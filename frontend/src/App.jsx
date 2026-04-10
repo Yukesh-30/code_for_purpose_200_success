@@ -10,6 +10,7 @@ import DashboardLayout from './layouts/DashboardLayout';
 // Pages
 import LandingPage from './pages/LandingPage';
 import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
 import Dashboard from './pages/Dashboard';
 import TalkToData from './pages/TalkToData';
 import Forecasting from './pages/Forecasting';
@@ -45,6 +46,7 @@ function App() {
               <Route index element={<LandingPage />} />
             </Route>
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignupPage />} />
 
             {/* Protected Routes */}
             <Route element={<ProtectedRoute><DashboardLayout /></ProtectedRoute>}>
