@@ -1,121 +1,82 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { AuthProvider, useAuth } from './context/AuthContext';
+import { ThemeProvider } from './context/ThemeContext';
+
+// Layouts
+import LandingLayout from './layouts/LandingLayout';
+import DashboardLayout from './layouts/DashboardLayout';
+
+// Pages
+import LandingPage from './pages/LandingPage';
+import LoginPage from './pages/LoginPage';
+import Dashboard from './pages/Dashboard';
+import TalkToData from './pages/TalkToData';
+import Forecasting from './pages/Forecasting';
+import InvoiceRisk from './pages/InvoiceRisk';
+import WorkingCapital from './pages/WorkingCapital';
+import BankingRecommendation from './pages/BankingRecommendation';
+
+// Bank Pages
+import BankPortfolio from './pages/bank/BankPortfolio';
+import HighRiskList from './pages/bank/HighRiskList';
+import CustomerDetail from './pages/bank/CustomerDetail';
+import RiskDefaultPrediction from './pages/bank/RiskDefaultPrediction';
+import LendingOpportunities from './pages/bank/LendingOpportunities';
+import Explainability from './pages/bank/Explainability';
+import Alerts from './pages/bank/AlertsCenter';
+import SystemAdmin from './pages/bank/SystemAdmin';
+
+const ProtectedRoute = ({ children }) => {
+  const { user, loading } = useAuth();
+  if (loading) return null;
+  if (!user) return <Navigate to="/login" replace />;
+  return children;
+};
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <ThemeProvider>
+      <AuthProvider>
+        <Router>
+          <Routes>
+            {/* Public Routes */}
+            <Route path="/" element={<LandingLayout />}>
+              <Route index element={<LandingPage />} />
+            </Route>
+            <Route path="/login" element={<LoginPage />} />
 
-      <div className="ticks"></div>
+            {/* Protected Routes */}
+            <Route element={<ProtectedRoute><DashboardLayout /></ProtectedRoute>}>
+              {/* MSME Routes */}
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/forecast" element={<Forecasting />} />
+              <Route path="/invoice-risk" element={<InvoiceRisk />} />
+              <Route path="/working-capital" element={<WorkingCapital />} />
+              <Route path="/banking-recommendations" element={<BankingRecommendation />} />
+              <Route path="/talk-to-data" element={<TalkToData />} />
+              
+              {/* Bank Routes */}
+              <Route path="/bank/portfolio" element={<BankPortfolio />} />
+              <Route path="/bank/risk-list" element={<HighRiskList />} />
+              <Route path="/bank/customer/:id" element={<CustomerDetail />} />
+              <Route path="/bank/prediction" element={<RiskDefaultPrediction />} />
+              <Route path="/bank/opportunities" element={<LendingOpportunities />} />
+              <Route path="/bank/explainability" element={<Explainability />} />
+              <Route path="/bank/alerts" element={<Alerts />} />
+              <Route path="/bank/admin" element={<SystemAdmin />} />
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+              <Route path="/team" element={<div>Team (Coming Soon)</div>} />
+              <Route path="/settings" element={<div>Settings (Coming Soon)</div>} />
+            </Route>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+            {/* Fallback */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Router>
+      </AuthProvider>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
