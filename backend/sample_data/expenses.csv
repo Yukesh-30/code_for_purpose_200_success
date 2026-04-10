@@ -1,0 +1,7 @@
+expense_name,expense_category,amount,expense_date,recurring
+Electricity Bill,Utilities,8000,2026-04-05,true
+Office Rent,Rent,55000,2026-04-01,true
+Internet,Utilities,2000,2026-04-10,true
+New Laptops,Hardware,150000,2026-04-12,false
+Travel Expense,Business,12000,2026-04-08,false
+Marketing Ads,Marketing,25000,2026-04-15,true

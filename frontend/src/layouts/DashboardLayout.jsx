@@ -20,7 +20,8 @@ import {
   BarChart3,
   Eye,
   LogOut,
-  AppWindow
+  AppWindow,
+  Upload
 } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { Input } from '../components/ui/Input';
@@ -30,6 +31,7 @@ import { ThemeToggle } from '../components/ui/ThemeToggle';
 
 const msmeNavItems = [
   { name: 'Dashboard', icon: LayoutDashboard, path: '/dashboard' },
+  { name: 'Data Central', icon: Upload, path: '/upload-data' },
   { name: 'Cash Flow Forecast', icon: TrendingUp, path: '/forecast' },
   { name: 'Invoice Risk', icon: AlertTriangle, path: '/invoice-risk' },
   { name: 'Working Capital', icon: Wallet, path: '/working-capital' },
