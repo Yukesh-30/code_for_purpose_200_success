@@ -11,6 +11,8 @@ import DashboardLayout from './layouts/DashboardLayout';
 import LandingPage from './pages/LandingPage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+import CompleteProfile from './pages/CompleteProfile';
+import DataUpload from './pages/DataUpload';
 import Dashboard from './pages/Dashboard';
 import TalkToData from './pages/TalkToData';
 import Forecasting from './pages/Forecasting';
@@ -52,6 +54,8 @@ function App() {
             <Route element={<ProtectedRoute><DashboardLayout /></ProtectedRoute>}>
               {/* MSME Routes */}
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/complete-profile" element={<CompleteProfile />} />
+              <Route path="/upload-data" element={<DataUpload />} />
               <Route path="/forecast" element={<Forecasting />} />
               <Route path="/invoice-risk" element={<InvoiceRisk />} />
               <Route path="/working-capital" element={<WorkingCapital />} />

@@ -1,0 +1,6 @@
+transaction_date,amount,transaction_type,category,merchant_name,payment_mode,balance_after_transaction,description
+2026-04-01,50000,credit,Sales,Customer Payment,UPI,400000,Monthly sales income
+2026-04-02,15000,debit,Rent,Office Rent,Bank Transfer,385000,Office rent payment
+2026-04-03,2000,debit,Utilities,Internet Service,Card,383000,Monthly internet
+2026-04-05,25000,credit,Refund,Tax Refund,NEFT,408000,Income tax refund
+2026-04-10,12000,debit,Supplies,Paper & Toner,UPI,396000,Office supplies

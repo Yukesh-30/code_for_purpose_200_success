@@ -1,0 +1,6 @@
+invoice_number,customer_name,invoice_amount,invoice_date,due_date,actual_payment_date,status,delay_days
+INV-1001,Ravi Stores,25000,2026-03-20,2026-04-05,2026-04-08,paid,3
+INV-1002,Mega Supermarket,40000,2026-03-25,2026-04-10,,pending,0
+INV-1003,Global Exports,150000,2026-03-28,2026-04-12,2026-04-12,paid,0
+INV-1004,City Bakers,5000,2026-04-01,2026-04-15,,pending,0
+INV-1005,Tech Solutions,30000,2026-03-15,2026-03-30,2026-04-05,paid,6
