@@ -23,3 +23,74 @@ class User(db.Model):
             "role": self.role,
             "phone_number": self.phone_number
         }
+
+class BusinessProfile(db.Model):
+    __tablename__ = 'business_profiles'
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id', ondelete='CASCADE'))
+    business_name = db.Column(db.String(200), nullable=False)
+    business_type = db.Column(db.String(100))
+    industry = db.Column(db.String(100))
+    gst_number = db.Column(db.String(50))
+    annual_revenue = db.Column(db.Numeric(15,2))
+    employee_count = db.Column(db.Integer)
+    city = db.Column(db.String(100))
+    state = db.Column(db.String(100))
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+class BankAccount(db.Model):
+    __tablename__ = 'bank_accounts'
+
+    id = db.Column(db.Integer, primary_key=True)
+    business_id = db.Column(db.Integer, db.ForeignKey('business_profiles.id', ondelete='CASCADE'))
+    bank_name = db.Column(db.String(150), nullable=False)
+    account_number = db.Column(db.String(100), nullable=False)
+    ifsc_code = db.Column(db.String(20))
+    account_type = db.Column(db.String(50))
+    current_balance = db.Column(db.Numeric(15,2))
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+class BankTransaction(db.Model):
+    __tablename__ = 'bank_transactions'
+
+    id = db.Column(db.Integer, primary_key=True)
+    business_id = db.Column(db.Integer, db.ForeignKey('business_profiles.id', ondelete='CASCADE'))
+    bank_account_id = db.Column(db.Integer, db.ForeignKey('bank_accounts.id', ondelete='CASCADE'))
+    transaction_date = db.Column(db.Date, nullable=False)
+    amount = db.Column(db.Numeric(15,2), nullable=False)
+    transaction_type = db.Column(db.String(20)) # 'credit', 'debit'
+    category = db.Column(db.String(100))
+    merchant_name = db.Column(db.String(200))
+    payment_mode = db.Column(db.String(50))
+    balance_after_transaction = db.Column(db.Numeric(15,2))
+    description = db.Column(db.Text)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+class InvoiceRecord(db.Model):
+    __tablename__ = 'invoice_records'
+
+    id = db.Column(db.Integer, primary_key=True)
+    business_id = db.Column(db.Integer, db.ForeignKey('business_profiles.id', ondelete='CASCADE'))
+    invoice_number = db.Column(db.String(100), nullable=False)
+    customer_name = db.Column(db.String(200))
+    invoice_amount = db.Column(db.Numeric(15,2), nullable=False)
+    invoice_date = db.Column(db.Date, nullable=False)
+    due_date = db.Column(db.Date, nullable=False)
+    actual_payment_date = db.Column(db.Date)
+    status = db.Column(db.String(50)) # 'paid', 'pending', 'overdue'
+    delay_days = db.Column(db.Integer, default=0)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+class Expense(db.Model):
+    __tablename__ = 'expenses'
+
+    id = db.Column(db.Integer, primary_key=True)
+    business_id = db.Column(db.Integer, db.ForeignKey('business_profiles.id', ondelete='CASCADE'))
+    expense_name = db.Column(db.String(200))
+    expense_category = db.Column(db.String(100))
+    amount = db.Column(db.Numeric(15,2))
+    expense_date = db.Column(db.Date)
+    recurring = db.Column(db.Boolean, default=False)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
