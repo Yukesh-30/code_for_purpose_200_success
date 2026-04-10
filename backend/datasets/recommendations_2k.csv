@@ -1,0 +1,2001 @@
+business_id,cash_gap,delayed_invoice_count,overdraft_probability,vendor_risk,recommended_product,confidence_score
+31,41903.98,7,0.35,0.15,invoice financing,90
+30,133445.07,7,0.54,0.64,invoice financing,96
+17,76808.45,0,0.67,0.31,overdraft facility,81
+35,476782.73,1,0.47,0.46,business expansion loan,63
+29,489069.84,0,0.33,0.36,business expansion loan,68
+49,353635.75,12,0.51,0.42,invoice financing,91
+48,140120.74,0,0.53,0.44,machinery loan,70
+31,224372.67,0,0.23,0.49,inventory financing,50
+14,104376.09,0,0.2,0.33,invoice financing,77
+38,381861.26,3,0.16,0.18,invoice financing,88
+31,450611.03,0,0.87,0.42,overdraft facility,84
+13,384252.55,1,0.55,0.27,business expansion loan,90
+34,237143.95,0,0.46,0.67,invoice financing,51
+44,37368.04,0,0.53,0.46,supply chain finance,59
+22,236328.3,7,0.23,0.22,invoice financing,82
+14,87285.14,0,0.61,0.11,overdraft facility,80
+22,81926.82,7,0.49,0.29,invoice financing,78
+6,212605.39,0,0.52,0.14,business expansion loan,69
+30,485248.58,3,0.76,0.54,invoice financing,84
+12,277688.95,3,0.7,0.48,invoice financing,99
+38,322403.05,3,0.33,0.69,invoice financing,88
+48,246361.58,0,0.35,0.1,business expansion loan,73
+28,372253.5,1,0.12,0.76,business expansion loan,89
+25,5290.96,1,0.44,0.73,business expansion loan,69
+10,453583.17,0,0.64,0.76,overdraft facility,80
+3,490094.76,0,0.58,0.78,business expansion loan,88
+16,134962.34,7,0.72,0.19,invoice financing,84
+12,16580.31,3,0.57,0.11,invoice financing,85
+34,44508.45,7,0.8,0.33,invoice financing,97
+35,307862.55,1,0.43,0.69,business expansion loan,61
+42,101790.35,0,0.65,0.37,overdraft facility,90
+4,451697.96,0,0.28,0.67,business expansion loan,84
+15,1543.13,0,0.52,0.54,machinery loan,56
+49,4606.41,1,0.45,0.21,overdraft facility,75
+32,96877.18,7,0.16,0.3,invoice financing,83
+28,443369.53,1,0.24,0.57,business expansion loan,83
+22,265520.92,0,0.67,0.3,overdraft facility,88
+10,202556.96,0,0.89,0.56,overdraft facility,87
+8,177760.14,0,0.12,0.7,machinery loan,77
+43,430228.65,0,0.64,0.2,overdraft facility,85
+37,403571.11,0,0.24,0.28,business expansion loan,80
+42,426172.69,0,0.71,0.18,overdraft facility,70
+13,471159.97,0,0.17,0.5,business expansion loan,64
+36,214954.97,0,0.18,0.15,overdraft facility,64
+41,314881.82,3,0.33,0.75,invoice financing,81
+47,35891.88,0,0.73,0.69,overdraft facility,76
+36,251693.9,12,0.54,0.21,invoice financing,82
+50,315802.11,3,0.81,0.6,invoice financing,82
+18,496836.96,0,0.48,0.56,business expansion loan,81
+5,145348.77,12,0.8,0.78,invoice financing,100
+17,414203.68,7,0.5,0.25,invoice financing,78
+16,298278.67,0,0.16,0.73,overdraft facility,79
+13,456241.25,3,0.52,0.78,invoice financing,99
+40,483472.77,1,0.44,0.79,business expansion loan,61
+17,40970.29,1,0.43,0.52,business expansion loan,78
+23,294509.28,3,0.3,0.27,invoice financing,88
+11,220751.21,1,0.51,0.42,business expansion loan,52
+37,492914.05,1,0.13,0.76,business expansion loan,70
+2,94562.24,0,0.84,0.74,overdraft facility,80
+6,314079.05,0,0.23,0.3,business expansion loan,61
+23,353725.42,0,0.28,0.52,business expansion loan,81
+50,76924.92,0,0.54,0.29,supply chain finance,70
+6,143394.22,7,0.12,0.74,invoice financing,96
+45,152730.38,0,0.81,0.69,overdraft facility,90
+49,71544.66,0,0.29,0.61,inventory financing,55
+9,458123.48,1,0.29,0.43,business expansion loan,87
+12,98886.82,3,0.62,0.66,invoice financing,93
+45,101611.34,0,0.63,0.21,overdraft facility,78
+35,146684.31,0,0.81,0.26,overdraft facility,84
+15,346969.46,0,0.59,0.56,business expansion loan,81
+39,460422.83,7,0.19,0.51,invoice financing,96
+42,101423.47,0,0.72,0.25,overdraft facility,94
+16,10520.16,1,0.2,0.27,invoice financing,52
+7,337753.41,3,0.59,0.65,invoice financing,80
+49,354914.27,0,0.51,0.37,business expansion loan,71
+27,39752.6,1,0.64,0.29,overdraft facility,72
+50,433300.0,0,0.62,0.22,overdraft facility,89
+3,417265.94,7,0.16,0.13,invoice financing,84
+43,82046.72,3,0.44,0.79,invoice financing,75
+40,214937.08,1,0.15,0.38,machinery loan,50
+3,191714.36,0,0.82,0.48,overdraft facility,81
+32,82270.42,0,0.23,0.21,inventory financing,58
+26,255076.51,1,0.13,0.41,invoice financing,79
+20,496792.46,0,0.15,0.66,business expansion loan,73
+45,473585.44,1,0.35,0.58,business expansion loan,88
+8,329845.88,7,0.12,0.43,invoice financing,82
+34,335003.1,1,0.46,0.74,business expansion loan,83
+33,135608.61,1,0.21,0.52,invoice financing,50
+32,29960.28,3,0.63,0.19,invoice financing,87
+29,121048.95,1,0.31,0.59,inventory financing,74
+27,134924.9,0,0.89,0.15,overdraft facility,76
+14,422736.54,0,0.75,0.49,overdraft facility,72
+24,457090.02,0,0.24,0.35,business expansion loan,75
+3,34799.55,1,0.42,0.48,machinery loan,57
+27,252160.07,7,0.36,0.27,invoice financing,89
+12,488790.75,0,0.46,0.43,business expansion loan,67
+31,462352.98,3,0.45,0.79,invoice financing,97
+32,428391.57,1,0.14,0.54,business expansion loan,78
+44,257967.41,3,0.83,0.13,invoice financing,79
+40,417056.69,0,0.14,0.47,business expansion loan,63
+33,122186.07,0,0.3,0.31,supply chain finance,76
+48,369454.84,3,0.87,0.46,invoice financing,88
+15,109456.57,1,0.89,0.67,overdraft facility,82
+1,241847.46,3,0.85,0.28,invoice financing,97
+14,198979.84,1,0.74,0.75,overdraft facility,80
+17,192529.1,1,0.25,0.17,supply chain finance,69
+8,33525.79,7,0.64,0.35,invoice financing,80
+37,331925.75,0,0.59,0.42,business expansion loan,87
+11,292924.17,0,0.87,0.56,overdraft facility,93
+20,53401.77,1,0.39,0.67,business expansion loan,76
+17,464463.12,0,0.79,0.73,overdraft facility,88
+20,57486.44,7,0.11,0.72,invoice financing,86
+35,488926.68,3,0.83,0.72,invoice financing,88
+19,80397.61,3,0.47,0.23,invoice financing,78
+39,391940.95,0,0.59,0.13,business expansion loan,69
+47,52068.87,1,0.75,0.13,overdraft facility,88
+15,400642.86,1,0.28,0.46,business expansion loan,60
+9,492887.12,0,0.54,0.28,business expansion loan,81
+32,36124.28,0,0.89,0.67,overdraft facility,84
+31,144607.14,0,0.77,0.73,overdraft facility,70
+27,6412.53,7,0.55,0.65,invoice financing,100
+39,290023.61,7,0.71,0.13,invoice financing,76
+10,14218.37,7,0.73,0.33,invoice financing,87
+39,270056.85,0,0.69,0.62,overdraft facility,78
+46,242568.75,0,0.33,0.47,machinery loan,50
+8,195741.36,0,0.64,0.48,overdraft facility,73
+6,6549.41,0,0.11,0.13,business expansion loan,80
+31,434268.51,0,0.35,0.44,business expansion loan,69
+17,277488.78,0,0.34,0.22,supply chain finance,80
+13,26620.98,0,0.17,0.32,business expansion loan,68
+1,499362.06,1,0.47,0.14,business expansion loan,79
+20,174941.49,3,0.84,0.11,invoice financing,83
+20,188211.67,1,0.23,0.37,overdraft facility,61
+5,283635.7,0,0.13,0.54,inventory financing,71
+39,199048.71,3,0.15,0.28,invoice financing,91
+39,347559.1,3,0.64,0.76,invoice financing,91
+39,216549.7,0,0.51,0.77,overdraft facility,65
+39,476109.77,1,0.39,0.61,business expansion loan,62
+13,381631.4,1,0.5,0.16,business expansion loan,82
+17,423655.26,1,0.74,0.79,overdraft facility,77
+25,249589.89,3,0.45,0.66,invoice financing,77
+26,457193.22,12,0.41,0.68,invoice financing,77
+37,222629.55,1,0.35,0.26,supply chain finance,72
+44,355206.98,12,0.76,0.14,invoice financing,76
+37,432108.26,3,0.18,0.39,invoice financing,80
+26,411107.4,1,0.13,0.43,business expansion loan,64
+48,225831.9,7,0.24,0.29,invoice financing,98
+27,471318.85,0,0.61,0.3,overdraft facility,76
+2,265665.31,3,0.46,0.58,invoice financing,87
+35,121314.35,0,0.55,0.24,business expansion loan,51
+29,377745.25,0,0.77,0.3,overdraft facility,95
+1,354084.68,1,0.21,0.23,business expansion loan,69
+1,319325.01,0,0.77,0.39,overdraft facility,87
+22,45250.63,0,0.21,0.46,supply chain finance,76
+10,60985.68,0,0.34,0.35,overdraft facility,75
+29,423182.66,0,0.64,0.14,overdraft facility,77
+48,154971.16,1,0.69,0.6,overdraft facility,80
+14,237817.09,0,0.84,0.35,overdraft facility,77
+27,434146.32,1,0.6,0.28,overdraft facility,91
+8,196950.43,0,0.83,0.68,overdraft facility,74
+10,418686.45,3,0.82,0.48,invoice financing,81
+6,111449.81,3,0.46,0.15,invoice financing,80
+50,476796.05,1,0.7,0.12,overdraft facility,84
+4,376396.26,0,0.24,0.49,business expansion loan,67
+45,472735.94,3,0.87,0.66,invoice financing,77
+50,107969.02,0,0.41,0.66,inventory financing,66
+2,218042.57,3,0.37,0.22,invoice financing,83
+42,326817.92,1,0.4,0.29,business expansion loan,64
+33,261761.5,0,0.54,0.7,machinery loan,52
+33,277120.51,3,0.84,0.15,invoice financing,90
+13,149607.69,1,0.45,0.54,supply chain finance,65
+50,215584.94,7,0.81,0.19,invoice financing,77
+29,396518.22,0,0.65,0.39,overdraft facility,81
+30,268051.0,7,0.7,0.48,invoice financing,94
+34,314249.87,1,0.86,0.44,overdraft facility,94
+5,312182.72,0,0.62,0.65,overdraft facility,75
+40,498620.75,0,0.34,0.74,business expansion loan,70
+19,248867.54,3,0.75,0.75,invoice financing,85
+14,387904.77,0,0.71,0.64,overdraft facility,95
+50,378903.39,1,0.42,0.44,business expansion loan,85
+43,201080.04,0,0.47,0.47,inventory financing,71
+44,350700.02,0,0.21,0.75,business expansion loan,64
+2,353995.39,1,0.33,0.2,business expansion loan,84
+22,187667.97,1,0.22,0.5,machinery loan,52
+35,109479.95,0,0.54,0.15,supply chain finance,76
+35,485971.41,1,0.86,0.67,overdraft facility,90
+37,158317.77,7,0.15,0.2,invoice financing,77
+43,404583.37,1,0.9,0.37,overdraft facility,90
+46,466272.8,1,0.76,0.44,overdraft facility,79
+16,457745.82,1,0.6,0.35,overdraft facility,73
+30,351236.17,3,0.75,0.67,invoice financing,82
+46,286377.5,12,0.75,0.38,invoice financing,96
+4,439450.1,0,0.51,0.39,business expansion loan,74
+28,293173.72,0,0.32,0.71,inventory financing,73
+41,180094.1,0,0.49,0.64,overdraft facility,57
+43,294982.19,0,0.87,0.69,overdraft facility,78
+17,99817.54,0,0.25,0.54,machinery loan,70
+25,343341.2,3,0.28,0.23,invoice financing,92
+19,260878.63,0,0.28,0.67,overdraft facility,76
+6,487000.02,1,0.6,0.59,overdraft facility,81
+44,248550.95,0,0.75,0.22,overdraft facility,94
+44,88052.11,0,0.57,0.49,machinery loan,60
+10,303115.35,3,0.68,0.18,invoice financing,95
+32,197338.57,0,0.26,0.44,business expansion loan,71
+32,176648.88,7,0.22,0.52,invoice financing,98
+1,174235.13,0,0.2,0.48,supply chain finance,67
+47,484822.03,3,0.69,0.15,invoice financing,82
+47,494741.65,0,0.58,0.52,business expansion loan,67
+42,341612.35,1,0.38,0.8,business expansion loan,78
+48,371477.54,1,0.78,0.34,overdraft facility,76
+10,494874.51,12,0.66,0.7,invoice financing,86
+45,303263.18,0,0.42,0.61,business expansion loan,65
+2,383415.96,0,0.2,0.16,business expansion loan,76
+7,426651.23,1,0.75,0.62,overdraft facility,73
+39,359583.68,3,0.54,0.34,invoice financing,85
+34,81524.72,3,0.66,0.61,invoice financing,84
+31,71585.68,7,0.42,0.61,invoice financing,94
+27,324943.93,0,0.48,0.52,business expansion loan,85
+22,401598.77,0,0.45,0.72,business expansion loan,82
+50,450382.39,0,0.36,0.37,business expansion loan,81
+38,182914.65,7,0.59,0.24,invoice financing,99
+42,219946.93,3,0.84,0.6,invoice financing,82
+36,296317.87,0,0.59,0.34,inventory financing,77
+7,199600.59,1,0.67,0.58,overdraft facility,84
+9,97155.1,0,0.9,0.43,overdraft facility,78
+26,55862.38,0,0.63,0.64,overdraft facility,94
+45,72730.81,3,0.7,0.15,invoice financing,88
+19,380261.02,0,0.74,0.43,overdraft facility,95
+13,337708.75,0,0.25,0.38,business expansion loan,69
+1,124095.96,7,0.13,0.76,invoice financing,91
+20,365966.32,12,0.4,0.53,invoice financing,96
+7,331265.02,1,0.16,0.33,business expansion loan,76
+1,326902.82,0,0.68,0.27,overdraft facility,79
+25,17772.98,1,0.13,0.41,inventory financing,56
+34,468271.87,7,0.37,0.36,invoice financing,96
+24,185014.13,7,0.45,0.36,invoice financing,85
+19,84655.06,1,0.84,0.11,overdraft facility,83
+4,231827.22,0,0.24,0.19,machinery loan,62
+11,231885.44,0,0.27,0.53,supply chain finance,65
+29,240714.58,7,0.85,0.47,invoice financing,76
+11,74439.49,0,0.58,0.12,business expansion loan,61
+11,15981.32,12,0.36,0.74,invoice financing,92
+31,79007.59,1,0.9,0.37,overdraft facility,80
+27,273493.0,3,0.19,0.8,invoice financing,96
+37,117603.98,0,0.41,0.39,supply chain finance,70
+21,395730.34,1,0.5,0.3,business expansion loan,72
+27,219605.12,0,0.44,0.67,business expansion loan,79
+37,425708.91,1,0.2,0.22,business expansion loan,87
+37,65060.56,3,0.36,0.38,invoice financing,78
+6,247981.08,1,0.5,0.49,business expansion loan,56
+33,465136.75,3,0.17,0.41,invoice financing,79
+20,321825.88,0,0.39,0.61,business expansion loan,71
+16,298422.87,0,0.88,0.32,overdraft facility,83
+17,298448.36,3,0.66,0.28,invoice financing,98
+18,435241.62,0,0.5,0.69,business expansion loan,61
+5,252069.56,12,0.39,0.15,invoice financing,95
+11,307718.55,0,0.16,0.57,business expansion loan,76
+11,97107.05,0,0.26,0.78,inventory financing,74
+12,79424.47,0,0.37,0.68,machinery loan,53
+38,399636.23,0,0.57,0.63,business expansion loan,80
+44,194167.73,3,0.31,0.28,invoice financing,90
+7,129941.03,0,0.56,0.42,inventory financing,70
+8,178746.49,0,0.67,0.22,overdraft facility,86
+44,109499.44,1,0.12,0.3,inventory financing,71
+31,220728.88,0,0.59,0.72,invoice financing,60
+39,39223.34,0,0.27,0.46,machinery loan,67
+46,497161.23,12,0.74,0.29,invoice financing,96
+3,336227.87,0,0.43,0.15,business expansion loan,82
+27,493773.37,1,0.27,0.12,business expansion loan,60
+6,147359.83,0,0.67,0.31,overdraft facility,94
+41,131460.89,0,0.82,0.67,overdraft facility,85
+21,250106.46,0,0.78,0.24,overdraft facility,85
+8,191234.35,0,0.3,0.42,supply chain finance,50
+50,141796.82,1,0.57,0.64,supply chain finance,64
+1,337582.76,1,0.39,0.47,business expansion loan,80
+19,164372.4,1,0.11,0.15,inventory financing,72
+7,459523.09,0,0.24,0.42,business expansion loan,77
+46,225078.85,0,0.72,0.41,overdraft facility,74
+15,279325.76,1,0.71,0.48,overdraft facility,72
+46,462494.9,0,0.27,0.37,business expansion loan,70
+31,394297.65,1,0.44,0.34,business expansion loan,71
+22,461859.14,0,0.89,0.27,overdraft facility,70
+3,96497.43,0,0.39,0.62,supply chain finance,64
+9,354973.07,0,0.34,0.28,business expansion loan,86
+16,122578.14,1,0.87,0.26,overdraft facility,75
+37,435718.26,0,0.47,0.33,business expansion loan,83
+11,285594.76,7,0.46,0.11,invoice financing,75
+38,184177.49,3,0.13,0.38,invoice financing,96
+32,421206.79,1,0.54,0.19,business expansion loan,76
+41,96054.52,0,0.16,0.22,business expansion loan,54
+33,60459.64,0,0.8,0.38,overdraft facility,88
+47,373941.76,1,0.83,0.26,overdraft facility,77
+43,480959.67,7,0.21,0.66,invoice financing,85
+1,102630.73,1,0.11,0.38,supply chain finance,74
+10,143712.4,0,0.53,0.26,overdraft facility,74
+7,222162.94,3,0.53,0.64,invoice financing,79
+28,99297.83,0,0.32,0.46,inventory financing,56
+5,79246.01,0,0.88,0.7,overdraft facility,83
+39,36821.94,7,0.31,0.58,invoice financing,79
+16,296565.29,1,0.68,0.16,overdraft facility,71
+7,18831.29,1,0.77,0.72,overdraft facility,70
+25,69935.83,0,0.53,0.48,business expansion loan,70
+33,79537.44,0,0.39,0.79,business expansion loan,63
+22,346223.64,3,0.37,0.38,invoice financing,93
+18,245258.82,7,0.23,0.79,invoice financing,76
+47,66279.64,0,0.79,0.31,overdraft facility,74
+12,366486.94,12,0.3,0.58,invoice financing,89
+12,97047.68,1,0.77,0.77,overdraft facility,85
+34,452591.35,3,0.82,0.79,invoice financing,97
+47,212357.91,1,0.11,0.22,overdraft facility,57
+15,404481.37,1,0.74,0.14,overdraft facility,78
+31,144931.87,0,0.65,0.29,overdraft facility,72
+33,450351.86,1,0.56,0.58,business expansion loan,73
+28,388973.66,0,0.71,0.78,overdraft facility,75
+35,480931.28,0,0.65,0.51,overdraft facility,75
+36,258609.89,0,0.13,0.76,inventory financing,69
+19,40735.51,3,0.5,0.34,invoice financing,80
+23,207731.17,1,0.71,0.39,overdraft facility,91
+5,403926.7,0,0.85,0.19,overdraft facility,70
+50,316333.53,3,0.54,0.78,invoice financing,85
+40,78879.18,7,0.38,0.36,invoice financing,78
+13,232431.16,0,0.72,0.55,overdraft facility,86
+46,435271.35,1,0.79,0.24,overdraft facility,88
+8,468943.46,0,0.16,0.35,business expansion loan,85
+27,480567.97,0,0.26,0.35,business expansion loan,64
+37,128363.68,3,0.59,0.76,invoice financing,87
+41,133063.54,0,0.89,0.22,overdraft facility,93
+43,452318.97,0,0.45,0.3,business expansion loan,69
+7,257590.95,0,0.7,0.46,overdraft facility,88
+14,305454.4,0,0.28,0.17,business expansion loan,80
+38,22387.38,3,0.57,0.28,invoice financing,78
+47,327180.38,0,0.78,0.6,overdraft facility,92
+17,7514.43,1,0.45,0.77,business expansion loan,67
+47,43394.02,0,0.38,0.54,supply chain finance,76
+32,360169.0,7,0.36,0.2,invoice financing,88
+7,324061.21,0,0.67,0.72,overdraft facility,92
+32,163668.74,7,0.34,0.76,invoice financing,75
+27,250904.37,3,0.43,0.53,invoice financing,75
+33,95929.31,0,0.23,0.49,business expansion loan,73
+45,306742.26,1,0.3,0.71,business expansion loan,79
+35,270092.38,3,0.87,0.79,invoice financing,87
+1,200768.59,0,0.57,0.55,inventory financing,73
+28,145716.38,12,0.36,0.26,invoice financing,97
+8,116995.71,0,0.48,0.66,business expansion loan,59
+43,410012.52,1,0.39,0.48,business expansion loan,66
+39,427020.52,1,0.16,0.37,business expansion loan,73
+50,496983.89,3,0.77,0.33,invoice financing,91
+21,415944.91,1,0.39,0.59,business expansion loan,89
+34,17125.09,7,0.13,0.4,invoice financing,94
+39,457407.09,3,0.56,0.17,invoice financing,79
+29,86226.43,0,0.25,0.54,machinery loan,75
+35,467601.32,0,0.88,0.5,overdraft facility,87
+49,319684.39,0,0.33,0.36,business expansion loan,76
+4,260671.0,0,0.17,0.43,invoice financing,72
+44,302535.13,0,0.35,0.42,business expansion loan,75
+13,115183.25,1,0.24,0.48,supply chain finance,76
+36,155915.14,3,0.53,0.28,invoice financing,88
+49,216703.03,0,0.88,0.34,overdraft facility,93
+26,395133.41,0,0.22,0.2,business expansion loan,79
+5,231973.57,1,0.44,0.44,inventory financing,65
+28,362116.65,3,0.81,0.67,invoice financing,90
+41,429058.56,3,0.74,0.41,invoice financing,77
+6,471295.6,0,0.44,0.11,business expansion loan,74
+42,20363.99,1,0.18,0.51,business expansion loan,55
+11,284045.6,0,0.72,0.77,overdraft facility,82
+15,201276.56,3,0.18,0.18,invoice financing,79
+48,468120.96,0,0.31,0.4,business expansion loan,82
+45,60212.15,7,0.84,0.42,invoice financing,83
+40,99622.11,1,0.83,0.65,overdraft facility,83
+19,234157.5,1,0.14,0.22,business expansion loan,56
+6,373177.43,0,0.65,0.38,overdraft facility,93
+20,444737.87,0,0.61,0.65,overdraft facility,77
+28,367588.94,0,0.87,0.37,overdraft facility,86
+38,77225.59,0,0.28,0.73,business expansion loan,63
+36,355149.99,7,0.3,0.4,invoice financing,99
+10,371584.54,0,0.59,0.58,business expansion loan,67
+31,251573.99,0,0.44,0.29,machinery loan,50
+31,249137.48,3,0.22,0.39,invoice financing,86
+49,426120.82,7,0.43,0.19,invoice financing,84
+12,150734.92,1,0.49,0.52,supply chain finance,61
+2,441010.38,0,0.71,0.32,overdraft facility,76
+14,36472.34,0,0.27,0.49,business expansion loan,61
+39,43986.96,1,0.3,0.6,overdraft facility,70
+21,21784.18,12,0.14,0.53,invoice financing,90
+46,257494.31,3,0.6,0.51,invoice financing,81
+32,235227.43,1,0.9,0.7,overdraft facility,95
+1,115574.75,0,0.73,0.33,overdraft facility,74
+49,261765.05,0,0.52,0.71,overdraft facility,75
+46,331522.24,1,0.62,0.51,overdraft facility,91
+1,128331.24,0,0.35,0.56,invoice financing,50
+44,31971.18,0,0.38,0.16,supply chain finance,52
+30,483379.37,12,0.41,0.69,invoice financing,83
+28,380225.2,1,0.16,0.51,business expansion loan,63
+43,233334.31,1,0.89,0.46,overdraft facility,80
+49,115999.91,3,0.77,0.35,invoice financing,95
+26,269106.76,1,0.59,0.78,supply chain finance,66
+18,461914.03,1,0.24,0.57,business expansion loan,89
+19,288598.62,0,0.39,0.37,business expansion loan,80
+48,197620.7,1,0.12,0.79,supply chain finance,60
+30,196683.03,0,0.33,0.36,invoice financing,60
+20,187007.97,1,0.16,0.61,invoice financing,67
+24,310270.65,0,0.38,0.66,business expansion loan,82
+6,114776.75,12,0.71,0.47,invoice financing,93
+49,301470.46,1,0.12,0.71,business expansion loan,76
+27,114570.21,0,0.23,0.52,inventory financing,61
+14,405772.45,0,0.66,0.49,overdraft facility,78
+37,338704.88,1,0.42,0.62,business expansion loan,69
+49,237449.89,3,0.83,0.12,invoice financing,75
+11,188986.81,12,0.52,0.35,invoice financing,83
+26,440933.96,1,0.54,0.47,business expansion loan,89
+13,283281.09,1,0.39,0.15,supply chain finance,72
+43,8762.58,3,0.24,0.36,invoice financing,92
+8,219361.53,0,0.66,0.35,overdraft facility,80
+43,84618.8,1,0.39,0.56,invoice financing,67
+23,316392.81,0,0.2,0.65,business expansion loan,90
+34,443621.94,1,0.26,0.14,business expansion loan,73
+16,422479.25,12,0.49,0.46,invoice financing,91
+41,69132.21,1,0.37,0.4,machinery loan,63
+39,133994.29,0,0.65,0.55,overdraft facility,94
+34,57954.62,0,0.33,0.25,invoice financing,69
+23,213402.28,3,0.15,0.26,invoice financing,89
+36,172818.46,0,0.58,0.28,machinery loan,71
+16,316829.45,3,0.68,0.57,invoice financing,75
+30,381530.55,7,0.62,0.71,invoice financing,95
+47,346095.4,3,0.21,0.58,invoice financing,85
+47,173406.72,0,0.11,0.11,supply chain finance,62
+16,451.88,1,0.35,0.77,supply chain finance,66
+3,30015.65,1,0.27,0.8,inventory financing,76
+46,5766.38,12,0.43,0.69,invoice financing,85
+5,480906.9,1,0.55,0.57,business expansion loan,61
+22,251262.43,3,0.84,0.14,invoice financing,85
+45,44857.77,1,0.39,0.67,supply chain finance,62
+47,297036.62,3,0.23,0.77,invoice financing,91
+23,473196.11,12,0.86,0.48,invoice financing,99
+44,86059.93,0,0.31,0.26,invoice financing,62
+25,157804.32,12,0.57,0.76,invoice financing,95
+3,465865.96,1,0.45,0.57,business expansion loan,73
+31,388502.22,0,0.78,0.53,overdraft facility,71
+19,145991.6,0,0.53,0.57,machinery loan,55
+36,434139.1,0,0.62,0.41,overdraft facility,78
+1,419561.28,3,0.57,0.79,invoice financing,84
+44,491126.84,1,0.27,0.43,business expansion loan,69
+8,441032.8,0,0.88,0.56,overdraft facility,86
+6,254108.63,0,0.88,0.35,overdraft facility,81
+39,110558.08,0,0.78,0.23,overdraft facility,95
+47,382808.3,7,0.72,0.36,invoice financing,92
+3,156190.66,0,0.55,0.45,overdraft facility,80
+37,41066.1,0,0.17,0.79,machinery loan,68
+32,135814.01,0,0.15,0.79,business expansion loan,69
+46,367832.23,0,0.32,0.38,business expansion loan,81
+16,484966.17,0,0.2,0.48,business expansion loan,75
+30,384559.04,1,0.29,0.12,business expansion loan,88
+19,222754.5,7,0.12,0.57,invoice financing,78
+21,325182.79,3,0.23,0.13,invoice financing,98
+7,168451.47,12,0.4,0.69,invoice financing,100
+2,79901.57,3,0.72,0.62,invoice financing,95
+24,314926.29,1,0.51,0.66,business expansion loan,74
+29,388284.85,0,0.15,0.23,business expansion loan,84
+40,399647.21,0,0.27,0.5,business expansion loan,63
+38,156224.72,1,0.61,0.65,overdraft facility,81
+16,384433.91,1,0.82,0.18,overdraft facility,82
+41,242142.01,0,0.32,0.11,inventory financing,51
+37,42711.43,0,0.16,0.36,inventory financing,72
+49,283526.59,7,0.77,0.41,invoice financing,100
+10,236429.69,0,0.39,0.37,machinery loan,78
+6,414818.86,0,0.45,0.14,business expansion loan,66
+2,61368.68,1,0.86,0.4,overdraft facility,95
+37,121405.48,3,0.59,0.54,invoice financing,85
+48,425046.64,12,0.65,0.21,invoice financing,83
+15,415330.82,3,0.84,0.14,invoice financing,78
+27,18483.76,0,0.5,0.46,overdraft facility,73
+10,52963.53,0,0.62,0.62,overdraft facility,72
+10,209085.42,1,0.11,0.47,business expansion loan,73
+46,201373.3,0,0.53,0.45,business expansion loan,77
+25,424205.74,3,0.87,0.3,invoice financing,85
+49,18669.94,1,0.69,0.13,overdraft facility,87
+47,370198.86,1,0.66,0.71,overdraft facility,81
+7,249807.13,7,0.45,0.46,invoice financing,87
+33,176420.89,1,0.33,0.66,machinery loan,71
+30,94570.41,7,0.27,0.67,invoice financing,97
+8,386184.05,1,0.38,0.55,business expansion loan,66
+26,186869.49,3,0.64,0.43,invoice financing,82
+9,492413.92,7,0.61,0.16,invoice financing,77
+36,325139.41,0,0.64,0.72,overdraft facility,94
+21,32742.3,12,0.43,0.28,invoice financing,78
+18,380072.34,1,0.19,0.77,business expansion loan,66
+30,6550.84,1,0.18,0.51,business expansion loan,68
+26,114101.41,1,0.41,0.21,supply chain finance,59
+10,485158.39,12,0.43,0.26,invoice financing,100
+40,3843.77,1,0.73,0.61,overdraft facility,87
+30,150922.59,3,0.5,0.35,invoice financing,75
+29,302829.1,1,0.38,0.22,business expansion loan,66
+28,271589.68,0,0.43,0.71,inventory financing,52
+39,94070.88,3,0.59,0.73,invoice financing,80
+16,178972.01,7,0.13,0.48,invoice financing,85
+46,313293.85,7,0.68,0.15,invoice financing,79
+34,262346.74,0,0.33,0.73,business expansion loan,55
+5,303567.09,3,0.88,0.71,invoice financing,85
+19,181572.71,7,0.17,0.67,invoice financing,84
+38,401886.89,3,0.67,0.66,invoice financing,79
+5,70989.29,0,0.65,0.44,overdraft facility,93
+26,430037.71,1,0.7,0.68,overdraft facility,86
+31,232325.58,1,0.23,0.39,business expansion loan,76
+27,54830.13,3,0.75,0.71,invoice financing,97
+33,397167.41,0,0.74,0.48,overdraft facility,87
+2,56807.87,1,0.61,0.4,overdraft facility,80
+21,206211.47,1,0.64,0.5,overdraft facility,91
+30,38295.56,12,0.89,0.54,invoice financing,99
+26,338846.39,0,0.66,0.6,overdraft facility,76
+3,20953.68,0,0.58,0.41,overdraft facility,63
+24,487364.56,1,0.35,0.66,business expansion loan,65
+13,89482.76,7,0.51,0.13,invoice financing,97
+18,360707.53,1,0.87,0.23,overdraft facility,92
+1,436342.35,12,0.41,0.53,invoice financing,90
+40,220347.15,0,0.51,0.2,machinery loan,62
+29,337052.85,7,0.18,0.21,invoice financing,95
+30,315740.62,1,0.82,0.39,overdraft facility,74
+13,98046.63,7,0.11,0.12,invoice financing,93
+20,97730.94,7,0.48,0.62,invoice financing,79
+19,470963.36,3,0.57,0.37,invoice financing,84
+19,384296.23,0,0.82,0.59,overdraft facility,86
+44,380530.26,1,0.5,0.68,business expansion loan,71
+40,175332.53,0,0.78,0.3,overdraft facility,83
+49,280512.45,3,0.13,0.49,invoice financing,78
+35,461886.75,0,0.69,0.28,overdraft facility,84
+8,52527.94,12,0.32,0.47,invoice financing,93
+46,123323.02,7,0.69,0.41,invoice financing,96
+17,238920.44,0,0.75,0.16,overdraft facility,93
+25,393758.0,3,0.76,0.66,invoice financing,80
+15,112941.7,0,0.8,0.11,overdraft facility,76
+35,445581.02,12,0.62,0.72,invoice financing,87
+25,302467.21,0,0.89,0.16,overdraft facility,73
+19,377867.66,1,0.79,0.48,overdraft facility,80
+27,398059.31,0,0.35,0.5,business expansion loan,68
+17,12517.08,0,0.72,0.64,overdraft facility,94
+25,478023.74,1,0.83,0.32,overdraft facility,70
+22,163516.96,1,0.78,0.45,overdraft facility,78
+1,9785.69,0,0.42,0.41,business expansion loan,70
+32,316129.41,0,0.13,0.73,business expansion loan,69
+30,333263.41,1,0.64,0.64,overdraft facility,92
+26,416018.68,7,0.72,0.33,invoice financing,86
+30,198291.13,1,0.56,0.29,machinery loan,72
+13,268588.26,1,0.38,0.11,machinery loan,78
+13,30713.26,0,0.56,0.15,overdraft facility,58
+15,191397.1,0,0.25,0.24,inventory financing,68
+26,415745.55,0,0.21,0.14,business expansion loan,73
+7,406923.77,12,0.41,0.28,invoice financing,86
+43,216354.17,1,0.43,0.49,machinery loan,77
+2,152849.45,0,0.6,0.21,overdraft facility,72
+33,112040.56,3,0.5,0.32,invoice financing,91
+12,147999.06,7,0.66,0.68,invoice financing,80
+16,453156.8,1,0.15,0.59,business expansion loan,65
+36,449301.87,1,0.25,0.66,business expansion loan,82
+46,217990.15,12,0.64,0.78,invoice financing,90
+44,410322.07,3,0.51,0.75,invoice financing,87
+8,178459.78,1,0.13,0.37,inventory financing,67
+11,66237.5,1,0.14,0.2,invoice financing,72
+39,50514.35,0,0.16,0.35,invoice financing,75
+13,175612.17,0,0.11,0.13,business expansion loan,73
+26,293711.83,0,0.19,0.27,invoice financing,62
+34,47337.25,1,0.28,0.11,overdraft facility,62
+39,341000.79,1,0.12,0.59,business expansion loan,62
+26,133404.23,0,0.12,0.18,supply chain finance,64
+10,477793.29,0,0.25,0.11,business expansion loan,66
+16,148587.65,3,0.73,0.65,invoice financing,87
+13,324800.64,1,0.7,0.79,overdraft facility,94
+4,180914.07,1,0.65,0.64,overdraft facility,91
+47,444478.88,0,0.18,0.72,business expansion loan,66
+38,451871.97,1,0.88,0.66,overdraft facility,89
+14,271515.53,0,0.73,0.56,overdraft facility,77
+7,190153.17,0,0.28,0.57,business expansion loan,58
+30,157860.21,1,0.89,0.23,overdraft facility,78
+36,39962.86,0,0.49,0.48,business expansion loan,57
+45,216862.07,1,0.25,0.64,invoice financing,79
+49,67563.58,7,0.84,0.43,invoice financing,82
+28,213766.83,0,0.24,0.57,overdraft facility,68
+21,325761.02,1,0.15,0.79,business expansion loan,61
+12,98967.59,3,0.18,0.53,invoice financing,90
+36,78467.79,0,0.55,0.44,overdraft facility,68
+42,141384.55,7,0.16,0.76,invoice financing,80
+16,62344.65,0,0.49,0.54,supply chain finance,58
+43,20082.32,3,0.69,0.53,invoice financing,99
+15,52865.33,3,0.51,0.4,invoice financing,90
+30,173191.34,0,0.49,0.55,overdraft facility,50
+50,146656.53,0,0.49,0.63,overdraft facility,78
+21,111582.75,3,0.57,0.18,invoice financing,89
+28,382987.53,1,0.77,0.72,overdraft facility,70
+14,293809.36,0,0.23,0.72,supply chain finance,67
+6,473793.21,1,0.78,0.18,overdraft facility,79
+28,31286.16,1,0.16,0.41,business expansion loan,75
+3,302174.56,3,0.35,0.2,invoice financing,78
+34,120644.19,1,0.74,0.17,overdraft facility,79
+19,464212.48,1,0.12,0.61,business expansion loan,88
+24,2622.12,1,0.85,0.46,overdraft facility,71
+35,208436.28,0,0.81,0.21,overdraft facility,81
+41,298613.02,7,0.52,0.49,invoice financing,94
+23,194904.77,0,0.5,0.66,supply chain finance,56
+5,251667.15,0,0.67,0.2,overdraft facility,82
+36,52688.94,1,0.24,0.52,invoice financing,70
+31,206009.59,0,0.62,0.4,overdraft facility,88
+8,211061.53,1,0.22,0.64,inventory financing,56
+34,133840.32,0,0.38,0.64,invoice financing,76
+36,145841.27,0,0.73,0.69,overdraft facility,84
+33,267288.45,12,0.62,0.76,invoice financing,77
+5,230042.83,7,0.42,0.26,invoice financing,89
+40,290614.99,1,0.24,0.14,business expansion loan,53
+24,450588.08,0,0.26,0.47,business expansion loan,73
+30,168419.98,0,0.29,0.38,invoice financing,52
+50,464932.85,1,0.23,0.18,business expansion loan,69
+44,24279.82,0,0.36,0.78,inventory financing,67
+47,23533.22,0,0.53,0.6,overdraft facility,71
+22,446860.06,1,0.57,0.23,business expansion loan,61
+32,142120.66,0,0.7,0.68,overdraft facility,78
+17,389772.58,0,0.71,0.15,overdraft facility,89
+9,185309.04,7,0.45,0.65,invoice financing,92
+34,45603.76,7,0.58,0.43,invoice financing,98
+25,442256.64,1,0.51,0.61,business expansion loan,78
+21,435793.29,1,0.9,0.71,overdraft facility,93
+10,127383.3,0,0.51,0.75,machinery loan,56
+5,32977.72,1,0.24,0.28,machinery loan,75
+38,286024.54,7,0.34,0.12,invoice financing,98
+1,496930.87,0,0.17,0.34,business expansion loan,71
+42,161854.3,3,0.42,0.39,invoice financing,87
+26,99050.3,1,0.39,0.28,supply chain finance,55
+17,46452.06,1,0.27,0.14,overdraft facility,58
+17,299747.24,0,0.73,0.27,overdraft facility,73
+22,181448.44,12,0.77,0.52,invoice financing,76
+1,412622.19,0,0.75,0.39,overdraft facility,92
+18,249633.31,0,0.83,0.45,overdraft facility,92
+27,472200.79,1,0.39,0.31,business expansion loan,74
+40,98134.99,0,0.66,0.78,overdraft facility,89
+2,147929.49,1,0.7,0.27,overdraft facility,81
+8,485418.04,0,0.2,0.22,business expansion loan,66
+13,169754.13,0,0.43,0.75,machinery loan,53
+29,380369.3,1,0.86,0.2,overdraft facility,91
+42,255465.74,0,0.27,0.12,business expansion loan,76
+29,402798.96,0,0.52,0.44,business expansion loan,73
+50,373548.65,1,0.73,0.48,overdraft facility,70
+24,394146.54,0,0.12,0.1,business expansion loan,79
+30,84176.3,1,0.73,0.6,overdraft facility,92
+15,395230.36,3,0.62,0.5,invoice financing,76
+21,337071.24,1,0.42,0.2,business expansion loan,73
+23,371021.51,0,0.44,0.27,business expansion loan,69
+16,345728.88,1,0.32,0.76,business expansion loan,89
+1,334971.98,0,0.14,0.61,business expansion loan,64
+9,495160.95,1,0.33,0.31,business expansion loan,63
+48,353124.54,3,0.46,0.24,invoice financing,89
+44,356420.18,0,0.58,0.21,business expansion loan,74
+45,85471.94,3,0.45,0.77,invoice financing,89
+18,289065.31,0,0.12,0.77,business expansion loan,53
+10,164372.23,0,0.51,0.49,invoice financing,66
+15,223907.48,0,0.19,0.52,overdraft facility,72
+46,456524.47,0,0.17,0.58,business expansion loan,74
+22,289738.88,7,0.46,0.64,invoice financing,80
+24,302122.51,1,0.12,0.66,business expansion loan,69
+35,455348.44,0,0.2,0.25,business expansion loan,75
+31,120721.93,0,0.76,0.79,overdraft facility,77
+47,325776.45,1,0.42,0.48,business expansion loan,82
+22,258211.98,1,0.67,0.3,overdraft facility,73
+42,362681.05,12,0.24,0.56,invoice financing,100
+2,100870.76,3,0.4,0.56,invoice financing,76
+25,122646.33,3,0.14,0.42,invoice financing,89
+48,482952.26,1,0.49,0.28,business expansion loan,64
+18,373766.3,7,0.65,0.42,invoice financing,85
+27,364496.27,1,0.87,0.39,overdraft facility,74
+8,135482.14,12,0.2,0.35,invoice financing,94
+18,372297.89,7,0.83,0.13,invoice financing,89
+15,50563.5,1,0.47,0.61,business expansion loan,76
+24,174824.78,12,0.12,0.42,invoice financing,85
+26,195104.14,3,0.47,0.58,invoice financing,75
+6,91597.8,1,0.67,0.67,overdraft facility,91
+1,293077.6,0,0.12,0.31,overdraft facility,79
+22,359856.03,3,0.6,0.72,invoice financing,76
+20,142519.55,1,0.86,0.35,overdraft facility,72
+30,145850.43,1,0.49,0.13,invoice financing,50
+35,305084.87,0,0.78,0.62,overdraft facility,79
+41,214980.98,0,0.45,0.55,supply chain finance,66
+31,498474.72,0,0.62,0.49,overdraft facility,73
+22,263967.19,0,0.83,0.78,overdraft facility,93
+18,252183.41,7,0.56,0.38,invoice financing,91
+48,429926.08,7,0.21,0.43,invoice financing,88
+15,238918.02,1,0.63,0.76,overdraft facility,79
+33,438550.44,7,0.25,0.14,invoice financing,80
+42,333454.46,3,0.86,0.43,invoice financing,97
+21,222841.75,3,0.17,0.26,invoice financing,94
+1,444487.82,1,0.15,0.68,business expansion loan,61
+46,145374.66,0,0.9,0.32,overdraft facility,81
+24,108795.34,7,0.66,0.32,invoice financing,95
+2,348064.06,0,0.49,0.55,business expansion loan,70
+42,129620.86,0,0.62,0.4,overdraft facility,81
+13,458456.49,1,0.29,0.79,business expansion loan,72
+34,291634.17,0,0.74,0.59,overdraft facility,91
+41,364879.93,7,0.32,0.45,invoice financing,88
+35,349895.99,0,0.41,0.15,business expansion loan,88
+2,26216.63,3,0.59,0.5,invoice financing,96
+41,168073.18,0,0.11,0.17,machinery loan,75
+2,293364.17,3,0.47,0.66,invoice financing,79
+31,486200.07,1,0.1,0.19,business expansion loan,73
+26,255546.46,0,0.27,0.16,machinery loan,61
+8,55608.21,1,0.2,0.19,machinery loan,53
+20,333660.52,12,0.31,0.79,invoice financing,80
+26,451811.71,0,0.38,0.49,business expansion loan,63
+47,46395.64,1,0.64,0.16,overdraft facility,94
+36,293509.13,1,0.62,0.58,overdraft facility,83
+7,183479.17,0,0.22,0.59,supply chain finance,69
+17,234465.34,1,0.47,0.3,business expansion loan,54
+7,290029.39,1,0.43,0.28,inventory financing,80
+1,163905.8,1,0.34,0.73,business expansion loan,76
+37,371795.92,3,0.17,0.15,invoice financing,96
+33,216732.65,0,0.35,0.45,inventory financing,72
+47,34119.22,7,0.48,0.68,invoice financing,79
+27,67984.69,12,0.67,0.66,invoice financing,97
+23,173754.65,0,0.58,0.71,invoice financing,77
+16,117350.72,7,0.29,0.37,invoice financing,80
+9,224197.41,1,0.69,0.42,overdraft facility,73
+33,34304.76,0,0.21,0.21,machinery loan,57
+19,377265.41,3,0.22,0.5,invoice financing,100
+45,230937.34,1,0.66,0.25,overdraft facility,91
+43,264847.52,0,0.85,0.72,overdraft facility,73
+4,177419.34,3,0.45,0.3,invoice financing,78
+33,298171.82,3,0.52,0.68,invoice financing,82
+20,360333.16,1,0.51,0.43,business expansion loan,85
+16,177226.88,0,0.17,0.24,business expansion loan,56
+7,350927.56,0,0.31,0.55,business expansion loan,60
+48,356697.03,3,0.71,0.38,invoice financing,76
+9,266982.2,1,0.41,0.38,business expansion loan,59
+5,281857.3,0,0.33,0.65,overdraft facility,57
+2,415580.65,0,0.71,0.34,overdraft facility,74
+26,85870.88,12,0.51,0.5,invoice financing,82
+2,37020.04,0,0.27,0.56,inventory financing,61
+15,374872.56,3,0.6,0.47,invoice financing,97
+3,86496.67,1,0.69,0.75,overdraft facility,74
+24,409428.08,12,0.13,0.74,invoice financing,83
+2,19354.83,0,0.7,0.55,overdraft facility,84
+32,135678.9,1,0.82,0.33,overdraft facility,85
+4,295291.02,0,0.74,0.15,overdraft facility,81
+22,145078.7,1,0.58,0.54,invoice financing,78
+26,99459.81,0,0.67,0.16,overdraft facility,85
+36,297937.91,1,0.19,0.74,inventory financing,76
+20,434057.54,3,0.68,0.19,invoice financing,82
+15,399653.02,7,0.55,0.52,invoice financing,77
+37,490901.07,0,0.87,0.74,overdraft facility,87
+30,490133.99,0,0.48,0.59,business expansion loan,62
+8,357293.94,12,0.87,0.5,invoice financing,88
+14,417439.29,0,0.13,0.19,business expansion loan,76
+41,288315.34,0,0.16,0.38,overdraft facility,69
+44,341666.69,1,0.19,0.4,business expansion loan,67
+45,387721.8,1,0.26,0.74,business expansion loan,85
+32,56478.54,1,0.59,0.14,supply chain finance,69
+45,170268.84,7,0.18,0.56,invoice financing,86
+6,18850.56,3,0.67,0.7,invoice financing,90
+15,479450.57,1,0.82,0.46,overdraft facility,84
+17,182642.1,7,0.24,0.35,invoice financing,77
+49,275670.68,0,0.61,0.3,overdraft facility,87
+26,112501.92,3,0.36,0.18,invoice financing,77
+27,349073.55,1,0.21,0.28,business expansion loan,81
+41,470336.89,1,0.66,0.54,overdraft facility,76
+5,342115.93,0,0.48,0.17,business expansion loan,72
+6,11689.23,0,0.86,0.4,overdraft facility,91
+5,77605.67,0,0.6,0.38,business expansion loan,74
+32,163203.34,3,0.47,0.48,invoice financing,84
+34,374121.15,7,0.19,0.67,invoice financing,86
+18,39949.0,7,0.28,0.44,invoice financing,76
+4,279412.29,1,0.28,0.3,overdraft facility,62
+50,84701.18,1,0.17,0.48,invoice financing,73
+33,458853.82,0,0.24,0.59,business expansion loan,61
+4,239585.67,0,0.72,0.47,overdraft facility,75
+16,120479.93,0,0.85,0.43,overdraft facility,84
+12,19787.2,3,0.55,0.64,invoice financing,96
+47,45251.42,3,0.68,0.7,invoice financing,78
+30,123616.3,0,0.46,0.49,supply chain finance,54
+15,281118.25,0,0.66,0.46,overdraft facility,72
+41,159995.79,0,0.56,0.38,business expansion loan,77
+12,153882.14,1,0.21,0.15,business expansion loan,50
+12,362024.3,1,0.7,0.34,overdraft facility,75
+32,247210.93,1,0.45,0.64,inventory financing,56
+49,193768.57,1,0.79,0.56,overdraft facility,92
+26,177198.15,0,0.39,0.3,overdraft facility,68
+22,107620.8,7,0.49,0.74,invoice financing,97
+8,145251.55,1,0.79,0.29,overdraft facility,88
+9,244940.27,0,0.58,0.73,overdraft facility,64
+27,72395.37,12,0.66,0.36,invoice financing,78
+3,425189.67,1,0.13,0.38,business expansion loan,66
+18,169335.91,0,0.68,0.39,overdraft facility,73
+24,182204.06,0,0.62,0.13,overdraft facility,77
+49,233215.92,0,0.85,0.11,overdraft facility,80
+16,273035.39,0,0.33,0.17,business expansion loan,52
+20,278943.52,7,0.73,0.23,invoice financing,87
+18,399049.08,0,0.37,0.28,business expansion loan,74
+26,442904.28,7,0.78,0.37,invoice financing,89
+30,92584.66,1,0.11,0.55,inventory financing,59
+40,460502.06,1,0.32,0.24,business expansion loan,67
+30,23364.39,0,0.2,0.65,supply chain finance,65
+18,320502.27,3,0.22,0.67,invoice financing,89
+15,365762.35,0,0.72,0.75,overdraft facility,92
+17,318868.11,1,0.28,0.71,business expansion loan,77
+26,242023.93,0,0.68,0.46,overdraft facility,78
+8,134163.33,0,0.78,0.33,overdraft facility,71
+43,1741.93,1,0.87,0.4,overdraft facility,90
+11,407639.85,1,0.62,0.46,overdraft facility,76
+36,23374.05,7,0.26,0.43,invoice financing,92
+5,69681.46,3,0.33,0.59,invoice financing,87
+36,374007.96,0,0.11,0.59,business expansion loan,82
+8,13530.21,0,0.36,0.43,machinery loan,52
+16,465212.37,0,0.71,0.54,overdraft facility,90
+19,288317.98,1,0.88,0.19,overdraft facility,93
+11,247240.16,7,0.12,0.56,invoice financing,87
+19,345674.87,3,0.18,0.55,invoice financing,82
+4,460784.91,0,0.21,0.32,business expansion loan,90
+14,443814.61,0,0.78,0.8,overdraft facility,91
+49,15406.1,0,0.14,0.18,business expansion loan,60
+35,253661.4,12,0.57,0.33,invoice financing,90
+46,453578.36,12,0.85,0.56,invoice financing,100
+34,167494.21,0,0.56,0.73,supply chain finance,62
+32,71152.46,3,0.41,0.41,invoice financing,91
+28,145258.65,3,0.36,0.59,invoice financing,80
+44,494163.32,0,0.82,0.67,overdraft facility,94
+48,15989.18,0,0.16,0.33,supply chain finance,54
+11,105243.38,0,0.66,0.27,overdraft facility,81
+12,496624.2,0,0.1,0.56,business expansion loan,77
+26,292175.18,0,0.39,0.21,supply chain finance,68
+28,476278.27,1,0.18,0.13,business expansion loan,66
+39,306536.12,0,0.12,0.69,business expansion loan,61
+37,89603.81,12,0.45,0.45,invoice financing,79
+32,112758.26,1,0.86,0.21,overdraft facility,73
+20,251030.9,3,0.31,0.33,invoice financing,99
+18,401976.11,3,0.79,0.63,invoice financing,84
+41,10704.27,12,0.13,0.55,invoice financing,90
+37,142034.23,0,0.81,0.45,overdraft facility,84
+20,404880.66,0,0.13,0.77,business expansion loan,65
+20,108931.59,0,0.45,0.29,business expansion loan,51
+44,214259.39,0,0.79,0.22,overdraft facility,77
+21,398356.23,0,0.31,0.46,business expansion loan,70
+4,326740.56,1,0.46,0.31,business expansion loan,66
+48,44203.09,1,0.14,0.28,supply chain finance,61
+39,144625.9,7,0.64,0.72,invoice financing,98
+18,45977.8,0,0.5,0.35,supply chain finance,68
+17,6250.18,1,0.5,0.49,machinery loan,71
+48,218677.81,1,0.46,0.63,inventory financing,71
+29,33150.68,1,0.65,0.4,overdraft facility,83
+18,113419.11,1,0.35,0.7,supply chain finance,59
+24,472692.95,1,0.39,0.79,business expansion loan,66
+7,116232.19,7,0.47,0.66,invoice financing,99
+48,425503.77,0,0.18,0.28,business expansion loan,87
+24,25999.4,3,0.15,0.23,invoice financing,80
+13,281918.27,3,0.53,0.33,invoice financing,75
+26,238229.73,0,0.29,0.1,overdraft facility,68
+26,158570.87,3,0.41,0.68,invoice financing,95
+23,421332.5,0,0.22,0.78,business expansion loan,79
+45,3281.51,0,0.15,0.17,inventory financing,66
+31,125716.89,7,0.38,0.45,invoice financing,96
+31,252931.78,0,0.54,0.2,overdraft facility,75
+3,143929.42,0,0.83,0.53,overdraft facility,81
+35,6035.88,0,0.35,0.3,supply chain finance,58
+1,164820.01,3,0.82,0.4,invoice financing,97
+37,242291.69,0,0.58,0.52,overdraft facility,53
+8,382005.92,1,0.2,0.41,business expansion loan,67
+14,171270.51,1,0.27,0.53,machinery loan,68
+5,296334.19,0,0.52,0.73,invoice financing,51
+36,224437.69,1,0.41,0.54,business expansion loan,62
+42,208682.66,0,0.11,0.11,inventory financing,52
+36,351192.32,0,0.57,0.36,business expansion loan,73
+13,177378.92,0,0.59,0.73,invoice financing,64
+17,395965.13,0,0.55,0.3,business expansion loan,82
+45,479775.79,0,0.45,0.62,business expansion loan,81
+18,94929.64,7,0.58,0.7,invoice financing,78
+29,393363.64,0,0.15,0.5,business expansion loan,86
+35,379456.18,0,0.52,0.1,business expansion loan,85
+15,324029.33,0,0.78,0.68,overdraft facility,91
+9,164032.92,0,0.24,0.58,machinery loan,74
+4,287971.55,7,0.32,0.27,invoice financing,95
+4,76085.71,3,0.63,0.27,invoice financing,80
+22,71475.39,0,0.64,0.66,overdraft facility,70
+34,388782.2,7,0.2,0.33,invoice financing,89
+3,636.67,0,0.45,0.35,machinery loan,71
+8,366822.15,0,0.14,0.19,business expansion loan,82
+36,103584.64,1,0.8,0.14,overdraft facility,86
+49,103561.61,1,0.42,0.62,overdraft facility,69
+38,309973.79,1,0.42,0.78,business expansion loan,79
+45,31041.44,0,0.73,0.76,overdraft facility,91
+47,305491.21,1,0.44,0.37,business expansion loan,68
+15,390709.62,1,0.45,0.56,business expansion loan,85
+40,48123.25,3,0.64,0.53,invoice financing,88
+16,223991.21,0,0.56,0.34,invoice financing,64
+9,178310.93,1,0.42,0.46,overdraft facility,54
+9,416663.83,12,0.4,0.22,invoice financing,87
+19,34643.68,3,0.56,0.4,invoice financing,85
+37,494369.79,3,0.26,0.14,invoice financing,87
+17,276557.83,1,0.71,0.67,overdraft facility,85
+3,230179.3,1,0.54,0.47,overdraft facility,55
+1,365152.66,7,0.83,0.74,invoice financing,80
+50,57223.35,1,0.62,0.52,overdraft facility,82
+21,198002.81,0,0.44,0.6,machinery loan,79
+22,253778.63,0,0.25,0.77,supply chain finance,80
+23,212823.83,1,0.47,0.33,inventory financing,69
+12,183728.27,0,0.63,0.32,overdraft facility,93
+20,34084.75,0,0.48,0.76,machinery loan,60
+36,465743.17,0,0.25,0.2,business expansion loan,70
+19,58451.22,3,0.7,0.53,invoice financing,77
+45,87133.11,0,0.17,0.31,machinery loan,54
+31,224418.27,0,0.77,0.32,overdraft facility,70
+44,38583.66,1,0.26,0.25,inventory financing,65
+44,469602.29,1,0.9,0.57,overdraft facility,75
+45,58482.38,3,0.33,0.72,invoice financing,85
+40,452193.48,0,0.79,0.16,overdraft facility,86
+36,137059.85,0,0.89,0.27,overdraft facility,80
+28,498711.61,3,0.19,0.27,invoice financing,86
+47,106475.21,3,0.36,0.26,invoice financing,75
+20,45338.17,0,0.41,0.37,inventory financing,74
+11,40027.78,0,0.75,0.11,overdraft facility,95
+39,130069.34,3,0.32,0.3,invoice financing,95
+37,193991.55,0,0.44,0.64,invoice financing,71
+34,469902.75,0,0.89,0.79,overdraft facility,94
+8,183740.21,3,0.74,0.27,invoice financing,76
+32,435495.53,1,0.24,0.19,business expansion loan,86
+14,444949.4,0,0.79,0.6,overdraft facility,88
+47,313096.7,0,0.2,0.53,business expansion loan,81
+4,152294.6,0,0.47,0.42,overdraft facility,65
+43,845.98,0,0.54,0.15,machinery loan,69
+25,46499.62,1,0.2,0.32,overdraft facility,79
+38,261659.27,1,0.39,0.13,machinery loan,61
+48,364139.2,3,0.31,0.79,invoice financing,98
+36,121231.81,1,0.46,0.42,machinery loan,68
+27,98737.4,0,0.63,0.49,overdraft facility,74
+8,305111.58,0,0.37,0.35,business expansion loan,69
+19,320562.36,1,0.77,0.54,overdraft facility,71
+7,275458.67,0,0.84,0.53,overdraft facility,76
+41,68386.68,1,0.13,0.54,invoice financing,63
+28,28090.28,1,0.43,0.13,invoice financing,70
+34,9415.21,0,0.52,0.29,supply chain finance,70
+27,296241.2,3,0.79,0.36,invoice financing,92
+18,378538.48,0,0.34,0.21,business expansion loan,85
+3,63766.94,0,0.5,0.15,inventory financing,56
+39,461393.53,3,0.57,0.6,invoice financing,90
+42,416079.08,7,0.26,0.19,invoice financing,80
+19,249879.32,0,0.12,0.52,overdraft facility,66
+48,49641.06,1,0.46,0.55,supply chain finance,54
+44,27917.09,3,0.86,0.79,invoice financing,86
+30,307508.38,3,0.23,0.6,invoice financing,86
+39,2555.98,1,0.29,0.52,overdraft facility,71
+42,335187.84,0,0.27,0.56,business expansion loan,66
+24,425097.4,0,0.62,0.78,overdraft facility,90
+7,424580.3,0,0.38,0.55,business expansion loan,90
+20,419757.43,7,0.49,0.58,invoice financing,84
+25,59840.99,1,0.52,0.46,supply chain finance,69
+2,260649.3,3,0.24,0.47,invoice financing,91
+10,453707.28,0,0.45,0.26,business expansion loan,73
+14,420305.83,1,0.15,0.76,business expansion loan,89
+15,92740.13,0,0.4,0.32,business expansion loan,50
+7,53493.46,0,0.54,0.5,inventory financing,55
+16,327492.88,0,0.22,0.71,business expansion loan,81
+1,344908.02,7,0.14,0.78,invoice financing,78
+7,341367.1,0,0.88,0.31,overdraft facility,89
+41,205359.28,3,0.55,0.54,invoice financing,83
+21,211153.56,12,0.8,0.65,invoice financing,84
+38,387036.16,1,0.33,0.57,business expansion loan,70
+21,190007.76,1,0.3,0.52,supply chain finance,78
+15,241021.55,3,0.25,0.48,invoice financing,84
+23,271466.21,0,0.69,0.67,overdraft facility,78
+39,210806.03,0,0.84,0.17,overdraft facility,88
+29,56130.83,1,0.79,0.56,overdraft facility,93
+14,340541.64,1,0.12,0.14,business expansion loan,60
+13,17695.37,0,0.2,0.36,business expansion loan,60
+26,10214.88,1,0.75,0.2,overdraft facility,80
+7,475035.39,1,0.26,0.38,business expansion loan,84
+20,312467.16,0,0.79,0.77,overdraft facility,95
+21,247131.12,3,0.28,0.69,invoice financing,87
+20,480635.87,3,0.2,0.53,invoice financing,91
+32,460358.23,7,0.78,0.46,invoice financing,83
+45,417240.6,12,0.81,0.48,invoice financing,78
+13,16051.42,7,0.55,0.79,invoice financing,91
+6,66015.57,12,0.58,0.75,invoice financing,84
+26,74874.1,0,0.66,0.65,overdraft facility,91
+5,170622.26,12,0.31,0.28,invoice financing,96
+1,240053.12,0,0.7,0.76,overdraft facility,80
+4,11541.74,0,0.15,0.18,machinery loan,60
+47,54709.45,0,0.45,0.14,machinery loan,53
+29,372121.16,1,0.7,0.13,overdraft facility,90
+3,302850.93,3,0.73,0.61,invoice financing,87
+22,138822.65,12,0.36,0.62,invoice financing,79
+8,483766.71,0,0.19,0.53,business expansion loan,87
+36,211658.83,1,0.78,0.77,overdraft facility,74
+3,119105.86,3,0.76,0.72,invoice financing,76
+1,334095.61,1,0.22,0.37,business expansion loan,77
+48,409006.48,0,0.64,0.41,overdraft facility,93
+32,143398.42,3,0.2,0.69,invoice financing,86
+30,370104.88,0,0.67,0.65,overdraft facility,92
+6,156563.33,0,0.31,0.79,supply chain finance,75
+40,133040.93,1,0.67,0.45,overdraft facility,71
+36,234177.05,1,0.79,0.33,overdraft facility,94
+2,139040.9,0,0.75,0.32,overdraft facility,91
+9,376444.33,1,0.84,0.74,overdraft facility,89
+26,324811.36,3,0.82,0.43,invoice financing,80
+29,214688.27,0,0.48,0.25,supply chain finance,64
+13,293788.06,1,0.45,0.19,business expansion loan,77
+5,5776.26,1,0.36,0.39,business expansion loan,64
+11,434320.99,7,0.56,0.58,invoice financing,98
+33,449974.64,1,0.26,0.5,business expansion loan,74
+14,131808.97,7,0.23,0.17,invoice financing,80
+18,469185.88,0,0.53,0.38,business expansion loan,65
+31,361250.25,1,0.46,0.43,business expansion loan,74
+27,412771.6,0,0.33,0.17,business expansion loan,86
+9,392000.34,3,0.67,0.38,invoice financing,81
+4,412919.68,3,0.18,0.5,invoice financing,78
+38,149920.32,1,0.57,0.64,inventory financing,67
+30,263540.84,3,0.73,0.69,invoice financing,89
+17,408839.17,0,0.54,0.58,business expansion loan,62
+35,464721.75,3,0.8,0.58,invoice financing,100
+19,432735.46,0,0.3,0.28,business expansion loan,85
+35,201274.92,0,0.49,0.76,inventory financing,57
+39,379161.0,0,0.42,0.22,business expansion loan,68
+42,318908.97,0,0.2,0.68,business expansion loan,87
+5,192119.59,0,0.37,0.73,machinery loan,60
+14,170849.0,1,0.33,0.26,inventory financing,59
+34,430820.24,3,0.61,0.41,invoice financing,78
+2,461756.7,0,0.67,0.28,overdraft facility,94
+11,333639.82,12,0.16,0.31,invoice financing,79
+13,332344.12,0,0.87,0.61,overdraft facility,84
+33,483324.76,0,0.45,0.35,business expansion loan,60
+39,44979.76,0,0.48,0.12,machinery loan,70
+11,402414.76,0,0.71,0.2,overdraft facility,85
+3,345896.64,1,0.39,0.53,business expansion loan,74
+24,241382.51,1,0.15,0.49,inventory financing,51
+27,456650.24,7,0.44,0.74,invoice financing,77
+41,61960.61,3,0.5,0.74,invoice financing,92
+11,398526.2,1,0.25,0.7,business expansion loan,63
+45,187612.14,7,0.73,0.46,invoice financing,95
+30,315788.65,3,0.26,0.63,invoice financing,98
+26,133618.62,3,0.59,0.55,invoice financing,92
+46,200858.89,7,0.49,0.24,invoice financing,76
+11,55720.55,0,0.53,0.33,business expansion loan,78
+1,31786.44,1,0.75,0.73,overdraft facility,77
+1,260256.13,0,0.64,0.15,overdraft facility,92
+33,238134.24,3,0.4,0.22,invoice financing,82
+9,166434.7,0,0.74,0.53,overdraft facility,88
+19,151567.01,7,0.53,0.32,invoice financing,75
+3,465978.26,1,0.86,0.13,overdraft facility,83
+24,276985.91,1,0.24,0.61,supply chain finance,54
+5,172979.22,3,0.51,0.11,invoice financing,81
+23,214840.81,7,0.65,0.13,invoice financing,83
+14,52249.22,3,0.52,0.69,invoice financing,79
+27,180705.92,1,0.44,0.51,business expansion loan,54
+13,299837.51,3,0.12,0.26,invoice financing,75
+10,182591.48,1,0.84,0.29,overdraft facility,75
+28,282681.58,1,0.48,0.4,machinery loan,66
+14,6029.31,1,0.3,0.5,business expansion loan,50
+39,70750.25,7,0.45,0.38,invoice financing,85
+39,465298.11,0,0.19,0.22,business expansion loan,80
+43,331991.9,0,0.45,0.77,business expansion loan,68
+20,332272.58,0,0.31,0.38,business expansion loan,83
+3,113792.94,0,0.42,0.38,invoice financing,74
+19,2080.18,1,0.54,0.76,machinery loan,62
+13,154516.86,0,0.31,0.34,supply chain finance,68
+5,206638.2,1,0.76,0.56,overdraft facility,78
+13,423940.15,0,0.85,0.68,overdraft facility,83
+12,482579.31,7,0.27,0.35,invoice financing,77
+48,482799.79,3,0.63,0.49,invoice financing,86
+50,208606.44,0,0.1,0.58,supply chain finance,79
+19,259829.23,1,0.36,0.71,supply chain finance,51
+43,163776.34,7,0.74,0.77,invoice financing,90
+19,45564.3,0,0.58,0.63,business expansion loan,56
+26,209221.07,0,0.75,0.47,overdraft facility,80
+3,443391.17,0,0.27,0.72,business expansion loan,68
+45,496202.66,7,0.9,0.39,invoice financing,98
+5,318114.52,12,0.71,0.31,invoice financing,100
+12,356448.61,0,0.62,0.6,overdraft facility,72
+9,211993.68,0,0.3,0.63,inventory financing,57
+16,72975.33,1,0.82,0.53,overdraft facility,70
+25,331103.45,3,0.74,0.43,invoice financing,97
+27,281161.03,0,0.14,0.7,overdraft facility,79
+49,474721.31,1,0.35,0.32,business expansion loan,87
+41,152249.58,1,0.35,0.6,overdraft facility,51
+40,72978.37,0,0.66,0.67,overdraft facility,78
+41,435192.19,1,0.77,0.26,overdraft facility,83
+49,61432.68,1,0.26,0.75,inventory financing,77
+49,28532.75,3,0.24,0.38,invoice financing,78
+23,93628.55,7,0.44,0.41,invoice financing,90
+14,280159.39,1,0.39,0.59,invoice financing,79
+9,228952.72,0,0.62,0.44,overdraft facility,78
+30,85721.43,7,0.44,0.34,invoice financing,87
+34,197737.92,0,0.87,0.12,overdraft facility,72
+11,452259.35,1,0.73,0.6,overdraft facility,92
+50,145677.38,7,0.28,0.17,invoice financing,88
+6,301108.53,0,0.81,0.34,overdraft facility,72
+14,13187.12,0,0.39,0.29,business expansion loan,50
+23,37702.38,3,0.22,0.29,invoice financing,76
+42,119525.79,0,0.45,0.54,business expansion loan,70
+30,199286.5,0,0.41,0.28,business expansion loan,60
+2,220150.09,0,0.85,0.14,overdraft facility,92
+50,90524.18,0,0.58,0.62,supply chain finance,54
+20,138312.15,1,0.14,0.36,business expansion loan,79
+32,245394.15,3,0.33,0.72,invoice financing,97
+21,126953.28,0,0.9,0.66,overdraft facility,92
+39,184454.46,1,0.5,0.65,overdraft facility,59
+22,142639.57,3,0.36,0.43,invoice financing,81
+47,45789.94,1,0.42,0.67,business expansion loan,74
+21,169345.7,7,0.88,0.16,invoice financing,96
+4,376100.63,1,0.72,0.45,overdraft facility,92
+22,160117.12,12,0.55,0.18,invoice financing,90
+2,428350.96,12,0.41,0.17,invoice financing,93
+20,11836.55,0,0.2,0.72,supply chain finance,77
+20,426553.73,3,0.45,0.61,invoice financing,91
+38,109472.05,1,0.1,0.8,machinery loan,62
+8,494942.3,0,0.6,0.55,business expansion loan,72
+40,397081.95,3,0.2,0.31,invoice financing,77
+21,59915.48,0,0.49,0.71,overdraft facility,59
+24,116335.52,0,0.34,0.74,overdraft facility,69
+9,185862.96,1,0.14,0.16,overdraft facility,64
+1,404698.21,1,0.7,0.62,overdraft facility,72
+31,376022.2,1,0.47,0.64,business expansion loan,71
+24,321717.05,0,0.4,0.26,business expansion loan,72
+43,65033.86,0,0.82,0.17,overdraft facility,83
+38,229156.29,7,0.41,0.46,invoice financing,82
+28,431676.04,0,0.84,0.63,overdraft facility,79
+42,279006.63,0,0.17,0.25,supply chain finance,56
+29,339248.69,0,0.76,0.19,overdraft facility,83
+44,416232.64,1,0.51,0.66,business expansion loan,86
+16,163947.56,7,0.9,0.14,invoice financing,92
+25,459640.02,1,0.19,0.78,business expansion loan,64
+25,307004.88,3,0.84,0.41,invoice financing,91
+37,488021.28,1,0.89,0.7,overdraft facility,87
+1,47227.13,3,0.82,0.6,invoice financing,90
+40,225233.01,0,0.37,0.78,machinery loan,51
+17,41368.94,1,0.18,0.62,inventory financing,56
+49,368939.56,7,0.6,0.79,invoice financing,98
+35,163295.75,7,0.56,0.22,invoice financing,98
+19,301125.62,3,0.69,0.24,invoice financing,84
+13,317568.89,12,0.29,0.4,invoice financing,82
+15,86650.05,0,0.9,0.32,overdraft facility,72
+6,499108.37,1,0.83,0.55,overdraft facility,84
+31,209252.11,7,0.73,0.62,invoice financing,97
+22,405531.78,7,0.58,0.62,invoice financing,75
+34,242769.86,0,0.43,0.25,business expansion loan,66
+49,139600.55,0,0.89,0.57,overdraft facility,82
+28,484516.54,1,0.54,0.53,business expansion loan,68
+22,138460.13,1,0.24,0.14,business expansion loan,59
+7,76683.41,0,0.37,0.79,machinery loan,66
+16,241729.99,12,0.82,0.21,invoice financing,79
+20,158257.22,1,0.81,0.15,overdraft facility,71
+9,439473.65,0,0.19,0.57,business expansion loan,60
+9,407374.04,1,0.25,0.74,business expansion loan,63
+7,198798.45,1,0.72,0.48,overdraft facility,84
+17,439482.25,3,0.21,0.4,invoice financing,84
+24,96755.57,0,0.25,0.18,business expansion loan,62
+48,252618.21,0,0.21,0.36,invoice financing,54
+36,56888.38,1,0.75,0.76,overdraft facility,87
+19,301456.69,3,0.38,0.26,invoice financing,89
+18,236129.7,0,0.29,0.6,machinery loan,51
+12,275801.59,3,0.49,0.16,invoice financing,75
+41,107767.27,3,0.68,0.77,invoice financing,87
+6,303672.36,3,0.4,0.72,invoice financing,75
+34,304650.48,0,0.42,0.29,business expansion loan,65
+34,57561.16,0,0.6,0.79,inventory financing,64
+17,348016.91,1,0.21,0.55,business expansion loan,74
+43,243552.79,12,0.89,0.13,invoice financing,77
+43,100860.0,0,0.37,0.67,overdraft facility,70
+29,41802.97,1,0.68,0.71,overdraft facility,88
+21,18827.73,0,0.34,0.49,machinery loan,64
+26,195155.55,1,0.75,0.77,overdraft facility,89
+10,300351.39,1,0.83,0.4,overdraft facility,70
+11,324717.16,1,0.4,0.45,business expansion loan,75
+35,428212.33,1,0.45,0.51,business expansion loan,68
+5,240658.4,0,0.75,0.35,overdraft facility,79
+3,360464.1,3,0.74,0.37,invoice financing,77
+32,286871.47,3,0.31,0.36,invoice financing,77
+46,402971.65,0,0.11,0.13,business expansion loan,64
+35,169651.44,7,0.18,0.57,invoice financing,98
+38,457236.21,1,0.5,0.12,business expansion loan,66
+26,428211.9,1,0.85,0.65,overdraft facility,86
+34,302517.16,7,0.52,0.42,invoice financing,79
+24,182322.73,3,0.53,0.18,invoice financing,92
+10,439778.07,0,0.88,0.21,overdraft facility,79
+17,444085.05,0,0.22,0.27,business expansion loan,66
+44,196035.88,0,0.21,0.14,invoice financing,58
+43,418337.3,3,0.75,0.24,invoice financing,89
+49,127355.54,7,0.14,0.18,invoice financing,93
+28,339599.44,3,0.14,0.27,invoice financing,76
+30,304223.85,1,0.62,0.69,overdraft facility,81
+24,385402.6,3,0.29,0.6,invoice financing,78
+9,499692.01,0,0.53,0.2,business expansion loan,66
+21,465709.48,12,0.69,0.13,invoice financing,88
+40,359995.74,1,0.5,0.22,business expansion loan,61
+26,407863.71,1,0.26,0.25,business expansion loan,85
+7,206431.21,7,0.42,0.72,invoice financing,84
+6,457903.67,7,0.68,0.8,invoice financing,98
+30,302877.77,1,0.61,0.8,overdraft facility,82
+37,233267.3,0,0.83,0.28,overdraft facility,77
+27,361293.99,3,0.56,0.34,invoice financing,88
+35,173948.28,0,0.67,0.7,overdraft facility,94
+19,248989.9,1,0.34,0.62,overdraft facility,69
+5,31326.87,1,0.33,0.65,inventory financing,62
+5,176739.24,1,0.25,0.14,machinery loan,66
+2,255361.92,0,0.74,0.43,overdraft facility,91
+30,448124.71,0,0.6,0.54,overdraft facility,80
+41,343616.35,1,0.6,0.3,overdraft facility,79
+18,271581.79,0,0.12,0.69,overdraft facility,57
+18,69896.11,7,0.86,0.44,invoice financing,80
+11,313640.49,1,0.83,0.11,overdraft facility,81
+47,410422.53,3,0.42,0.75,invoice financing,88
+46,151939.73,1,0.39,0.25,invoice financing,70
+40,23023.95,7,0.57,0.57,invoice financing,95
+34,476354.85,1,0.48,0.4,business expansion loan,84
+21,167958.24,7,0.61,0.26,invoice financing,77
+49,318867.78,7,0.63,0.74,invoice financing,87
+45,66925.19,0,0.86,0.43,overdraft facility,84
+22,143737.02,0,0.36,0.59,supply chain finance,73
+19,253022.24,0,0.14,0.56,overdraft facility,56
+26,461327.07,1,0.44,0.62,business expansion loan,90
+17,497522.23,0,0.9,0.25,overdraft facility,73
+41,29237.44,3,0.82,0.11,invoice financing,93
+26,112226.9,12,0.26,0.17,invoice financing,83
+20,470203.99,0,0.79,0.17,overdraft facility,91
+10,228525.1,0,0.13,0.25,business expansion loan,78
+43,320619.9,0,0.72,0.13,overdraft facility,93
+48,183559.86,0,0.52,0.37,machinery loan,69
+28,409938.83,1,0.34,0.68,business expansion loan,86
+23,53321.49,3,0.68,0.32,invoice financing,95
+39,77041.12,3,0.57,0.62,invoice financing,92
+2,224040.79,0,0.48,0.57,supply chain finance,65
+36,21578.45,1,0.78,0.65,overdraft facility,93
+18,185415.3,7,0.76,0.47,invoice financing,78
+50,298180.51,7,0.18,0.62,invoice financing,97
+18,382844.5,7,0.16,0.8,invoice financing,81
+27,319456.41,0,0.32,0.54,business expansion loan,66
+43,496332.55,3,0.65,0.3,invoice financing,91
+4,474037.23,7,0.53,0.59,invoice financing,93
+16,267035.01,12,0.53,0.18,invoice financing,95
+10,115940.68,3,0.66,0.28,invoice financing,77
+26,229386.04,0,0.67,0.26,overdraft facility,88
+20,205016.77,3,0.46,0.1,invoice financing,81
+26,116730.51,0,0.22,0.46,inventory financing,67
+44,385987.85,1,0.32,0.78,business expansion loan,61
+20,261022.35,12,0.2,0.38,invoice financing,85
+6,76754.95,0,0.45,0.75,supply chain finance,62
+48,29697.88,0,0.87,0.53,overdraft facility,90
+46,30344.03,1,0.48,0.69,machinery loan,79
+5,327891.69,0,0.61,0.17,overdraft facility,88
+45,323834.07,3,0.11,0.31,invoice financing,76
+50,262603.92,3,0.39,0.26,invoice financing,98
+33,320806.68,1,0.17,0.26,business expansion loan,63
+30,422223.95,0,0.83,0.12,overdraft facility,77
+36,18443.24,1,0.77,0.29,overdraft facility,75
+28,329106.33,3,0.47,0.7,invoice financing,97
+39,447811.48,1,0.39,0.79,business expansion loan,66
+16,27334.97,3,0.87,0.53,invoice financing,80
+47,177098.35,0,0.27,0.74,supply chain finance,61
+23,8519.99,0,0.33,0.73,supply chain finance,77
+42,70377.72,1,0.18,0.38,business expansion loan,60
+35,343991.39,0,0.81,0.34,overdraft facility,88
+19,440870.28,1,0.12,0.71,business expansion loan,72
+34,256814.06,3,0.75,0.39,invoice financing,92
+37,256921.94,7,0.32,0.49,invoice financing,95
+4,376487.85,0,0.69,0.74,overdraft facility,82
+40,189357.35,0,0.66,0.4,overdraft facility,93
+11,133532.33,0,0.29,0.11,business expansion loan,77
+9,156642.27,0,0.63,0.79,overdraft facility,70
+10,84375.87,1,0.69,0.53,overdraft facility,76
+21,452284.94,0,0.73,0.21,overdraft facility,72
+19,105894.19,0,0.59,0.38,machinery loan,72
+33,407953.14,3,0.14,0.76,invoice financing,95
+20,55275.31,7,0.65,0.35,invoice financing,99
+9,439355.08,7,0.37,0.21,invoice financing,87
+19,245624.95,1,0.16,0.4,supply chain finance,67
+13,182513.58,1,0.41,0.2,machinery loan,57
+24,197920.43,1,0.23,0.5,overdraft facility,53
+36,167004.77,0,0.69,0.44,overdraft facility,86
+21,260800.89,1,0.49,0.79,business expansion loan,73
+2,298245.61,1,0.57,0.27,invoice financing,50
+43,346580.9,3,0.68,0.34,invoice financing,89
+34,396766.4,0,0.63,0.37,overdraft facility,91
+17,157790.03,0,0.61,0.21,overdraft facility,73
+41,165670.08,3,0.84,0.54,invoice financing,82
+43,323392.47,0,0.74,0.13,overdraft facility,80
+1,313241.32,0,0.76,0.34,overdraft facility,83
+46,280803.58,1,0.44,0.18,supply chain finance,58
+33,19355.05,3,0.81,0.71,invoice financing,83
+2,175353.76,1,0.64,0.62,overdraft facility,94
+24,348323.47,0,0.32,0.51,business expansion loan,78
+46,190515.88,1,0.32,0.76,overdraft facility,59
+27,428171.06,3,0.15,0.71,invoice financing,83
+29,394684.6,0,0.2,0.24,business expansion loan,75
+4,161635.77,3,0.53,0.53,invoice financing,92
+27,418326.28,1,0.48,0.27,business expansion loan,73
+39,396164.99,12,0.76,0.6,invoice financing,80
+46,28304.85,1,0.29,0.69,invoice financing,51
+13,157380.97,0,0.53,0.2,machinery loan,73
+46,395034.35,1,0.58,0.12,business expansion loan,78
+40,178340.0,1,0.75,0.66,overdraft facility,75
+46,317545.1,0,0.23,0.2,business expansion loan,88
+26,350040.56,0,0.29,0.17,business expansion loan,68
+15,400218.1,12,0.49,0.58,invoice financing,81
+39,493276.94,0,0.52,0.76,business expansion loan,89
+28,365589.69,1,0.13,0.67,business expansion loan,60
+47,321939.64,0,0.61,0.78,overdraft facility,77
+46,46751.2,0,0.28,0.61,business expansion loan,66
+7,156446.48,0,0.2,0.55,machinery loan,80
+6,497243.71,1,0.27,0.57,business expansion loan,87
+46,18798.35,0,0.68,0.61,overdraft facility,71
+14,228369.61,1,0.58,0.72,inventory financing,74
+11,314737.93,7,0.45,0.78,invoice financing,75
+14,110957.89,1,0.56,0.75,business expansion loan,62
+29,149079.62,12,0.65,0.63,invoice financing,75
+28,113639.79,12,0.31,0.51,invoice financing,93
+24,368486.74,3,0.67,0.42,invoice financing,97
+17,377648.82,3,0.17,0.26,invoice financing,83
+28,470171.73,1,0.48,0.26,business expansion loan,78
+22,375307.09,0,0.47,0.15,business expansion loan,75
+15,185523.56,7,0.75,0.18,invoice financing,78
+1,22733.71,3,0.15,0.19,invoice financing,89
+39,379587.29,3,0.4,0.35,invoice financing,82
+10,175445.91,1,0.41,0.68,machinery loan,53
+3,30378.59,1,0.26,0.62,inventory financing,71
+21,244615.2,1,0.52,0.51,inventory financing,67
+12,75010.45,0,0.57,0.64,business expansion loan,75
+33,1860.25,1,0.8,0.69,overdraft facility,89
+40,176645.01,0,0.37,0.55,invoice financing,66
+41,41940.1,0,0.43,0.62,inventory financing,71
+30,323145.28,0,0.81,0.73,overdraft facility,74
+21,284966.2,3,0.47,0.62,invoice financing,92
+18,25536.72,1,0.23,0.59,inventory financing,80
+41,80190.26,1,0.4,0.13,supply chain finance,63
+12,320746.32,0,0.39,0.48,business expansion loan,76
+1,438556.17,0,0.28,0.55,business expansion loan,85
+15,369757.95,12,0.47,0.58,invoice financing,80
+12,100639.89,1,0.8,0.18,overdraft facility,92
+13,159266.93,0,0.42,0.39,supply chain finance,63
+31,72736.91,0,0.68,0.53,overdraft facility,80
+21,158559.37,0,0.69,0.48,overdraft facility,92
+19,38779.49,0,0.42,0.25,overdraft facility,53
+20,380264.15,1,0.26,0.28,business expansion loan,72
+42,276041.42,3,0.35,0.79,invoice financing,88
+23,82110.14,0,0.14,0.46,inventory financing,72
+34,337406.77,0,0.48,0.44,business expansion loan,85
+1,273547.6,3,0.11,0.75,invoice financing,91
+20,26302.08,3,0.87,0.56,invoice financing,96
+33,478221.25,1,0.21,0.14,business expansion loan,60
+16,290196.78,12,0.1,0.6,invoice financing,82
+33,43215.88,0,0.4,0.66,machinery loan,56
+15,87103.46,3,0.34,0.33,invoice financing,93
+22,138010.14,0,0.4,0.65,business expansion loan,64
+41,403130.44,3,0.49,0.48,invoice financing,78
+13,261704.55,1,0.14,0.74,supply chain finance,62
+18,491016.67,3,0.9,0.43,invoice financing,76
+24,165751.76,1,0.44,0.26,supply chain finance,53
+30,239858.38,0,0.89,0.34,overdraft facility,85
+27,71234.68,7,0.3,0.36,invoice financing,90
+45,265144.15,1,0.89,0.23,overdraft facility,85
+7,114559.43,0,0.54,0.16,overdraft facility,70
+24,357391.04,1,0.89,0.43,overdraft facility,86
+49,407502.16,7,0.21,0.38,invoice financing,84
+36,491984.15,3,0.61,0.44,invoice financing,100
+18,306818.98,3,0.38,0.64,invoice financing,96
+34,282559.84,1,0.82,0.42,overdraft facility,77
+15,264928.73,3,0.55,0.23,invoice financing,92
+37,489574.63,3,0.24,0.71,invoice financing,76
+18,437150.06,3,0.6,0.69,invoice financing,98
+37,140163.2,0,0.85,0.63,overdraft facility,84
+43,415050.48,1,0.35,0.46,business expansion loan,85
+23,6052.46,0,0.29,0.44,invoice financing,69
+9,212881.99,1,0.52,0.15,machinery loan,77
+17,192841.12,0,0.82,0.76,overdraft facility,89
+31,484499.31,0,0.68,0.14,overdraft facility,77
+24,379938.08,1,0.66,0.47,overdraft facility,91
+12,344738.81,0,0.68,0.28,overdraft facility,91
+18,198430.44,0,0.64,0.78,overdraft facility,83
+3,396135.76,0,0.54,0.77,business expansion loan,85
+33,420563.54,1,0.11,0.38,business expansion loan,66
+31,418599.41,0,0.6,0.47,overdraft facility,91
+1,477791.98,3,0.8,0.55,invoice financing,89
+24,121118.0,3,0.48,0.64,invoice financing,85
+18,237484.59,1,0.31,0.64,business expansion loan,76
+24,166829.7,0,0.52,0.69,invoice financing,71
+31,209129.51,1,0.47,0.13,machinery loan,67
+37,165682.07,0,0.83,0.8,overdraft facility,70
+14,192431.93,1,0.21,0.64,overdraft facility,72
+26,492218.96,12,0.74,0.47,invoice financing,95
+6,249746.75,0,0.37,0.36,supply chain finance,50
+42,259097.62,3,0.63,0.12,invoice financing,76
+29,371990.89,0,0.53,0.46,business expansion loan,88
+24,273077.88,1,0.56,0.69,machinery loan,75
+50,341569.71,0,0.11,0.65,business expansion loan,60
+28,203989.74,1,0.42,0.52,machinery loan,71
+46,439156.96,7,0.63,0.6,invoice financing,86
+26,301374.4,1,0.32,0.37,business expansion loan,76
+15,14091.27,0,0.3,0.11,supply chain finance,75
+30,126886.58,0,0.59,0.6,overdraft facility,80
+37,43607.97,1,0.57,0.36,business expansion loan,50
+42,461806.07,0,0.83,0.28,overdraft facility,83
+45,476437.11,1,0.17,0.38,business expansion loan,84
+14,388802.41,0,0.89,0.62,overdraft facility,80
+42,100772.2,0,0.63,0.44,overdraft facility,74
+10,496929.65,0,0.75,0.43,overdraft facility,78
+31,207246.23,7,0.44,0.16,invoice financing,76
+8,82867.42,1,0.58,0.28,inventory financing,54
+28,261591.94,0,0.22,0.2,overdraft facility,60
+2,194943.82,12,0.61,0.45,invoice financing,80
+15,150003.13,1,0.45,0.3,business expansion loan,52
+35,258260.54,7,0.88,0.2,invoice financing,99
+23,331664.38,0,0.23,0.45,business expansion loan,62
+21,55407.38,0,0.11,0.28,inventory financing,58
+9,215866.38,1,0.83,0.33,overdraft facility,85
+37,249350.09,7,0.14,0.7,invoice financing,86
+7,102684.4,0,0.39,0.17,overdraft facility,68
+39,492988.31,1,0.76,0.48,overdraft facility,94
+42,410077.97,1,0.19,0.33,business expansion loan,83
+31,51196.93,0,0.85,0.65,overdraft facility,90
+26,134798.62,0,0.81,0.53,overdraft facility,74
+9,103195.14,3,0.66,0.44,invoice financing,94
+3,186863.43,1,0.58,0.22,machinery loan,71
+7,62425.8,0,0.73,0.55,overdraft facility,84
+12,71211.89,1,0.3,0.71,supply chain finance,71
+5,471623.44,7,0.18,0.51,invoice financing,90
+38,134701.7,0,0.69,0.39,overdraft facility,73
+22,45522.07,0,0.12,0.41,business expansion loan,73
+34,401643.13,3,0.27,0.27,invoice financing,99
+43,271563.26,0,0.54,0.68,overdraft facility,56
+28,233080.58,7,0.13,0.79,invoice financing,87
+14,219862.88,7,0.55,0.39,invoice financing,81
+11,184461.67,12,0.19,0.62,invoice financing,92
+41,246695.13,7,0.55,0.35,invoice financing,76
+45,191017.67,0,0.84,0.34,overdraft facility,88
+2,383962.22,1,0.65,0.57,overdraft facility,76
+28,256139.85,0,0.71,0.31,overdraft facility,72
+14,442314.23,0,0.2,0.49,business expansion loan,76
+30,356294.02,7,0.21,0.22,invoice financing,85
+16,338249.56,0,0.57,0.2,business expansion loan,90
+23,426448.86,0,0.72,0.28,overdraft facility,72
+15,381808.66,0,0.74,0.22,overdraft facility,78
+33,109505.72,12,0.48,0.8,invoice financing,90
+50,149635.95,3,0.14,0.69,invoice financing,97
+6,324282.46,0,0.6,0.72,overdraft facility,76
+38,275457.14,12,0.29,0.2,invoice financing,93
+15,21143.97,7,0.69,0.16,invoice financing,93
+9,10840.84,0,0.33,0.73,overdraft facility,67
+47,372742.85,3,0.45,0.38,invoice financing,93
+46,350176.35,3,0.27,0.24,invoice financing,99
+37,56827.3,0,0.29,0.72,supply chain finance,77
+8,12801.88,0,0.68,0.52,overdraft facility,88
+29,90183.74,0,0.56,0.36,inventory financing,78
+31,159336.74,1,0.32,0.75,machinery loan,55
+39,320786.75,3,0.29,0.31,invoice financing,76
+7,411079.5,0,0.52,0.67,business expansion loan,85
+46,478288.77,0,0.59,0.77,business expansion loan,75
+13,299752.22,0,0.88,0.53,overdraft facility,73
+9,11356.93,0,0.44,0.45,machinery loan,56
+42,282327.94,1,0.85,0.43,overdraft facility,94
+37,69693.81,3,0.19,0.35,invoice financing,87
+18,388720.46,1,0.45,0.59,business expansion loan,62
+28,452703.69,0,0.27,0.59,business expansion loan,73
+8,431781.61,1,0.33,0.37,business expansion loan,73
+45,26113.62,3,0.49,0.59,invoice financing,87
+31,272930.21,1,0.31,0.18,machinery loan,50
+47,202114.48,0,0.78,0.45,overdraft facility,85
+25,111834.15,1,0.7,0.46,overdraft facility,78
+19,280459.38,0,0.56,0.28,machinery loan,51
+22,293751.92,0,0.69,0.63,overdraft facility,82
+35,477092.22,1,0.56,0.39,business expansion loan,66
+33,72840.49,0,0.32,0.76,inventory financing,50
+15,449082.64,0,0.8,0.51,overdraft facility,82
+49,173736.39,3,0.64,0.6,invoice financing,92
+20,368900.58,0,0.27,0.66,business expansion loan,63
+37,179798.48,0,0.28,0.38,machinery loan,66
+44,486626.16,3,0.58,0.75,invoice financing,93
+43,432335.46,0,0.8,0.34,overdraft facility,76
+1,353076.56,0,0.45,0.4,business expansion loan,69
+45,179278.61,7,0.41,0.47,invoice financing,83
+15,49061.41,0,0.35,0.1,inventory financing,56
+25,414408.71,0,0.17,0.67,business expansion loan,71
+39,64390.85,1,0.82,0.72,overdraft facility,93
+12,327214.21,0,0.54,0.63,business expansion loan,69
+42,433466.71,0,0.18,0.13,business expansion loan,66
+31,253771.57,3,0.69,0.29,invoice financing,96
+9,70806.44,0,0.34,0.67,supply chain finance,72
+24,304772.16,3,0.3,0.22,invoice financing,96
+7,220026.39,1,0.31,0.76,invoice financing,71
+37,322152.64,0,0.44,0.36,business expansion loan,90
+5,436840.67,0,0.4,0.54,business expansion loan,62
+35,465586.47,0,0.15,0.52,business expansion loan,71
+15,28141.42,1,0.15,0.33,invoice financing,52
+15,108376.89,0,0.75,0.15,overdraft facility,72
+10,255083.87,7,0.4,0.68,invoice financing,90
+38,373720.61,7,0.11,0.48,invoice financing,90
+19,275095.84,3,0.78,0.16,invoice financing,81
+10,192995.19,0,0.48,0.12,overdraft facility,66
+44,160949.83,0,0.34,0.55,invoice financing,50
+8,135866.08,7,0.86,0.35,invoice financing,88
+18,308794.75,3,0.46,0.8,invoice financing,94
+21,79578.66,0,0.31,0.61,inventory financing,62
+32,273251.07,1,0.82,0.1,overdraft facility,83
+14,240654.83,0,0.66,0.28,overdraft facility,86
+33,81148.8,0,0.21,0.73,supply chain finance,59
+12,487715.58,7,0.8,0.23,invoice financing,89
+40,292351.09,1,0.36,0.78,machinery loan,80
+2,285562.82,12,0.28,0.37,invoice financing,90
+18,411137.0,0,0.68,0.35,overdraft facility,91
+10,139696.46,0,0.12,0.52,invoice financing,69
+24,152574.93,1,0.5,0.54,inventory financing,67
+12,457372.79,0,0.17,0.18,business expansion loan,87
+30,269261.37,1,0.69,0.27,overdraft facility,76
+45,480583.97,1,0.51,0.28,business expansion loan,77
+6,162365.88,0,0.69,0.79,overdraft facility,80
+50,204640.12,1,0.59,0.77,machinery loan,78
+2,290520.83,0,0.58,0.72,business expansion loan,57
+6,214231.23,0,0.82,0.41,overdraft facility,76
+46,472795.36,0,0.2,0.48,business expansion loan,81
+22,145698.08,1,0.1,0.23,inventory financing,59
+36,371785.11,0,0.86,0.73,overdraft facility,81
+19,417816.01,7,0.65,0.76,invoice financing,85
+1,188118.75,0,0.5,0.15,overdraft facility,71
+32,25972.48,1,0.34,0.57,machinery loan,75
+23,279674.72,1,0.62,0.49,overdraft facility,72
+49,432152.46,0,0.74,0.68,overdraft facility,84
+32,216252.43,7,0.37,0.34,invoice financing,94
+17,458108.01,0,0.38,0.26,business expansion loan,77
+40,276331.94,0,0.35,0.31,machinery loan,65
+14,137133.34,0,0.71,0.3,overdraft facility,91
+34,391020.99,3,0.27,0.42,invoice financing,95
+42,457178.12,1,0.51,0.42,business expansion loan,88
+45,226037.66,0,0.33,0.62,overdraft facility,50
+18,335628.66,1,0.77,0.33,overdraft facility,80
+7,69739.47,1,0.55,0.72,overdraft facility,73
+43,178972.98,0,0.3,0.5,business expansion loan,60
+13,448568.37,1,0.44,0.18,business expansion loan,71
+6,354259.93,0,0.4,0.47,business expansion loan,87
+10,376498.98,0,0.75,0.29,overdraft facility,70
+50,56471.57,0,0.62,0.37,overdraft facility,89
+3,278645.68,7,0.2,0.22,invoice financing,90
+24,112628.41,0,0.63,0.68,overdraft facility,77
+20,376797.47,0,0.68,0.78,overdraft facility,77
+15,479976.62,0,0.4,0.36,business expansion loan,69
+49,39286.84,1,0.34,0.33,business expansion loan,58
+28,346257.72,0,0.71,0.66,overdraft facility,78
+18,64411.59,0,0.66,0.48,overdraft facility,83
+34,205683.7,0,0.18,0.66,overdraft facility,60
+1,395342.1,0,0.34,0.65,business expansion loan,86
+32,142490.94,0,0.54,0.57,invoice financing,78
+9,443917.63,0,0.44,0.45,business expansion loan,70
+28,91342.24,0,0.84,0.37,overdraft facility,76
+32,299283.99,7,0.8,0.47,invoice financing,93
+46,144793.72,7,0.31,0.49,invoice financing,81
+23,339104.64,3,0.87,0.7,invoice financing,98
+11,80658.52,1,0.23,0.41,inventory financing,56
+27,292574.49,7,0.15,0.13,invoice financing,89
+4,286047.24,7,0.37,0.49,invoice financing,83
+9,136613.64,0,0.11,0.51,machinery loan,53
+38,291777.52,0,0.59,0.54,inventory financing,58
+5,305697.82,0,0.2,0.49,business expansion loan,81
+45,5128.27,0,0.55,0.25,overdraft facility,79
+11,159815.65,0,0.31,0.63,machinery loan,71
+46,96976.64,0,0.35,0.33,overdraft facility,78
+30,105651.79,0,0.79,0.74,overdraft facility,90
+8,75747.12,1,0.45,0.37,machinery loan,79
+24,444315.51,0,0.64,0.3,overdraft facility,74
+28,308656.82,1,0.36,0.69,business expansion loan,64
+5,457214.42,0,0.73,0.54,overdraft facility,73
+14,196368.1,0,0.32,0.5,invoice financing,75
+16,43141.74,1,0.2,0.65,business expansion loan,78
+36,478830.94,0,0.48,0.71,business expansion loan,88
+15,1183.44,0,0.14,0.76,machinery loan,65
+15,262535.82,0,0.73,0.61,overdraft facility,72
+25,150798.73,1,0.62,0.66,overdraft facility,77
+3,262525.29,0,0.38,0.15,inventory financing,59
+7,303682.85,1,0.44,0.72,business expansion loan,78
+7,38188.92,3,0.57,0.73,invoice financing,88
+5,209023.17,3,0.61,0.38,invoice financing,93
+3,459116.53,0,0.34,0.18,business expansion loan,83
+38,458665.64,3,0.89,0.51,invoice financing,97
+27,70171.89,0,0.16,0.35,supply chain finance,65
+5,407029.88,0,0.71,0.25,overdraft facility,81
+40,203773.65,1,0.26,0.38,overdraft facility,57
+34,128438.66,3,0.15,0.23,invoice financing,99
+32,471851.71,12,0.74,0.72,invoice financing,79
+33,450240.84,1,0.63,0.31,overdraft facility,71
+29,76494.96,0,0.86,0.3,overdraft facility,70
+36,410784.51,3,0.18,0.28,invoice financing,82
+20,147633.76,1,0.32,0.4,machinery loan,62
+36,153207.26,1,0.56,0.11,inventory financing,56
+27,399593.21,1,0.27,0.42,business expansion loan,79
+50,373002.18,0,0.19,0.56,business expansion loan,63
+20,251285.14,1,0.83,0.48,overdraft facility,73
+13,478223.19,3,0.18,0.64,invoice financing,90
+1,370683.08,0,0.11,0.13,business expansion loan,63
+38,171653.11,1,0.12,0.13,invoice financing,71
+34,127072.35,7,0.15,0.29,invoice financing,83
+46,394875.26,1,0.67,0.75,overdraft facility,80
+20,256111.35,12,0.58,0.52,invoice financing,86
+49,235461.57,7,0.77,0.42,invoice financing,97
+45,418800.07,0,0.1,0.69,business expansion loan,63
+28,353077.68,7,0.71,0.19,invoice financing,90
+31,233557.38,12,0.23,0.31,invoice financing,80
+5,394065.85,3,0.46,0.36,invoice financing,95
+46,101249.79,0,0.15,0.53,inventory financing,65
+32,78398.52,1,0.47,0.74,inventory financing,64
+10,113791.69,12,0.5,0.74,invoice financing,95
+31,84522.34,0,0.31,0.43,invoice financing,69
+14,172754.53,1,0.77,0.49,overdraft facility,79
+20,54094.17,1,0.34,0.75,machinery loan,58
+48,360307.09,1,0.46,0.2,business expansion loan,85
+47,272337.78,0,0.28,0.24,overdraft facility,51
+10,450590.84,3,0.3,0.77,invoice financing,79
+40,447781.5,0,0.37,0.69,business expansion loan,63
+25,444419.27,0,0.79,0.68,overdraft facility,86
+3,411347.21,0,0.59,0.34,business expansion loan,87
+37,404183.82,0,0.59,0.27,business expansion loan,71
+36,312579.47,1,0.78,0.72,overdraft facility,87
+49,257039.8,7,0.7,0.4,invoice financing,95
+10,81118.72,3,0.62,0.56,invoice financing,90
+30,403014.18,0,0.74,0.24,overdraft facility,87
+42,298757.67,1,0.83,0.73,overdraft facility,74
+22,250153.06,0,0.89,0.76,overdraft facility,92
+20,29225.04,3,0.3,0.32,invoice financing,85
+30,453273.58,3,0.74,0.22,invoice financing,78
+39,248986.73,0,0.6,0.19,overdraft facility,93
+24,260414.4,12,0.13,0.23,invoice financing,75
+8,50293.72,1,0.72,0.71,overdraft facility,84
+16,36173.3,0,0.31,0.51,machinery loan,70
+39,255270.46,0,0.33,0.28,business expansion loan,80
+37,363926.17,0,0.4,0.74,business expansion loan,75
+7,10375.02,0,0.25,0.27,invoice financing,76
+10,4597.41,1,0.4,0.41,inventory financing,64
+21,260683.5,3,0.71,0.21,invoice financing,77
+33,283871.94,1,0.34,0.27,business expansion loan,71
+20,230872.07,1,0.61,0.29,overdraft facility,89
+42,239031.91,1,0.58,0.14,business expansion loan,69
+11,484294.44,1,0.11,0.59,business expansion loan,61
+11,107463.99,12,0.12,0.31,invoice financing,86
+23,310774.2,1,0.13,0.3,business expansion loan,64
+35,430996.07,0,0.22,0.29,business expansion loan,81
+42,102838.26,0,0.55,0.7,business expansion loan,57
+14,444979.19,1,0.15,0.52,business expansion loan,65
+27,475274.3,7,0.54,0.24,invoice financing,86
+41,94266.08,0,0.74,0.37,overdraft facility,71
+22,81004.98,1,0.24,0.24,business expansion loan,73
+11,398943.16,0,0.22,0.43,business expansion loan,79
+23,395551.01,1,0.86,0.37,overdraft facility,88
+12,63956.08,3,0.41,0.65,invoice financing,96
+5,148682.85,1,0.2,0.62,invoice financing,60
+41,237950.61,0,0.23,0.77,inventory financing,59
+36,209162.6,7,0.16,0.77,invoice financing,79
+44,448647.99,1,0.14,0.25,business expansion loan,74
+28,163075.03,0,0.69,0.77,overdraft facility,78
+24,198140.52,0,0.16,0.16,overdraft facility,56
+20,378671.76,0,0.12,0.63,business expansion loan,62
+36,434806.81,0,0.54,0.12,business expansion loan,84
+46,83216.62,1,0.28,0.75,inventory financing,57
+43,254320.39,1,0.4,0.2,machinery loan,79
+34,375231.7,12,0.54,0.28,invoice financing,97
+23,63058.36,0,0.11,0.43,supply chain finance,76
+3,419251.49,0,0.57,0.24,business expansion loan,70
+47,162518.75,0,0.19,0.43,inventory financing,77
+1,159303.62,7,0.61,0.64,invoice financing,88
+27,213012.31,0,0.58,0.34,machinery loan,58
+35,386722.92,0,0.59,0.12,business expansion loan,79
+13,43536.14,12,0.19,0.31,invoice financing,95
+49,495124.79,7,0.1,0.45,invoice financing,81
+41,102575.59,1,0.57,0.42,inventory financing,63
+50,232628.58,0,0.19,0.76,inventory financing,74
+29,317880.88,1,0.32,0.67,business expansion loan,63
+40,488958.51,0,0.78,0.8,overdraft facility,87
+11,116473.21,1,0.14,0.51,machinery loan,53
+44,466204.69,0,0.54,0.46,business expansion loan,69
+30,310618.03,7,0.8,0.51,invoice financing,89
+30,446266.18,0,0.6,0.3,overdraft facility,85
+37,128150.73,0,0.68,0.37,overdraft facility,77
+2,118512.61,0,0.61,0.23,overdraft facility,87
+42,165502.91,3,0.27,0.48,invoice financing,97
+11,69670.94,0,0.81,0.77,overdraft facility,73
+33,225177.8,0,0.21,0.74,supply chain finance,73
+32,201445.38,1,0.84,0.72,overdraft facility,77
+46,133571.2,0,0.54,0.64,overdraft facility,74
+2,37998.21,0,0.83,0.72,overdraft facility,85
+9,371045.49,1,0.14,0.34,business expansion loan,74
+35,117323.15,0,0.16,0.57,business expansion loan,65
+1,79874.1,7,0.28,0.53,invoice financing,85
+32,463365.86,0,0.61,0.32,overdraft facility,91
+40,114919.14,1,0.9,0.26,overdraft facility,92
+30,90168.06,0,0.71,0.68,overdraft facility,88
+38,5780.46,3,0.75,0.18,invoice financing,93
+29,261579.59,0,0.64,0.3,overdraft facility,72
+13,2906.84,1,0.84,0.24,overdraft facility,89
+29,79992.0,0,0.89,0.43,overdraft facility,95
+25,184712.18,3,0.49,0.54,invoice financing,83
+40,127566.24,0,0.87,0.19,overdraft facility,92
+47,295454.4,3,0.14,0.76,invoice financing,94
+33,254530.71,3,0.66,0.44,invoice financing,79
+30,215423.71,0,0.68,0.48,overdraft facility,83
+34,255235.81,0,0.69,0.69,overdraft facility,83
+19,399511.6,0,0.48,0.42,business expansion loan,87
+31,330748.51,0,0.55,0.66,business expansion loan,60
+23,246000.88,0,0.64,0.28,overdraft facility,71
+27,124578.03,0,0.26,0.38,supply chain finance,67
+4,113394.39,1,0.18,0.79,overdraft facility,61
+17,169653.47,0,0.81,0.2,overdraft facility,94
+12,465885.45,3,0.86,0.12,invoice financing,83
+26,130453.4,0,0.43,0.14,machinery loan,72
+44,210121.26,7,0.44,0.56,invoice financing,94
+29,120770.74,12,0.18,0.53,invoice financing,95
+7,40263.43,1,0.75,0.27,overdraft facility,90
+23,456119.0,0,0.37,0.77,business expansion loan,84
+42,257645.35,1,0.61,0.57,overdraft facility,83
+17,117184.45,1,0.13,0.13,supply chain finance,63
+37,249963.05,1,0.3,0.54,inventory financing,50
+20,360397.45,1,0.77,0.77,overdraft facility,85
+16,364035.28,1,0.71,0.28,overdraft facility,71
+30,44067.56,0,0.11,0.52,business expansion loan,67
+2,154854.51,3,0.82,0.7,invoice financing,82
+5,37173.89,7,0.48,0.26,invoice financing,82
+6,245357.61,3,0.62,0.71,invoice financing,80
+14,480190.06,0,0.57,0.56,business expansion loan,66
+5,459932.77,7,0.49,0.56,invoice financing,87
+12,269800.76,1,0.28,0.19,machinery loan,62
+3,330435.87,1,0.19,0.62,business expansion loan,68
+39,370317.58,0,0.77,0.4,overdraft facility,92
+8,273798.9,1,0.82,0.67,overdraft facility,81
+5,239233.95,0,0.27,0.57,business expansion loan,59
+26,402253.84,7,0.42,0.67,invoice financing,80
+3,154333.49,0,0.79,0.57,overdraft facility,90
+11,66530.94,0,0.6,0.52,overdraft facility,60
+4,2241.63,0,0.29,0.42,inventory financing,66
+24,270312.38,1,0.49,0.4,machinery loan,76
+3,477775.83,0,0.61,0.47,overdraft facility,88
+30,102629.54,0,0.71,0.36,overdraft facility,81
+27,308159.85,1,0.44,0.68,business expansion loan,81
+40,120367.49,1,0.28,0.73,machinery loan,72
+14,87754.91,0,0.7,0.56,overdraft facility,73
+17,497053.68,1,0.84,0.31,overdraft facility,89
+42,125612.38,0,0.35,0.77,invoice financing,56
+3,176010.71,3,0.88,0.2,invoice financing,96
+25,123772.15,3,0.72,0.36,invoice financing,91
+39,484197.94,0,0.26,0.32,business expansion loan,82
+6,497641.29,12,0.51,0.51,invoice financing,83
+2,350270.92,1,0.24,0.56,business expansion loan,71
+2,445097.63,1,0.67,0.62,overdraft facility,86
+38,68014.37,3,0.15,0.33,invoice financing,94
+4,182282.76,12,0.66,0.74,invoice financing,96
+33,333400.43,0,0.2,0.14,business expansion loan,63
+10,255366.04,3,0.27,0.15,invoice financing,83
+9,210011.52,0,0.71,0.64,overdraft facility,85
+13,486934.81,0,0.69,0.66,overdraft facility,95
+44,238229.86,0,0.55,0.62,inventory financing,64
+5,199478.12,0,0.29,0.1,machinery loan,55
+39,454078.12,1,0.12,0.69,business expansion loan,75
+9,70316.34,0,0.62,0.64,overdraft facility,83
+15,57249.63,0,0.28,0.35,supply chain finance,70
+32,348744.68,1,0.56,0.31,business expansion loan,73
+1,148158.19,1,0.52,0.11,overdraft facility,75
+39,157934.98,0,0.34,0.48,business expansion loan,59
+9,35112.5,0,0.32,0.41,machinery loan,75
+45,471396.49,0,0.63,0.54,overdraft facility,83
+33,306161.61,0,0.45,0.47,business expansion loan,60
+19,48129.23,1,0.62,0.34,overdraft facility,85
+9,232134.23,1,0.47,0.34,overdraft facility,75
+10,192392.33,1,0.73,0.6,overdraft facility,95
+29,297764.45,3,0.22,0.19,invoice financing,76
+32,303346.66,1,0.14,0.16,business expansion loan,62
+2,302702.8,7,0.65,0.48,invoice financing,96
+33,443275.58,0,0.28,0.38,business expansion loan,81
+17,297300.03,3,0.79,0.15,invoice financing,75
+22,304726.35,3,0.16,0.67,invoice financing,75
+25,221087.82,0,0.82,0.37,overdraft facility,71
+32,344348.21,1,0.35,0.72,business expansion loan,74
+41,285964.96,3,0.78,0.64,invoice financing,84
+19,153657.81,1,0.22,0.38,overdraft facility,75
+23,318559.53,1,0.48,0.32,business expansion loan,89
+33,4723.33,3,0.86,0.6,invoice financing,96
+17,370352.45,3,0.42,0.18,invoice financing,78
+49,245176.3,0,0.84,0.57,overdraft facility,95
+13,211816.06,12,0.7,0.37,invoice financing,83
+9,458385.28,0,0.66,0.56,overdraft facility,85
+50,334346.41,0,0.82,0.58,overdraft facility,76
+11,13879.55,3,0.81,0.1,invoice financing,85
+40,447956.96,3,0.27,0.24,invoice financing,93
+12,250882.15,3,0.65,0.58,invoice financing,100
+3,425898.32,0,0.57,0.62,business expansion loan,69
+26,262143.08,7,0.33,0.11,invoice financing,100
+29,190777.34,0,0.36,0.42,overdraft facility,77
+7,28014.71,7,0.72,0.52,invoice financing,86
+36,371465.2,7,0.65,0.62,invoice financing,100
+35,303630.68,1,0.69,0.52,overdraft facility,87
+30,346921.74,0,0.72,0.54,overdraft facility,93
+23,152285.28,0,0.72,0.25,overdraft facility,87
+38,305968.47,1,0.89,0.51,overdraft facility,81
+43,165695.45,7,0.39,0.62,invoice financing,79
+21,317934.55,0,0.73,0.12,overdraft facility,76
+13,158619.07,3,0.28,0.33,invoice financing,82
+18,296767.94,0,0.44,0.79,overdraft facility,70
+13,436377.54,1,0.37,0.8,business expansion loan,75
+10,201588.55,3,0.59,0.44,invoice financing,99
+10,758.14,0,0.18,0.59,machinery loan,80
+30,270698.93,0,0.35,0.48,supply chain finance,77
+16,142196.23,3,0.69,0.38,invoice financing,79
+26,345609.79,7,0.84,0.29,invoice financing,96
+3,262357.12,1,0.61,0.38,overdraft facility,94
+39,296627.52,0,0.41,0.27,overdraft facility,63
+34,186057.73,1,0.32,0.73,invoice financing,80
+30,216713.42,0,0.54,0.75,inventory financing,57
+46,85810.93,1,0.88,0.62,overdraft facility,84
+6,84065.35,1,0.27,0.7,overdraft facility,71
+49,390179.83,0,0.75,0.27,overdraft facility,82
+41,173874.69,3,0.42,0.15,invoice financing,100
+17,236161.33,0,0.48,0.66,overdraft facility,71
+39,260234.12,1,0.72,0.25,overdraft facility,70
+24,105063.9,7,0.43,0.27,invoice financing,92
+40,108282.11,1,0.37,0.47,supply chain finance,70
+19,454224.68,1,0.69,0.64,overdraft facility,94
+39,48900.11,7,0.29,0.46,invoice financing,76
+4,26925.75,1,0.46,0.19,invoice financing,78
+28,72311.62,0,0.57,0.28,supply chain finance,50
+44,349393.55,0,0.37,0.65,business expansion loan,63
+3,234084.1,7,0.29,0.68,invoice financing,100
+37,206032.8,0,0.32,0.35,machinery loan,57
+16,499682.82,7,0.83,0.78,invoice financing,92
+2,217597.3,0,0.81,0.56,overdraft facility,84
+46,425521.19,3,0.58,0.29,invoice financing,89
+20,260633.51,7,0.8,0.13,invoice financing,89
+5,445150.12,12,0.16,0.11,invoice financing,95
+47,8745.39,0,0.33,0.63,machinery loan,69
+34,170386.0,1,0.34,0.37,invoice financing,80
+38,288333.24,0,0.65,0.61,overdraft facility,87
+2,491853.18,0,0.64,0.6,overdraft facility,85
+28,479522.89,0,0.19,0.17,business expansion loan,68
+30,17330.59,1,0.64,0.37,overdraft facility,94
+12,294455.78,0,0.16,0.41,overdraft facility,54
+23,222168.4,1,0.42,0.71,machinery loan,59
+4,459098.89,0,0.62,0.72,overdraft facility,95
+15,234945.33,3,0.3,0.38,invoice financing,77
+14,454988.77,1,0.25,0.11,business expansion loan,66
+42,64133.61,1,0.67,0.35,overdraft facility,74
+42,484892.21,7,0.86,0.31,invoice financing,85
+47,48065.25,7,0.79,0.28,invoice financing,99
+37,269779.84,0,0.56,0.69,machinery loan,66
+50,351491.33,3,0.19,0.43,invoice financing,82
+13,389634.17,0,0.16,0.57,business expansion loan,77
+6,14724.96,3,0.64,0.45,invoice financing,90
+30,188786.27,0,0.15,0.28,invoice financing,63
+20,376551.54,12,0.46,0.26,invoice financing,90
+7,271916.98,3,0.16,0.52,invoice financing,96
+50,213930.5,0,0.89,0.45,overdraft facility,89
+11,29905.06,3,0.37,0.37,invoice financing,88
+32,208918.95,3,0.78,0.5,invoice financing,75
+9,24506.97,7,0.37,0.27,invoice financing,91
+29,218945.36,0,0.78,0.43,overdraft facility,80
+46,144640.41,0,0.19,0.39,supply chain finance,73
+10,155561.75,1,0.15,0.47,invoice financing,63
+43,193835.71,3,0.1,0.59,invoice financing,83
+14,276358.95,0,0.61,0.59,overdraft facility,86
+11,494253.56,7,0.36,0.21,invoice financing,94
+28,106997.06,0,0.62,0.24,overdraft facility,76
+47,87836.41,3,0.76,0.24,invoice financing,76
+46,193714.81,0,0.4,0.12,inventory financing,77
+48,8162.66,0,0.85,0.75,overdraft facility,73
+26,176372.01,0,0.4,0.44,supply chain finance,79
+10,214413.44,3,0.36,0.28,invoice financing,91
+47,309630.15,12,0.68,0.15,invoice financing,76
+50,43103.72,1,0.13,0.63,inventory financing,56
+30,462919.69,1,0.15,0.64,business expansion loan,72
+12,107894.81,1,0.72,0.46,overdraft facility,84
+36,273306.77,12,0.45,0.69,invoice financing,83
+43,77037.61,0,0.45,0.49,business expansion loan,60
+8,406087.72,12,0.28,0.73,invoice financing,100
+46,128208.54,0,0.7,0.21,overdraft facility,80
+44,462870.9,12,0.54,0.77,invoice financing,79
+20,49592.97,3,0.2,0.75,invoice financing,79
+39,474028.63,0,0.87,0.13,overdraft facility,94
+21,97210.34,3,0.74,0.37,invoice financing,96
+18,33485.4,0,0.33,0.16,supply chain finance,60
+50,263507.88,0,0.25,0.56,overdraft facility,69
+33,366289.88,0,0.12,0.32,business expansion loan,76
+10,66536.53,7,0.35,0.39,invoice financing,94
+47,278871.91,3,0.4,0.77,invoice financing,79
+17,208535.04,0,0.66,0.59,overdraft facility,78
+48,97996.75,0,0.73,0.19,overdraft facility,81
+3,429376.34,0,0.33,0.77,business expansion loan,65
+33,187441.12,0,0.41,0.14,supply chain finance,74
+3,6560.24,12,0.48,0.72,invoice financing,93
+27,273644.35,0,0.79,0.28,overdraft facility,75
+14,143301.58,0,0.5,0.28,business expansion loan,71
+45,33597.21,12,0.29,0.42,invoice financing,76
+42,38868.78,1,0.3,0.56,invoice financing,75
+15,387048.53,3,0.81,0.24,invoice financing,76
+44,58899.49,1,0.44,0.18,machinery loan,66
+22,443911.31,1,0.26,0.54,business expansion loan,68
+5,399696.2,1,0.57,0.7,business expansion loan,73
+29,431331.99,3,0.75,0.37,invoice financing,84
+13,250274.79,0,0.27,0.37,business expansion loan,61
+38,491912.13,0,0.16,0.78,business expansion loan,90
+38,485262.72,3,0.29,0.44,invoice financing,100
+18,226216.54,1,0.67,0.73,overdraft facility,81
+29,111475.14,7,0.55,0.76,invoice financing,87
+7,189351.51,0,0.34,0.11,invoice financing,69
+23,77767.78,1,0.4,0.51,overdraft facility,69
+33,433495.4,1,0.54,0.49,business expansion loan,74
+1,321069.36,0,0.87,0.61,overdraft facility,81
+1,301858.78,0,0.49,0.63,business expansion loan,87
+19,13573.29,7,0.64,0.22,invoice financing,83
+37,113824.68,1,0.44,0.27,inventory financing,62
+7,308122.36,1,0.84,0.21,overdraft facility,82
+10,208130.22,1,0.71,0.44,overdraft facility,88
+3,448133.42,1,0.33,0.11,business expansion loan,68
+26,41805.48,0,0.32,0.46,overdraft facility,77
+30,345303.27,3,0.42,0.48,invoice financing,83
+25,51408.35,0,0.32,0.6,machinery loan,73
+26,373252.2,1,0.54,0.49,business expansion loan,80
+26,453318.96,1,0.43,0.69,business expansion loan,78
+37,141242.24,1,0.56,0.74,business expansion loan,76
+32,31504.21,1,0.48,0.78,invoice financing,56
+9,271105.69,3,0.11,0.55,invoice financing,98
+39,123457.57,1,0.77,0.78,overdraft facility,79
+31,134163.27,0,0.65,0.32,overdraft facility,92
+41,241451.95,0,0.63,0.35,overdraft facility,95
+35,152792.6,0,0.72,0.49,overdraft facility,79
+3,357820.18,3,0.63,0.41,invoice financing,93
+30,89167.85,1,0.73,0.75,overdraft facility,88
+25,37751.98,7,0.51,0.23,invoice financing,86
+7,473508.58,0,0.8,0.76,overdraft facility,79
+2,128048.64,1,0.66,0.7,overdraft facility,72
+34,186424.27,1,0.35,0.78,supply chain finance,77
+9,434664.47,1,0.11,0.15,business expansion loan,76
+9,126226.46,0,0.13,0.26,supply chain finance,69
+17,153794.63,1,0.51,0.3,overdraft facility,77
+11,345679.89,3,0.5,0.62,invoice financing,88
+16,365692.22,1,0.87,0.37,overdraft facility,85
+29,134008.19,0,0.34,0.62,business expansion loan,65
+9,132857.64,0,0.31,0.48,invoice financing,80
+42,134379.13,0,0.73,0.49,overdraft facility,71
+14,301696.03,1,0.74,0.17,overdraft facility,73
+30,145288.88,0,0.71,0.69,overdraft facility,82
+26,211784.19,0,0.36,0.4,inventory financing,67
+42,432134.77,1,0.63,0.41,overdraft facility,71
+4,485931.38,7,0.15,0.41,invoice financing,81
+24,375340.78,7,0.54,0.33,invoice financing,93
+41,281574.83,0,0.24,0.3,business expansion loan,68
+43,202166.99,1,0.2,0.44,inventory financing,67
+32,45936.45,0,0.39,0.62,business expansion loan,65
+23,241234.89,1,0.58,0.8,supply chain finance,55
+40,119107.51,0,0.13,0.32,overdraft facility,71
+44,446711.96,1,0.79,0.15,overdraft facility,91
+29,115813.22,0,0.45,0.65,invoice financing,73
+26,362536.02,0,0.36,0.4,business expansion loan,83
+13,283513.34,1,0.26,0.77,inventory financing,56
+47,332415.3,1,0.23,0.28,business expansion loan,83
+46,412181.39,7,0.22,0.44,invoice financing,91
+31,93873.08,0,0.17,0.64,invoice financing,54
+33,485310.8,1,0.35,0.44,business expansion loan,62
+14,73900.21,1,0.49,0.28,supply chain finance,56
+1,414993.67,7,0.72,0.72,invoice financing,78
+26,69477.68,1,0.82,0.78,overdraft facility,80
+27,355845.76,1,0.14,0.45,business expansion loan,62
+5,399766.78,0,0.44,0.54,business expansion loan,73
+34,136500.74,3,0.41,0.47,invoice financing,79
+21,39235.25,0,0.82,0.78,overdraft facility,85
+47,363036.23,1,0.47,0.6,business expansion loan,84
+40,93209.26,0,0.56,0.76,overdraft facility,55
+11,223662.97,0,0.73,0.73,overdraft facility,75
+39,396113.86,0,0.54,0.6,business expansion loan,77
+42,209099.84,1,0.36,0.61,business expansion loan,50
+7,445485.05,7,0.86,0.76,invoice financing,90
+37,419302.72,0,0.77,0.2,overdraft facility,89
+14,412760.42,3,0.75,0.71,invoice financing,77
+45,28217.93,0,0.63,0.52,overdraft facility,87
+19,440411.82,0,0.89,0.75,overdraft facility,71
+12,227798.07,3,0.35,0.33,invoice financing,99
+44,406727.42,3,0.49,0.35,invoice financing,81
+12,372266.32,0,0.22,0.59,business expansion loan,71
+19,143818.24,1,0.9,0.57,overdraft facility,75
+29,49746.86,0,0.74,0.38,overdraft facility,76
+39,22788.74,0,0.86,0.61,overdraft facility,77
+37,479580.13,3,0.42,0.54,invoice financing,75
+25,326506.1,7,0.78,0.66,invoice financing,77
+42,78140.07,0,0.48,0.59,supply chain finance,62
+21,9280.96,3,0.68,0.19,invoice financing,99
+11,367354.4,1,0.65,0.52,overdraft facility,75
+44,55226.82,0,0.75,0.62,overdraft facility,70
+48,434194.86,1,0.6,0.36,overdraft facility,86
+41,116418.69,1,0.25,0.73,supply chain finance,57
+37,78224.81,1,0.59,0.23,overdraft facility,73
+46,9215.77,0,0.7,0.26,overdraft facility,71
+10,9787.04,1,0.61,0.19,overdraft facility,75
+43,370146.42,0,0.81,0.34,overdraft facility,92
+46,481063.62,1,0.59,0.23,business expansion loan,61
+19,109742.96,0,0.88,0.41,overdraft facility,83
+19,223002.2,3,0.69,0.16,invoice financing,77
+20,90114.19,3,0.15,0.41,invoice financing,78
+19,410622.54,12,0.1,0.17,invoice financing,82
+38,264306.38,1,0.32,0.61,supply chain finance,62
+23,174337.0,1,0.26,0.78,invoice financing,71
+5,404.1,3,0.58,0.21,invoice financing,93
+41,262030.83,1,0.82,0.42,overdraft facility,88
+32,296186.67,7,0.39,0.25,invoice financing,85
+43,76283.22,1,0.82,0.48,overdraft facility,84
+21,331682.98,0,0.54,0.55,business expansion loan,64
+9,440682.93,0,0.86,0.79,overdraft facility,94
+17,452786.81,12,0.8,0.6,invoice financing,92
+5,319627.14,1,0.64,0.51,overdraft facility,90
+26,224760.52,1,0.42,0.61,business expansion loan,75
+32,399784.86,12,0.2,0.49,invoice financing,87
+37,213036.23,3,0.76,0.38,invoice financing,100
+14,263714.01,12,0.75,0.48,invoice financing,88
+44,275252.4,1,0.48,0.75,inventory financing,53
+27,233278.31,3,0.62,0.72,invoice financing,79
