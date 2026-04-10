@@ -1,1 +1,88 @@
 @import "tailwindcss";
+
+@theme {
+  --color-background: #0B1020;
+  --color-secondary-background: #121A2F;
+  --color-card: #17223B;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-primary: #4F8CFF;
+  --color-secondary: #6C63FF;
+  --color-success: #16C784;
+  --color-warning: #F5A524;
+  --color-danger: #FF5C5C;
+  --color-info: #00C2FF;
+  
+  --color-primary-text: #F5F7FA;
+  --color-secondary-text: #AAB2C8;
+  --color-muted-text: #7C879F;
+
+  --color-ring: rgba(79, 140, 255, 0.5);
+}
+
+/* Light Mode Overrides */
+[data-theme='light'] {
+  --color-background: #FFFFFF;
+  --color-secondary-background: #F8FAFC;
+  --color-card: #FFFFFF;
+  --color-border: rgba(0, 0, 0, 0.08);
+  
+  --color-primary-text: #0F172A;
+  --color-secondary-text: #475569;
+  --color-muted-text: #64748B;
+  
+  --color-ring: rgba(79, 140, 255, 0.2);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-primary-text);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+/* Custom Utilities for gradients and glassmorphism */
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+  
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+  }
+
+  .theme-gradient {
+    background: var(--color-background);
+    background-image: radial-gradient(at 0% 0%, rgba(245, 165, 36, 0.05) 0px, transparent 50%),
+                      radial-gradient(at 100% 100%, rgba(79, 140, 255, 0.05) 0px, transparent 50%);
+  }
+
+  [data-theme='light'] .theme-gradient {
+    background-image: radial-gradient(at 0% 0%, rgba(245, 165, 36, 0.08) 0px, transparent 50%),
+                      radial-gradient(at 100% 0%, rgba(245, 165, 36, 0.03) 0px, transparent 50%);
+  }
+
+  /* Custom scrollbar for dark theme */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
