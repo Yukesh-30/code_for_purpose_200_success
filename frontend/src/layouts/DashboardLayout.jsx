@@ -57,7 +57,7 @@ export default function DashboardLayout() {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
 
-  const navItems = user?.role === 'bank' ? bankNavItems : msmeNavItems;
+  const navItems = user?.role === 'relationship_manager' ? bankNavItems : msmeNavItems;
 
   const handleLogout = () => {
     logout();
@@ -159,9 +159,7 @@ export default function DashboardLayout() {
             <ThemeToggle />
             <Button variant="ghost" size="icon" className="relative rounded-full">
               <Bell size={20} />
-              <span className="absolute top-2 right-2 w-2 h-2 bg-danger rounded-full border border-background"></span>
             </Button>
-            <Button className="hidden md:flex rounded-full">Quick Action</Button>
           </div>
         </header>
 

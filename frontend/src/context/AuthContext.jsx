@@ -1,82 +1,104 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { authAPI } from '../services/api';
 
-const AuthContext = createContext();
+const AuthContext = createContext(null);
 
-export const AuthProvider = ({ children }) => {
+export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const savedUser = localStorage.getItem('flowSightUser');
-    if (savedUser) {
-      setUser(JSON.parse(savedUser));
+    // Check for saved token on mount
+    const savedToken = localStorage.getItem('token');
+    const savedUser = localStorage.getItem('user');
+
+    if (savedToken && savedUser) {
+      try {
+        const parsed = JSON.parse(savedUser);
+        setUser(parsed);
+      } catch (e) {
+        console.error("Failed to parse user from local storage");
+      }
     }
     setLoading(false);
   }, []);
 
   const login = async (email, password) => {
     try {
-      const response = await fetch('http://localhost:5000/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
+      const data = await authAPI.login(email, password);
+      
+      const userData = {
+        id: data.user.id,
+        name: data.user.name,
+        email: data.user.email,
+        role: data.role || data.user.role,
+        business_id: data.business_id || data.user.business_id || null, // No more defaulting to 1
+        avatar: data.user.name.substring(0, 2).toUpperCase()
+      };
 
-      const data = await response.json();
-
-      if (response.ok) {
-        const userData = {
-          ...data.user,
-          token: data.access_token,
-          avatar: data.user.role === 'msme_owner' ? 'YR' : 'SA',
-          lastLogin: new Date().toISOString()
-        };
-        setUser(userData);
-        localStorage.setItem('flowSightUser', JSON.stringify(userData));
-        return { success: true, role: data.user.role };
-      } else {
-        return { success: false, message: data.message || 'Login failed' };
-      }
+      localStorage.setItem('token', data.access_token);
+      localStorage.setItem('user', JSON.stringify(userData));
+      
+      setUser(userData);
+      return { success: true, role: userData.role };
     } catch (error) {
-      console.error('Login error:', error);
-      return { success: false, message: 'Server connection failed' };
+      return { success: false, message: error.message };
     }
   };
 
   const signup = async (userData) => {
     try {
-      const response = await fetch('http://localhost:5000/auth/signup', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(userData),
-      });
-
-      const data = await response.json();
-      if (response.ok) {
-        return { success: true };
-      } else {
-        return { success: false, message: data.message || 'Signup failed' };
-      }
+      const data = await authAPI.signup(userData);
+      return { success: true, user_id: data.user_id };
     } catch (error) {
-      console.error('Signup error:', error);
-      return { success: false, message: 'Server connection failed' };
+      return { success: false, message: error.message };
     }
   };
 
   const logout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
     setUser(null);
-    localStorage.removeItem('flowSightUser');
+  };
+
+  const refreshUser = async () => {
+     try {
+       const token = localStorage.getItem('token');
+       if (!token) return;
+       
+       const response = await fetch('/auth/me', {
+         headers: { 'Authorization': `Bearer ${token}` }
+       });
+       
+       if (response.ok) {
+         const data = await response.json();
+         const userData = {
+           id: data.id,
+           name: data.name,
+           email: data.email,
+           role: data.role,
+           business_id: data.business_id,
+           avatar: data.name.substring(0, 2).toUpperCase()
+         };
+         localStorage.setItem('user', JSON.stringify(userData));
+         setUser(userData);
+       }
+     } catch (e) {
+       console.error("Failed to refresh user profile", e);
+     }
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout, loading }}>
-      {children}
+    <AuthContext.Provider value={{ user, login, signup, logout, loading, refreshUser }}>
+      {!loading && children}
     </AuthContext.Provider>
   );
-};
+}
 
-export const useAuth = () => useContext(AuthContext);
+export function useAuth() {
+  const context = useContext(AuthContext);
+  if (!context) {
+    throw new Error('useAuth must be used within an AuthProvider');
+  }
+  return context;
+}

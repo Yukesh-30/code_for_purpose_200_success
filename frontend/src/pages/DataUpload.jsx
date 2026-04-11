@@ -33,12 +33,14 @@ export default function DataUpload() {
 
     const formData = new FormData();
     formData.append('file', file);
-    formData.append('business_id', 1); // Mock business ID for now, should come from user context later
+    formData.append('business_id', user?.business_id);
 
     try {
       const endpoint = type === 'transactions' ? 'bank-transactions' : type;
-      const response = await fetch(`http://localhost:5000/upload/${endpoint}`, {
+      const token = localStorage.getItem('token');
+      const response = await fetch(`/upload/${endpoint}`, {
         method: 'POST',
+        headers: token ? { Authorization: `Bearer ${token}` } : {},
         body: formData,
       });
 

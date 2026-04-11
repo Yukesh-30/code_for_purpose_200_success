@@ -40,7 +40,7 @@ export default function CompleteProfile() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:5000/business/create', {
+      const response = await fetch('/business/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -54,7 +54,13 @@ export default function CompleteProfile() {
       const data = await response.json();
 
       if (response.ok) {
-        navigate('/upload-data');
+        // Update user config in local storage with new business_id immediately
+        const savedUser = JSON.parse(localStorage.getItem('user') || '{}');
+        savedUser.business_id = data.business_id;
+        localStorage.setItem('user', JSON.stringify(savedUser));
+        
+        // Let AuthContext pick it up via refresh or reload, but we'll navigate directly
+        window.location.href = '/upload-data';
       } else {
         setError(data.error || 'Failed to create business profile');
       }
