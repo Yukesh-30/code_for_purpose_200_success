@@ -1,4 +1,18 @@
 SCHEMA = {
+
+    "users": {
+        "description": "Platform users including MSME owners, relationship managers, and admins",
+        "primary_key": "id",
+        "columns": {
+            "id": "unique user id",
+            "full_name": "user full name",
+            "email": "user email",
+            "role": "user role like msme_owner, relationship_manager, admin",
+            "phone_number": "contact number",
+            "created_at": "account creation time"
+        }
+    },
+
     "business_profiles": {
         "description": "MSME business details",
         "primary_key": "id",
@@ -10,6 +24,19 @@ SCHEMA = {
             "employee_count": "number of employees",
             "city": "business city",
             "state": "business state"
+        }
+    },
+
+    "business_users": {
+        "description": "Mapping between users and businesses with roles",
+        "primary_key": "id",
+        "join_keys": ["user_id", "business_id"],
+        "columns": {
+            "user_id": "user id",
+            "business_id": "business id",
+            "role": "role of user in business",
+            "is_primary": "whether primary owner",
+            "created_at": "mapping created time"
         }
     },
 
@@ -25,7 +52,8 @@ SCHEMA = {
             "category": "transaction category",
             "merchant_name": "merchant involved",
             "payment_mode": "payment type",
-            "balance_after_transaction": "balance after transaction"
+            "balance_after_transaction": "balance after transaction",
+            "description": "transaction description"
         }
     },
 
@@ -123,6 +151,45 @@ SCHEMA = {
             "payroll_date": "salary date",
             "total_salary_amount": "total salary",
             "employee_count": "employees paid"
+        }
+    },
+
+    "query_history": {
+        "description": "Stored queries and generated insights",
+        "primary_key": "id",
+        "join_key": "business_id",
+        "columns": {
+            "user_id": "user id",
+            "business_id": "business id",
+            "user_query": "original question",
+            "generated_sql": "generated SQL query",
+            "response_summary": "summary of result",
+            "result_json": "query result",
+            "tags": "tags for categorization",
+            "created_at": "timestamp"
+        }
+    },
+
+    "chat_sessions": {
+        "description": "User chat sessions",
+        "primary_key": "id",
+        "join_key": "business_id",
+        "columns": {
+            "user_id": "user id",
+            "business_id": "business id",
+            "session_name": "chat session name"
+        }
+    },
+
+    "chat_messages": {
+        "description": "Messages inside chat sessions",
+        "primary_key": "id",
+        "join_key": "business_id",
+        "columns": {
+            "session_id": "chat session id",
+            "business_id": "business id",
+            "sender_type": "user or ai",
+            "message_text": "message content"
         }
     }
 }
