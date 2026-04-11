@@ -12,6 +12,7 @@ from routes.dashboard_routes import dashboard_bp
 from routes.forecasting_routes import forecasting_bp
 from routes.risk_routes import risk_bp
 from routes.recommendation_routes import recommendation_bp
+from routes.team_routes import team_bp
 
 load_dotenv(override=True)
 
@@ -41,6 +42,7 @@ app.register_blueprint(dashboard_bp, url_prefix='/dashboard')
 app.register_blueprint(forecasting_bp, url_prefix='/forecasting')
 app.register_blueprint(risk_bp, url_prefix='/risk')
 app.register_blueprint(recommendation_bp, url_prefix='/recommendation')
+app.register_blueprint(team_bp, url_prefix='/team')
 @app.route('/')
 def home():
     return {"message": "FlowSight AI Backend is Running!"}
