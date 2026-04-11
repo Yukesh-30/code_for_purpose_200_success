@@ -6,6 +6,7 @@ from models import db
 from routes.auth_routes import auth_bp
 from routes.business_routes import business_bp
 from routes.upload_routes import upload_bp
+from routes.chatbot_routes import chatbot_bp
 
 load_dotenv()
 
@@ -29,6 +30,7 @@ db.init_app(app)
 app.register_blueprint(auth_bp, url_prefix='/auth')
 app.register_blueprint(business_bp, url_prefix='/business')
 app.register_blueprint(upload_bp, url_prefix='/upload')
+app.register_blueprint(chatbot_bp, url_prefix='/chatbot')
 
 @app.route('/')
 def home():

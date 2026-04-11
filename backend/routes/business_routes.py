@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from models import db, BusinessProfile, BankAccount, User
+from models import db, BusinessProfile, BankAccount, User, BusinessUser
 
 business_bp = Blueprint('business', __name__)
 
@@ -20,7 +20,6 @@ def create_business():
         
     try:
         new_business = BusinessProfile(
-            user_id=data['user_id'],
             business_name=data['business_name'],
             business_type=data['business_type'],
             industry=data['industry'],
@@ -33,6 +32,15 @@ def create_business():
         
         db.session.add(new_business)
         db.session.flush() # Get ID before commit
+        
+        # Create user business mapping
+        mapping = BusinessUser(
+            user_id=data['user_id'],
+            business_id=new_business.id,
+            role='msme_owner',
+            is_primary=True
+        )
+        db.session.add(mapping)
         
         # Create a default bank account as discussed
         default_account = BankAccount(

@@ -2,6 +2,8 @@ import bcrypt
 import jwt
 import datetime
 import os
+from functools import wraps
+from flask import request, jsonify
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -29,3 +31,23 @@ def decode_token(token):
         return 'Token expired'
     except jwt.InvalidTokenError:
         return 'Invalid token'
+
+def token_required(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        token = None
+        if 'Authorization' in request.headers:
+            auth_header = request.headers['Authorization']
+            if auth_header.startswith('Bearer '):
+                token = auth_header.split(" ")[1]
+        
+        if not token:
+            return jsonify({"message": "Token is missing!"}), 401
+        
+        data = decode_token(token)
+        if isinstance(data, str):
+            return jsonify({"message": data}), 401
+        
+        return f(data, *args, **kwargs)
+    
+    return decorated

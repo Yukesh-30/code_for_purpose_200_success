@@ -4,10 +4,10 @@
 -- USERS
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    full_name VARCHAR(150) NOT NULL,
-    email VARCHAR(150) UNIQUE NOT NULL,
-    password_hash TEXT NOT NULL,
-    role VARCHAR(50) CHECK (role IN ('msme_owner', 'relationship_manager', 'admin')),
+    full_name VARCHAR(150),
+    email VARCHAR(150) UNIQUE,
+    password_hash TEXT,
+    role VARCHAR(50),
     phone_number VARCHAR(20),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -15,13 +15,13 @@ CREATE TABLE users (
 -- BUSINESS PROFILES
 CREATE TABLE business_profiles (
     id SERIAL PRIMARY KEY,
-    user_id INT REFERENCES users(id) ON DELETE CASCADE,
     business_name VARCHAR(200),
     industry VARCHAR(100),
     annual_revenue NUMERIC(15,2),
     employee_count INT,
     city VARCHAR(100),
-    state VARCHAR(100)
+    state VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- BANK TRANSACTIONS

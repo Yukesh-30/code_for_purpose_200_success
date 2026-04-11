@@ -28,7 +28,6 @@ class BusinessProfile(db.Model):
     __tablename__ = 'business_profiles'
 
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id', ondelete='CASCADE'))
     business_name = db.Column(db.String(200), nullable=False)
     business_type = db.Column(db.String(100))
     industry = db.Column(db.String(100))
@@ -39,6 +38,48 @@ class BusinessProfile(db.Model):
     state = db.Column(db.String(100))
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+class BusinessUser(db.Model):
+    __tablename__ = 'business_users'
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id', ondelete='CASCADE'))
+    business_id = db.Column(db.Integer, db.ForeignKey('business_profiles.id', ondelete='CASCADE'))
+    role = db.Column(db.String(50))
+    is_primary = db.Column(db.Boolean, default=False)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+    __table_args__ = (db.UniqueConstraint('user_id', 'business_id', name='_user_business_uc'),)
+
+class QueryHistory(db.Model):
+    __tablename__ = 'query_history'
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id', ondelete='CASCADE'))
+    business_id = db.Column(db.Integer, db.ForeignKey('business_profiles.id', ondelete='CASCADE'))
+    user_query = db.Column(db.Text)
+    generated_sql = db.Column(db.Text)
+    response_summary = db.Column(db.Text)
+    result_json = db.Column(db.JSON)
+    tags = db.Column(db.ARRAY(db.String))
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+class ChatSession(db.Model):
+    __tablename__ = 'chat_sessions'
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id', ondelete='CASCADE'))
+    business_id = db.Column(db.Integer, db.ForeignKey('business_profiles.id', ondelete='CASCADE'))
+    session_name = db.Column(db.String(200))
+
+class ChatMessage(db.Model):
+    __tablename__ = 'chat_messages'
+
+    id = db.Column(db.Integer, primary_key=True)
+    session_id = db.Column(db.Integer, db.ForeignKey('chat_sessions.id', ondelete='CASCADE'))
+    business_id = db.Column(db.Integer, db.ForeignKey('business_profiles.id', ondelete='CASCADE'))
+    sender_type = db.Column(db.String(50)) # 'user', 'ai'
+    message_text = db.Column(db.Text)
 
 class BankAccount(db.Model):
     __tablename__ = 'bank_accounts'
