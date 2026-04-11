@@ -12,6 +12,9 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
+print("DATABASE_URL:", os.getenv("DATABASE_URL"))
+
+
 # Database Configuration
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
