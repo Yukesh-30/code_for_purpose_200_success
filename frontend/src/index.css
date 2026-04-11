@@ -66,7 +66,8 @@
 
   /* Interactive Background elements */
   .bg-blob {
-    @apply absolute w-72 h-72 rounded-full mix-blend-multiply filter blur-[80px] opacity-10 animate-blob;
+    @apply absolute w-72 h-72 rounded-full mix-blend-multiply filter blur-[80px] opacity-10;
+    animation: blob 7s infinite;
   }
 
   @keyframes blob {
@@ -76,17 +77,7 @@
     100% { transform: translate(0px, 0px) scale(1); }
   }
 
-  .animate-blob {
-    animation: blob 7s infinite;
-  }
-
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
-
-  .animation-delay-4000 {
-    animation-delay: 4s;
-  }
+  /* Custom animations are better handled natively or via inline variables so removing invalid v4 utility definitions */
 
   /* Custom scrollbar for dark theme */
   .custom-scrollbar::-webkit-scrollbar {

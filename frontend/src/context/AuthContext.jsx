@@ -30,6 +30,7 @@ export const AuthProvider = ({ children }) => {
         const userData = {
           ...data.user,
           token: data.access_token,
+          business_id: data.user.business_id,
           avatar: data.user.role === 'msme_owner' ? 'YR' : 'SA',
           lastLogin: new Date().toISOString()
         };
@@ -73,7 +74,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout, loading }}>
+    <AuthContext.Provider value={{ user, login, logout, signup, loading }}>
       {children}
     </AuthContext.Provider>
   );

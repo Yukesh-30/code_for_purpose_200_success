@@ -54,6 +54,8 @@ const bankNavItems = [
 
 export default function DashboardLayout() {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
+  const [showNotifications, setShowNotifications] = useState(false);
+  const [showQuickActions, setShowQuickActions] = useState(false);
   const { user, logout } = useAuth();
   const navigate = useNavigate();
 
@@ -157,11 +159,54 @@ export default function DashboardLayout() {
           </div>
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <Button variant="ghost" size="icon" className="relative rounded-full">
-              <Bell size={20} />
-              <span className="absolute top-2 right-2 w-2 h-2 bg-danger rounded-full border border-background"></span>
-            </Button>
-            <Button className="hidden md:flex rounded-full">Quick Action</Button>
+            <div className="relative">
+              <Button variant="ghost" size="icon" className="relative rounded-full" onClick={() => { setShowNotifications(!showNotifications); setShowQuickActions(false); }}>
+                <Bell size={20} />
+                <span className="absolute top-2 right-2 w-2 h-2 bg-danger rounded-full border border-background"></span>
+              </Button>
+              {showNotifications && (
+                <div className="absolute right-0 mt-2 w-72 bg-card border border-border rounded-lg shadow-xl z-50 p-4">
+                  <div className="flex justify-between items-center mb-3">
+                    <h4 className="font-semibold text-primary-text">Notifications</h4>
+                    <span className="text-xs text-primary cursor-pointer hover:underline">Mark all as read</span>
+                  </div>
+                  <ul className="text-sm space-y-2">
+                    <li className="p-3 bg-secondary-background/50 border border-border rounded-lg flex gap-3 items-start">
+                      <div className="w-2 h-2 mt-1.5 rounded-full bg-danger shrink-0"></div>
+                      <div>
+                        <p className="font-medium text-primary-text">Invoice #INV-2050 at High Risk</p>
+                        <p className="text-xs text-muted-text mt-1">Predicted delay of 21 days for Nexus Inc.</p>
+                      </div>
+                    </li>
+                    <li className="p-3 bg-secondary-background/50 border border-border rounded-lg flex gap-3 items-start">
+                      <div className="w-2 h-2 mt-1.5 rounded-full bg-warning shrink-0"></div>
+                      <div>
+                        <p className="font-medium text-primary-text">Cash Gap Approaching</p>
+                        <p className="text-xs text-muted-text mt-1">-$12,450 projected on Apr 24.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+            
+            <div className="relative">
+              <Button className="hidden md:flex rounded-full" onClick={() => { setShowQuickActions(!showQuickActions); setShowNotifications(false); }}>Quick Action</Button>
+              {showQuickActions && (
+                 <div className="absolute right-0 mt-2 w-56 bg-card border border-border rounded-lg shadow-xl z-50 py-2">
+                   <h4 className="px-4 py-2 text-xs font-semibold text-muted-text uppercase tracking-wider">Shortcuts</h4>
+                   <button className="w-full text-left px-4 py-2 hover:bg-secondary-background text-sm text-primary-text flex items-center gap-2" onClick={() => { navigate('/upload-data'); setShowQuickActions(false); }}>
+                     <Upload size={16} className="text-secondary" /> Upload ERP Data
+                   </button>
+                   <button className="w-full text-left px-4 py-2 hover:bg-secondary-background text-sm text-primary-text flex items-center gap-2" onClick={() => { navigate('/talk-to-data'); setShowQuickActions(false); }}>
+                     <MessageSquare size={16} className="text-primary" /> Ask AI Assistant
+                   </button>
+                   <button className="w-full text-left px-4 py-2 hover:bg-secondary-background text-sm text-primary-text flex items-center gap-2" onClick={() => { navigate('/banking-recommendations'); setShowQuickActions(false); }}>
+                     <Wallet size={16} className="text-success" /> Explore Funding
+                   </button>
+                 </div>
+              )}
+            </div>
           </div>
         </header>
 

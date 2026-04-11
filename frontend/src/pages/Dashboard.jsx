@@ -28,7 +28,25 @@ export default function Dashboard() {
           <h1 className="text-3xl font-bold tracking-tight">Overview</h1>
           <p className="text-muted-text mt-1">Your AI-generated financial summary for the next 30 days.</p>
         </div>
-        <Button>Generate Report</Button>
+        <Button onClick={async () => {
+          try {
+            const resp = await fetch('http://localhost:5000/dashboard/report', { method: 'POST' });
+            if (!resp.ok) throw new Error('Report failed');
+            
+            // Handle the file download
+            const blob = await resp.blob();
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = 'financial_overview_report.csv';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+          } catch (e) {
+            alert('Failed to download report.');
+          }
+        }}>Generate Report</Button>
       </div>
 
       {/* KPI Cards */}
@@ -186,7 +204,15 @@ export default function Dashboard() {
                   <div className="bg-success h-2 rounded-full" style={{ width: '92%' }}></div>
                 </div>
               </div>
-              <Button className="w-full mt-4" variant="outline">View Products</Button>
+              <Button className="w-full mt-4" variant="outline" onClick={async () => {
+                try {
+                  const resp = await fetch('http://localhost:5000/recommendation/apply', { method: 'POST' });
+                  const data = await resp.json();
+                  alert(data.message);
+                } catch (e) {
+                  alert('Action failed.');
+                }
+              }}>View Products</Button>
             </CardContent>
           </Card>
 

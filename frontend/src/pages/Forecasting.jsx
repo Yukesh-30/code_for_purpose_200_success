@@ -42,7 +42,15 @@ export default function Forecasting() {
         </div>
         <div className="flex gap-2">
           <Button variant="outline" className="gap-2"><Calendar size={16} /> Date Range</Button>
-          <Button className="gap-2"><Sparkles size={16} /> Auto-Optimize</Button>
+          <Button className="gap-2" onClick={async () => {
+            try {
+              const resp = await fetch('http://localhost:5000/forecasting/optimize', { method: 'POST' });
+              const data = await resp.json();
+              alert(data.message);
+            } catch (e) {
+              alert('Failed to optimize.');
+            }
+          }}><Sparkles size={16} /> Auto-Optimize</Button>
         </div>
       </div>
 
@@ -136,7 +144,15 @@ export default function Forecasting() {
                   <h4 className="font-semibold flex items-center gap-2"><Sparkles size={16} className="text-secondary"/> AI Scenario Summary</h4>
                   <p className="text-sm text-muted-text mt-1">This scenario will force your balance into negative territory by Day 42. Immediate action is suggested.</p>
                 </div>
-                <Button className="shrink-0 gap-2">View Mitigations <ArrowRight size={16} /></Button>
+                <Button className="shrink-0 gap-2" onClick={async () => {
+                  try {
+                    const resp = await fetch('http://localhost:5000/forecasting/mitigations', { method: 'POST' });
+                    const data = await resp.json();
+                    alert(data.message);
+                  } catch (e) {
+                    alert('Action failed.');
+                  }
+                }}>View Mitigations <ArrowRight size={16} /></Button>
               </div>
             )}
           </CardContent>
