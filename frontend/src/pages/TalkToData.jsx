@@ -88,7 +88,7 @@ export default function TalkToData() {
     if (!user?.token) return;
     setIsLoadingSessions(true);
     try {
-      const resp = await fetch('http://localhost:5000/chat/sessions', {
+      const resp = await fetch(`${import.meta.env.VITE_API_URL}/chat/sessions`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ export default function TalkToData() {
     if (!user?.token) return;
     setIsLoading(true);
     try {
-      const resp = await fetch('http://localhost:5000/chat/start', {
+      const resp = await fetch(`${import.meta.env.VITE_API_URL}/chat/start`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -142,7 +142,7 @@ export default function TalkToData() {
       setIsLanding(false);
       setIsLoadingHistory(true);
       setSidebarOpen(false);
-      const resp = await fetch('http://localhost:5000/chat/history', {
+      const resp = await fetch(`${import.meta.env.VITE_API_URL}/chat/history`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -173,7 +173,7 @@ export default function TalkToData() {
     setIsLoading(true);
 
     try {
-      const resp = await fetch('http://localhost:5000/chat/query', {
+      const resp = await fetch(`${import.meta.env.VITE_API_URL}/chat/query`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -15,7 +15,7 @@ export default function TeamWorkspace() {
 
   const fetchMembers = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/team/members?business_id=${user.business_id}`);
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/team/members?business_id=${user.business_id}`);
       const data = await res.json();
       if (res.ok) setMembers(data.members || []);
     } catch (e) {
@@ -33,7 +33,7 @@ export default function TeamWorkspace() {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:5000/team/invite`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/team/invite`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...inviteData, business_id: user.business_id })
@@ -53,7 +53,7 @@ export default function TeamWorkspace() {
 
   const handleRemoveMember = async (userId) => {
     try {
-      const res = await fetch(`http://localhost:5000/team/remove`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/team/remove`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ business_id: user.business_id, user_id: userId })

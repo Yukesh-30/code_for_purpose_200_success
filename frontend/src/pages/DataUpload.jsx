@@ -37,7 +37,7 @@ export default function DataUpload() {
 
     try {
       const endpoint = type === 'transactions' ? 'bank-transactions' : type;
-      const response = await fetch(`http://localhost:5000/upload/${endpoint}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/upload/${endpoint}`, {
         method: 'POST',
         body: formData,
       });

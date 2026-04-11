@@ -30,7 +30,7 @@ export default function Dashboard() {
         </div>
         <Button onClick={async () => {
           try {
-            const resp = await fetch('http://localhost:5000/dashboard/report', { method: 'POST' });
+            const resp = await fetch(`${import.meta.env.VITE_API_URL}/dashboard/report`, { method: 'POST' });
             if (!resp.ok) throw new Error('Report failed');
             
             // Handle the file download
@@ -206,7 +206,7 @@ export default function Dashboard() {
               </div>
               <Button className="w-full mt-4" variant="outline" onClick={async () => {
                 try {
-                  const resp = await fetch('http://localhost:5000/recommendation/apply', { method: 'POST' });
+                  const resp = await fetch(`${import.meta.env.VITE_API_URL}/recommendation/apply`, { method: 'POST' });
                   const data = await resp.json();
                   alert(data.message);
                 } catch (e) {

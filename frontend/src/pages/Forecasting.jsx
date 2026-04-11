@@ -44,7 +44,7 @@ export default function Forecasting() {
           <Button variant="outline" className="gap-2"><Calendar size={16} /> Date Range</Button>
           <Button className="gap-2" onClick={async () => {
             try {
-              const resp = await fetch('http://localhost:5000/forecasting/optimize', { method: 'POST' });
+              const resp = await fetch(`${import.meta.env.VITE_API_URL}/forecasting/optimize`, { method: 'POST' });
               const data = await resp.json();
               alert(data.message);
             } catch (e) {
@@ -146,7 +146,7 @@ export default function Forecasting() {
                 </div>
                 <Button className="shrink-0 gap-2" onClick={async () => {
                   try {
-                    const resp = await fetch('http://localhost:5000/forecasting/mitigations', { method: 'POST' });
+                    const resp = await fetch(`${import.meta.env.VITE_API_URL}/forecasting/mitigations`, { method: 'POST' });
                     const data = await resp.json();
                     alert(data.message);
                   } catch (e) {

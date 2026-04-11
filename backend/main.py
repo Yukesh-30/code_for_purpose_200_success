@@ -17,7 +17,7 @@ from routes.team_routes import team_bp
 load_dotenv(override=True)
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 print("DATABASE_URL:", os.getenv("DATABASE_URL"))
 

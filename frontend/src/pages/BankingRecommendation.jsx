@@ -80,7 +80,7 @@ export default function BankingRecommendation() {
                  </div>
                  <Button className={`gap-2 ${p.recommended ? '' : 'variant-secondary'}`} onClick={async () => {
                    try {
-                     const resp = await fetch('http://localhost:5000/recommendation/apply', { method: 'POST' });
+                     const resp = await fetch(`${import.meta.env.VITE_API_URL}/recommendation/apply`, { method: 'POST' });
                      const data = await resp.json();
                      alert(data.message);
                    } catch (e) {
