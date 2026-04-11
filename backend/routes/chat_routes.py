@@ -39,6 +39,33 @@ def start_session(current_user):
         return jsonify({"session_id": new_session.id}), 201
     except Exception as e:
         db.session.rollback()
+        print(e)
+        return jsonify({"error": str(e)}), 500
+
+@chat_bp.route('/sessions', methods=['POST'])
+@token_required
+def list_sessions(current_user):
+    data = request.get_json()
+    if not data or 'business_id' not in data:
+        return jsonify({"error": "Missing business_id in request"}), 400
+
+    user_id = current_user.get('user_id')
+    business_id = data['business_id']
+
+    # Verify that the user belongs to this business
+    mapping = BusinessUser.query.filter_by(user_id=user_id, business_id=business_id).first()
+    if not mapping:
+        return jsonify({"error": "User does not have access to this business"}), 403
+
+    try:
+        sessions = ChatSession.query.filter_by(business_id=business_id, user_id=user_id).order_by(ChatSession.id.desc()).all()
+        return jsonify({
+            "sessions": [
+                {"id": s.id, "session_name": s.session_name} for s in sessions
+            ]
+        })
+    except Exception as e:
+        print(e)
         return jsonify({"error": str(e)}), 500
 
 @chat_bp.route('/history', methods=['POST'])

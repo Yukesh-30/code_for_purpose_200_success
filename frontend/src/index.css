@@ -56,33 +56,51 @@
   }
   
   .glass-panel {
-    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)];
   }
 
   .theme-gradient {
+    @apply relative overflow-hidden;
     background: var(--color-background);
-    background-image: radial-gradient(at 0% 0%, rgba(245, 165, 36, 0.05) 0px, transparent 50%),
-                      radial-gradient(at 100% 100%, rgba(79, 140, 255, 0.05) 0px, transparent 50%);
   }
 
-  [data-theme='light'] .theme-gradient {
-    background-image: radial-gradient(at 0% 0%, rgba(245, 165, 36, 0.08) 0px, transparent 50%),
-                      radial-gradient(at 100% 0%, rgba(245, 165, 36, 0.03) 0px, transparent 50%);
+  /* Interactive Background elements */
+  .bg-blob {
+    @apply absolute w-72 h-72 rounded-full mix-blend-multiply filter blur-[80px] opacity-10 animate-blob;
+  }
+
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
   }
 
   /* Custom scrollbar for dark theme */
-  ::-webkit-scrollbar {
+  .custom-scrollbar::-webkit-scrollbar {
     width: 6px;
     height: 6px;
   }
-  ::-webkit-scrollbar-track {
+  .custom-scrollbar::-webkit-scrollbar-track {
     background: transparent;
   }
-  ::-webkit-scrollbar-thumb {
+  .custom-scrollbar::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
   }
-  ::-webkit-scrollbar-thumb:hover {
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.2);
   }
 }

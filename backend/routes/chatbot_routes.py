@@ -49,9 +49,6 @@ def is_safe_sql(sql):
     if "business_id" not in sql_lower:
         return False, "Missing business_id filter"
 
-    if "limit" not in sql_lower:
-        return False, "LIMIT required"
-
     return True, None
 
 def resolve_query_context(current_query, chat_history_list):
@@ -160,28 +157,36 @@ def context_resolver(current_user):
 
 def select_relevant_tables(user_query):
     table_descriptions = get_table_descriptions()
-    prompt = f"""You are an expert financial data analyst.
+    prompt = f'''You are a strict database table selector for a financial analytics system.
 
-Your task is to identify the MOST RELEVANT database tables needed to answer the user's question.
+Your ONLY job is to select the MINIMUM set of relevant tables required to answer the user’s question.
 
------------------------
+-----------------------------------
 USER QUESTION:
 {user_query}
------------------------
+-----------------------------------
 
-AVAILABLE TABLES:
-
+AVAILABLE TABLES (USE ONLY THESE EXACT NAMES):
 {table_descriptions}
 
------------------------
+-----------------------------------
 
-RULES:
+CRITICAL RULES (MUST FOLLOW):
 
-1. Only select tables that are NECESSARY to answer the question.
-2. Prefer MINIMUM tables (1–3 tables).
-3. Use business logic:
+1. OUTPUT MUST BE VALID JSON ONLY.
+2. DO NOT return any explanation, text, or extra fields.
+3. ONLY use table names EXACTLY as provided above.
+   - DO NOT modify names
+   - DO NOT invent new tables
+   - DO NOT assume missing tables
+
+4. SELECT MINIMUM tables:
+   - Prefer 1–2 tables
+   - Maximum 3 tables ONLY if absolutely required
+
+5. BUSINESS LOGIC MAPPING:
    - Revenue / cash flow → bank_transactions
-   - Payments / delays → invoice_records
+   - Payments / invoice delays → invoice_records
    - Expenses → expenses
    - Loans / EMI → loan_obligations
    - Forecast / future → cashflow_forecasts
@@ -189,20 +194,79 @@ RULES:
    - Vendor payments → vendor_payments
    - Salaries → salary_schedule
 
-4. Do NOT include irrelevant tables.
-5. Always assume queries are for ONE business (business_id filtering handled separately).
+6. GREETINGS / NON-DATA QUERIES:
+   If the query is:
+   - greeting (e.g., "hi", "hello")
+   - casual talk
+   - unrelated to financial data
+   - ambiguous with NO clear data requirement
 
------------------------
+   → RETURN:
+   {{
+     "tables": []
+   }}
 
-OUTPUT FORMAT (STRICT JSON ONLY):
+7. NO MATCH CASE:
+   If NO available table can answer the query:
+   → RETURN:
+   {{
+     "tables": []
+   }}
+
+8. STRICT RELEVANCE:
+   - DO NOT include tables “just in case”
+   - DO NOT include loosely related tables
+   - If unsure → return empty list
+
+9. ASSUME:
+   - Queries are for ONE business
+   - Filtering (business_id) is handled elsewhere
+
+-----------------------------------
+
+OUTPUT FORMAT (STRICT):
 
 {{
-  "tables": ["table1", "table2"]
+  "tables": ["table_name_1", "table_name_2"]
 }}
 
------------------------
+OR (if no relevant tables):
 
-Return ONLY JSON. No explanation."""
+{{
+  "tables": []
+}}
+
+-----------------------------------
+
+EXAMPLES:
+
+Q: "hi"
+A:
+{{
+  "tables": []
+}}
+
+Q: "show my revenue last month"
+A:
+{{
+  "tables": ["bank_transactions"]
+}}
+
+Q: "why are my expenses high?"
+A:
+{{
+  "tables": ["expenses"]
+}}
+
+Q: "compare revenue and invoice delays"
+A:
+{{
+  "tables": ["bank_transactions", "invoice_records"]
+}}
+
+-----------------------------------
+
+Return ONLY JSON. No explanation.'''
 
     completion = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
@@ -501,3 +565,34 @@ def generate_insight(current_user):
     except Exception as e:
         db.session.rollback()
         return jsonify({"error": str(e)}), 500
+
+def generate_conversational_response(user_query, chat_history_list):
+    formatted_history = []
+    for msg in chat_history_list:
+        role = msg.get('role', 'unknown').upper()
+        text = msg.get('text', '')
+        formatted_history.append(f"{role}: {text}")
+
+    chat_history_str = "\n".join(formatted_history) if formatted_history else "No previous conversation."
+
+    # 🔥 FIX: escape braces
+    chat_history_str = chat_history_str.replace("{", "{{").replace("}", "}}")
+
+    prompt = f"""You are a helpful and professional financial AI assistant...
+
+USER QUERY:
+{user_query}
+
+CONVERSATION HISTORY:
+{chat_history_str}
+
+Response:"""
+
+    completion = client.chat.completions.create(
+        model="llama-3.1-8b-instant",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.7,
+        max_tokens=150
+    )
+
+    return completion.choices[0].message.content.strip()
