@@ -19,6 +19,8 @@ import Forecasting from './pages/Forecasting';
 import InvoiceRisk from './pages/InvoiceRisk';
 import WorkingCapital from './pages/WorkingCapital';
 import BankingRecommendation from './pages/BankingRecommendation';
+import Settings from './pages/Settings';
+import TeamWorkspace from './pages/TeamWorkspace';
 
 // Bank Pages
 import BankPortfolio from './pages/bank/BankPortfolio';
@@ -72,8 +74,8 @@ function App() {
               <Route path="/bank/alerts" element={<Alerts />} />
               <Route path="/bank/admin" element={<SystemAdmin />} />
 
-              <Route path="/team" element={<div>Team (Coming Soon)</div>} />
-              <Route path="/settings" element={<div>Settings (Coming Soon)</div>} />
+              <Route path="/team" element={<TeamWorkspace />} />
+              <Route path="/settings" element={<Settings />} />
             </Route>
 
             {/* Fallback */}

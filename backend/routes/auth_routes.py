@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from models import db, User, BusinessUser, BusinessProfile
+from models import db, User, BusinessUser, BusinessProfile, BankAccount
 from services.auth_service import hash_password, check_password, generate_token
 
 auth_bp = Blueprint('auth', __name__)
@@ -29,6 +29,15 @@ def signup():
         business_name=f"{data.get('full_name')} Business"
     )
     db.session.add(new_business)
+    db.session.flush() # flush to get the id
+
+    # Create default Bank Account to accept transaction uploads
+    default_account = BankAccount(
+        business_id=new_business.id,
+        bank_name="Default Bank",
+        account_number="MAIN-001"
+    )
+    db.session.add(default_account)
     db.session.commit()
 
     mapping = BusinessUser(
