@@ -8,3 +8,4 @@ bcrypt
 pandas
 faker
 groq
+gunicorn
