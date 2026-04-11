@@ -6,11 +6,16 @@ from models import db
 from routes.auth_routes import auth_bp
 from routes.business_routes import business_bp
 from routes.upload_routes import upload_bp
+from routes.chatbot_routes import chatbot_bp
+from routes.chat_routes import chat_bp
 
 load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
+
+print("DATABASE_URL:", os.getenv("DATABASE_URL"))
+
 
 # Database Configuration
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
@@ -26,6 +31,8 @@ db.init_app(app)
 app.register_blueprint(auth_bp, url_prefix='/auth')
 app.register_blueprint(business_bp, url_prefix='/business')
 app.register_blueprint(upload_bp, url_prefix='/upload')
+app.register_blueprint(chatbot_bp, url_prefix='/chatbot')
+app.register_blueprint(chat_bp, url_prefix='/chat')
 
 @app.route('/')
 def home():

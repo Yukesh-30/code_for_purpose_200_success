@@ -1,101 +1,67 @@
 # Neon DB PostgreSQL Table Creation Queries
 
 ```sql
--- USERS TABLE
+-- USERS
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    full_name VARCHAR(150) NOT NULL,
-    email VARCHAR(150) UNIQUE NOT NULL,
-    password_hash TEXT NOT NULL,
-    role VARCHAR(50) NOT NULL CHECK (role IN ('msme_owner', 'relationship_manager', 'admin')),
+    full_name VARCHAR(150),
+    email VARCHAR(150) UNIQUE,
+    password_hash TEXT,
+    role VARCHAR(50),
     phone_number VARCHAR(20),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- BUSINESS PROFILES TABLE
+-- BUSINESS PROFILES
 CREATE TABLE business_profiles (
     id SERIAL PRIMARY KEY,
-    user_id INT REFERENCES users(id) ON DELETE CASCADE,
-    business_name VARCHAR(200) NOT NULL,
-    business_type VARCHAR(100),
+    business_name VARCHAR(200),
     industry VARCHAR(100),
-    gst_number VARCHAR(50),
     annual_revenue NUMERIC(15,2),
     employee_count INT,
     city VARCHAR(100),
     state VARCHAR(100),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- BANK ACCOUNTS TABLE
-CREATE TABLE bank_accounts (
-    id SERIAL PRIMARY KEY,
-    business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
-    bank_name VARCHAR(150) NOT NULL,
-    account_number VARCHAR(100) NOT NULL,
-    ifsc_code VARCHAR(20),
-    account_type VARCHAR(50),
-    current_balance NUMERIC(15,2),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- BANK TRANSACTIONS TABLE
+-- BANK TRANSACTIONS
 CREATE TABLE bank_transactions (
     id SERIAL PRIMARY KEY,
     business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
-    bank_account_id INT REFERENCES bank_accounts(id) ON DELETE CASCADE,
-    transaction_date DATE NOT NULL,
-    amount NUMERIC(15,2) NOT NULL,
-    transaction_type VARCHAR(20) CHECK (transaction_type IN ('credit', 'debit')),
+    transaction_date DATE,
+    amount NUMERIC(15,2),
+    transaction_type VARCHAR(20),
     category VARCHAR(100),
     merchant_name VARCHAR(200),
     payment_mode VARCHAR(50),
     balance_after_transaction NUMERIC(15,2),
-    description TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    description TEXT
 );
 
--- CASHFLOW FORECASTS TABLE
-CREATE TABLE cashflow_forecasts (
+-- USERS TO BUSINESS MAP
+CREATE TABLE business_users (
     id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(id) ON DELETE CASCADE,
     business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
-    forecast_date DATE NOT NULL,
-    predicted_inflow NUMERIC(15,2),
-    predicted_outflow NUMERIC(15,2),
-    predicted_closing_balance NUMERIC(15,2),
-    liquidity_gap NUMERIC(15,2),
-    overdraft_probability NUMERIC(5,2),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    role VARCHAR(50),
+    is_primary BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(user_id, business_id)
 );
 
--- INVOICE RECORDS TABLE
+-- INVOICES
 CREATE TABLE invoice_records (
     id SERIAL PRIMARY KEY,
     business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
-    invoice_number VARCHAR(100) NOT NULL,
-    customer_name VARCHAR(200),
-    invoice_amount NUMERIC(15,2) NOT NULL,
-    invoice_date DATE NOT NULL,
-    due_date DATE NOT NULL,
+    invoice_amount NUMERIC(15,2),
+    invoice_date DATE,
+    due_date DATE,
     actual_payment_date DATE,
-    status VARCHAR(50) CHECK (status IN ('paid', 'pending', 'overdue')),
-    delay_days INT DEFAULT 0,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    status VARCHAR(50),
+    delay_days INT
 );
 
--- INVOICE DELAY PREDICTIONS TABLE
-CREATE TABLE invoice_delay_predictions (
-    id SERIAL PRIMARY KEY,
-    invoice_id INT REFERENCES invoice_records(id) ON DELETE CASCADE,
-    predicted_delay_days INT,
-    delay_probability NUMERIC(5,2),
-    predicted_impact_amount NUMERIC(15,2),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- EXPENSES TABLE
+-- EXPENSES
 CREATE TABLE expenses (
     id SERIAL PRIMARY KEY,
     business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
@@ -103,123 +69,89 @@ CREATE TABLE expenses (
     expense_category VARCHAR(100),
     amount NUMERIC(15,2),
     expense_date DATE,
-    recurring BOOLEAN DEFAULT FALSE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    recurring BOOLEAN
 );
 
--- SALARY SCHEDULE TABLE
-CREATE TABLE salary_schedule (
+-- LOANS
+CREATE TABLE loan_obligations (
     id SERIAL PRIMARY KEY,
     business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
-    payroll_date DATE,
-    total_salary_amount NUMERIC(15,2),
-    employee_count INT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    loan_type VARCHAR(100),
+    emi_amount NUMERIC(15,2),
+    due_date DATE,
+    outstanding_amount NUMERIC(15,2),
+    interest_rate NUMERIC(5,2)
 );
 
--- VENDOR PAYMENTS TABLE
+-- CASHFLOW FORECAST
+CREATE TABLE cashflow_forecasts (
+    id SERIAL PRIMARY KEY,
+    business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
+    forecast_date DATE,
+    predicted_inflow NUMERIC(15,2),
+    predicted_outflow NUMERIC(15,2),
+    predicted_closing_balance NUMERIC(15,2),
+    liquidity_gap NUMERIC(15,2),
+    overdraft_probability NUMERIC(5,2)
+);
+
+-- RISK SCORES
+CREATE TABLE risk_scores (
+    id SERIAL PRIMARY KEY,
+    business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
+    liquidity_score INT,
+    default_risk_score INT,
+    overdraft_risk_score INT,
+    working_capital_score INT,
+    overall_risk_band VARCHAR(50)
+);
+
+-- VENDOR PAYMENTS
 CREATE TABLE vendor_payments (
     id SERIAL PRIMARY KEY,
     business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
     vendor_name VARCHAR(200),
     payment_amount NUMERIC(15,2),
     due_date DATE,
-    status VARCHAR(50) CHECK (status IN ('paid', 'pending', 'overdue')),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    status VARCHAR(50)
 );
 
--- LOAN OBLIGATIONS TABLE
-CREATE TABLE loan_obligations (
+-- SALARY
+CREATE TABLE salary_schedule (
     id SERIAL PRIMARY KEY,
     business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
-    loan_type VARCHAR(100),
-    lender_name VARCHAR(150),
-    emi_amount NUMERIC(15,2),
-    due_date DATE,
-    outstanding_amount NUMERIC(15,2),
-    interest_rate NUMERIC(5,2),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    payroll_date DATE,
+    total_salary_amount NUMERIC(15,2),
+    employee_count INT
 );
 
--- RISK SCORES TABLE
-CREATE TABLE risk_scores (
-    id SERIAL PRIMARY KEY,
-    business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
-    forecast_date DATE,
-    liquidity_score INT CHECK (liquidity_score BETWEEN 0 AND 100),
-    default_risk_score INT CHECK (default_risk_score BETWEEN 0 AND 100),
-    overdraft_risk_score INT CHECK (overdraft_risk_score BETWEEN 0 AND 100),
-    working_capital_score INT CHECK (working_capital_score BETWEEN 0 AND 100),
-    overall_risk_band VARCHAR(50) CHECK (overall_risk_band IN ('safe', 'moderate', 'high', 'critical')),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- BANKING PRODUCT RECOMMENDATIONS TABLE
-CREATE TABLE banking_product_recommendations (
-    id SERIAL PRIMARY KEY,
-    business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
-    recommended_product VARCHAR(150),
-    reason TEXT,
-    confidence_score NUMERIC(5,2),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- ALERTS TABLE
-CREATE TABLE alerts (
-    id SERIAL PRIMARY KEY,
-    business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
-    alert_type VARCHAR(100),
-    alert_message TEXT,
-    severity VARCHAR(50) CHECK (severity IN ('low', 'medium', 'high', 'critical')),
-    is_read BOOLEAN DEFAULT FALSE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- QUERY HISTORY TABLE
+-- QUERY HISTORY
 CREATE TABLE query_history (
     id SERIAL PRIMARY KEY,
     user_id INT REFERENCES users(id) ON DELETE CASCADE,
+    business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
     user_query TEXT,
     generated_sql TEXT,
     response_summary TEXT,
+    result_json JSONB,
+    tags TEXT[],
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- CHAT SESSIONS TABLE
+-- CHAT
 CREATE TABLE chat_sessions (
     id SERIAL PRIMARY KEY,
     user_id INT REFERENCES users(id) ON DELETE CASCADE,
-    session_name VARCHAR(200),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
+    session_name VARCHAR(200)
 );
 
--- CHAT MESSAGES TABLE
 CREATE TABLE chat_messages (
     id SERIAL PRIMARY KEY,
     session_id INT REFERENCES chat_sessions(id) ON DELETE CASCADE,
-    sender_type VARCHAR(50) CHECK (sender_type IN ('user', 'ai')),
-    message_text TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- RELATIONSHIP MANAGERS TABLE
-CREATE TABLE relationship_managers (
-    id SERIAL PRIMARY KEY,
-    user_id INT REFERENCES users(id) ON DELETE CASCADE,
-    employee_code VARCHAR(100) UNIQUE,
-    region VARCHAR(100),
-    branch_name VARCHAR(150),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- CUSTOMER PORTFOLIOS TABLE
-CREATE TABLE customer_portfolios (
-    id SERIAL PRIMARY KEY,
-    relationship_manager_id INT REFERENCES relationship_managers(id) ON DELETE CASCADE,
     business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
-    assigned_date DATE,
-    portfolio_status VARCHAR(50) CHECK (portfolio_status IN ('active', 'inactive')),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    sender_type VARCHAR(50),
+    message_text TEXT
 );
 ```
 
