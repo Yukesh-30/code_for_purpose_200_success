@@ -38,6 +38,17 @@ CREATE TABLE bank_transactions (
     description TEXT
 );
 
+-- USERS TO BUSINESS MAP
+CREATE TABLE business_users (
+    id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(id) ON DELETE CASCADE,
+    business_id INT REFERENCES business_profiles(id) ON DELETE CASCADE,
+    role VARCHAR(50),
+    is_primary BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(user_id, business_id)
+);
+
 -- INVOICES
 CREATE TABLE invoice_records (
     id SERIAL PRIMARY KEY,
