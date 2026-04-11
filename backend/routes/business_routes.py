@@ -37,7 +37,7 @@ def create_business():
         mapping = BusinessUser(
             user_id=data['user_id'],
             business_id=new_business.id,
-            role='msme_owner',
+            role='owner',
             is_primary=True
         )
         db.session.add(mapping)

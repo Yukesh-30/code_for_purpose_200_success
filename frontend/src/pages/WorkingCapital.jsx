@@ -89,7 +89,15 @@ export default function WorkingCapital() {
                     <span className="font-bold text-danger">$45,000</span>
                  </div>
                  <p className="text-sm text-muted-text">Due: Apr 30. Predicted cash gap on this date. High Risk.</p>
-                 <Button variant="outline" size="sm" className="mt-3 text-warning border-warning/50">Explore Overdraft</Button>
+                 <Button variant="outline" size="sm" className="mt-3 text-warning border-warning/50" onClick={async () => {
+                   try {
+                     const resp = await fetch('http://localhost:5000/recommendation/apply', { method: 'POST' });
+                     const data = await resp.json();
+                     alert(data.message);
+                   } catch (e) {
+                     alert('Action failed.');
+                   }
+                 }}>Explore Overdraft</Button>
               </div>
             </div>
 

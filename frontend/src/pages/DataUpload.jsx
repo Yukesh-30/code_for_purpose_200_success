@@ -33,7 +33,7 @@ export default function DataUpload() {
 
     const formData = new FormData();
     formData.append('file', file);
-    formData.append('business_id', 1); // Mock business ID for now, should come from user context later
+    formData.append('business_id', user.business_id);
 
     try {
       const endpoint = type === 'transactions' ? 'bank-transactions' : type;

@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from models import db, User
+from models import db, User, BusinessUser, BusinessProfile
 from services.auth_service import hash_password, check_password, generate_token
 
 auth_bp = Blueprint('auth', __name__)
@@ -21,8 +21,23 @@ def signup():
         role=data.get('role', 'msme_owner'),
         phone_number=data.get('phone_number')
     )
-    
     db.session.add(new_user)
+    db.session.commit()
+    
+    # Create new business profile automatically
+    new_business = BusinessProfile(
+        business_name=f"{data.get('full_name')} Business"
+    )
+    db.session.add(new_business)
+    db.session.commit()
+
+    mapping = BusinessUser(
+        user_id=new_user.id,
+        business_id=new_business.id,
+        role='owner',
+        is_primary=True
+    )
+    db.session.add(mapping)
     db.session.commit()
     
     return jsonify({
@@ -44,12 +59,16 @@ def login():
     
     token = generate_token(user.id, user.role)
     
+    business_user = BusinessUser.query.filter_by(user_id=user.id).first()
+    business_id = business_user.business_id if business_user else 1
+
     return jsonify({
         "access_token": token,
         "role": user.role,
         "user": {
             "name": user.full_name,
             "email": user.email,
-            "role": user.role
+            "role": user.role,
+            "business_id": business_id
         }
     }), 200

@@ -44,3 +44,15 @@ dist-ssr
 # OS
 .DS_Store
 Thumbs.db
+
+
+.venv/
+
+.agents/
+
+skills-lock.json
+
+backend/__pycache__/
+backend/__pycache__/models.cpython-311.pyc
+backend/services/__pycache__/auth_service.cpython-311.pyc
+backend/routes/__pycache__/auth_routes.cpython-311.pyc

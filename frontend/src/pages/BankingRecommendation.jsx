@@ -78,7 +78,15 @@ export default function BankingRecommendation() {
                      </div>
                    </div>
                  </div>
-                 <Button className={`gap-2 ${p.recommended ? '' : 'variant-secondary'}`}>Apply Now <ArrowRight size={16}/></Button>
+                 <Button className={`gap-2 ${p.recommended ? '' : 'variant-secondary'}`} onClick={async () => {
+                   try {
+                     const resp = await fetch('http://localhost:5000/recommendation/apply', { method: 'POST' });
+                     const data = await resp.json();
+                     alert(data.message);
+                   } catch (e) {
+                     alert('Action failed.');
+                   }
+                 }}>Apply Now <ArrowRight size={16}/></Button>
                </div>
             </CardContent>
           </Card>

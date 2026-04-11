@@ -94,7 +94,7 @@ export default function TalkToData() {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${user.token}`
         },
-        body: JSON.stringify({ business_id: 1 })
+        body: JSON.stringify({ business_id: user.business_id })
       });
       const data = await resp.json();
       if (data.sessions) setSessions(data.sessions);
@@ -115,7 +115,7 @@ export default function TalkToData() {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${user.token}`
         },
-        body: JSON.stringify({ business_id: 1, session_name: `Analysis ${new Date().toLocaleDateString()}` })
+        body: JSON.stringify({ business_id: user.business_id, session_name: `Analysis ${new Date().toLocaleDateString()}` })
       });
       const data = await resp.json();
       if (data.session_id) {
@@ -259,8 +259,8 @@ export default function TalkToData() {
 
       {/* Decorative background elements */}
       <div className="bg-blob bg-primary left-[-10%] top-[-10%] opacity-10"></div>
-      <div className="bg-blob bg-secondary right-[-10%] top-[40%] opacity-10 animation-delay-2000"></div>
-      <div className="bg-blob bg-success left-[20%] bottom-[-10%] opacity-10 animation-delay-4000"></div>
+      <div className="bg-blob bg-secondary right-[-10%] top-[40%] opacity-10 [animation-delay:2s]"></div>
+      <div className="bg-blob bg-success left-[20%] bottom-[-10%] opacity-10 [animation-delay:4s]"></div>
 
       {/* Floating Sidebar Trigger */}
       <div className="absolute top-4 left-4 z-20 flex gap-2">
