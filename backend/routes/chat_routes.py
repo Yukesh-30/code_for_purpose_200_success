@@ -39,7 +39,6 @@ def start_session(current_user):
         return jsonify({"session_id": new_session.id}), 201
     except Exception as e:
         db.session.rollback()
-        print(e)
         return jsonify({"error": str(e)}), 500
 
 @chat_bp.route('/sessions', methods=['POST'])
@@ -65,7 +64,6 @@ def list_sessions(current_user):
             ]
         })
     except Exception as e:
-        print(e)
         return jsonify({"error": str(e)}), 500
 
 @chat_bp.route('/history', methods=['POST'])

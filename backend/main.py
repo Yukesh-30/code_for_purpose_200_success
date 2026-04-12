@@ -19,7 +19,7 @@ load_dotenv(override=True)
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-print("DATABASE_URL:", os.getenv("DATABASE_URL"))
+
 
 
 # Database Configuration
