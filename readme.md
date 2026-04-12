@@ -170,17 +170,31 @@ bun run dev
 ## Folder Structure
 
 ```text
-project-root/
+.
+├── .gitignore
 ├── backend/
+│   ├── .dockerignore
+│   ├── .env.example
 │   ├── datasets/
 │   │   ├── bank_transactions.csv
+│   │   ├── bank_transactions_10k.csv
 │   │   ├── expenses.csv
+│   │   ├── expenses_3k.csv
 │   │   ├── invoices.csv
+│   │   ├── invoices_10k.csv
 │   │   ├── loans.csv
+│   │   ├── loans_2k.csv
 │   │   ├── payroll.csv
+│   │   ├── payroll_2k.csv
 │   │   ├── recommendations.csv
+│   │   ├── recommendations_2k.csv
 │   │   ├── risk_scores.csv
-│   │   └── vendor_payments.csv
+│   │   ├── risk_scores_3k.csv
+│   │   ├── vendor_payments.csv
+│   │   └── vendor_payments_3k.csv
+│   │
+│   ├── instance/
+│   │   └── test.db
 │   │
 │   ├── ml_models/
 │   │   ├── forecast_model.pkl
@@ -201,16 +215,17 @@ project-root/
 │   │   ├── relationship_manager_routes.py
 │   │   ├── risk_routes.py
 │   │   ├── team_routes.py
-│   │   └── upload_routes.py
+│   │   ├── upload_routes.py
+│   │   └── __pycache__/
+│   │       └── auth_routes.cpython-311.pyc
+│   │
+│   ├── sample_data/
+│   │   ├── bank_transactions.csv
+│   │   ├── expenses.csv
+│   │   └── invoices.csv
 │   │
 │   ├── schema/
 │   │   └── db_schema.py
-│   │
-│   ├── scripts/
-│   │   ├── generate_ai_outcomes.py
-│   │   ├── generate_bank_transactions.py
-│   │   ├── generate_extra_datasets.py
-│   │   └── generate_invoices.py
 │   │
 │   ├── services/
 │   │   ├── alert_service.py
@@ -224,7 +239,9 @@ project-root/
 │   │   ├── report_service.py
 │   │   ├── risk_score_service.py
 │   │   ├── transaction_service.py
-│   │   └── upload_service.py
+│   │   ├── upload_service.py
+│   │   └── __pycache__/
+│   │       └── auth_service.cpython-311.pyc
 │   │
 │   ├── tests/
 │   │   ├── test_auth.py
@@ -241,44 +258,88 @@ project-root/
 │   │   ├── response_formatter.py
 │   │   └── validators.py
 │   │
+│   ├── Dockerfile
 │   ├── main.py
 │   ├── models.py
-│   ├── requirements.txt
-│   ├── Dockerfile
-│   ├── .env.example
-│   └── db.txt
+│   ├── package-lock.json
+│   ├── readme.md
+│   └── requirements.txt
 │
 ├── frontend/
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── bun.lock
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
 │   ├── public/
 │   │   ├── favicon.svg
 │   │   └── icons.svg
 │   │
 │   ├── src/
 │   │   ├── assets/
+│   │   │   ├── hero.png
+│   │   │   ├── react.svg
+│   │   │   └── vite.svg
+│   │   │
 │   │   ├── components/
 │   │   │   └── ui/
+│   │   │       ├── Badge.jsx
+│   │   │       ├── Button.jsx
+│   │   │       ├── Card.jsx
+│   │   │       ├── Input.jsx
+│   │   │       └── ThemeToggle.jsx
+│   │   │
 │   │   ├── context/
+│   │   │   ├── AuthContext.jsx
+│   │   │   └── ThemeContext.jsx
+│   │   │
 │   │   ├── layouts/
+│   │   │   ├── DashboardLayout.jsx
+│   │   │   └── LandingLayout.jsx
+│   │   │
+│   │   ├── lib/
+│   │   │   └── utils.js
+│   │   │
 │   │   ├── pages/
+│   │   │   ├── bank/
+│   │   │   │   ├── AlertsCenter.jsx
+│   │   │   │   ├── BankPortfolio.jsx
+│   │   │   │   ├── CustomerDetail.jsx
+│   │   │   │   ├── Explainability.jsx
+│   │   │   │   ├── HighRiskList.jsx
+│   │   │   │   ├── LendingOpportunities.jsx
+│   │   │   │   ├── RiskDefaultPrediction.jsx
+│   │   │   │   └── SystemAdmin.jsx
+│   │   │   │
+│   │   │   ├── BankingRecommendation.jsx
+│   │   │   ├── CompleteProfile.jsx
 │   │   │   ├── Dashboard.jsx
 │   │   │   ├── DataUpload.jsx
 │   │   │   ├── Forecasting.jsx
 │   │   │   ├── InvoiceRisk.jsx
+│   │   │   ├── LandingPage.jsx
+│   │   │   ├── LoginPage.jsx
+│   │   │   ├── Settings.jsx
+│   │   │   ├── SignupPage.jsx
 │   │   │   ├── TalkToData.jsx
-│   │   │   ├── WorkingCapital.jsx
-│   │   │   └── BankingRecommendation.jsx
-│   │   ├── lib/
+│   │   │   ├── TeamWorkspace.jsx
+│   │   │   └── WorkingCapital.jsx
+│   │   │
+│   │   ├── App.css
 │   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
+│   │   ├── index.css
+│   │   └── main.jsx
 │   │
-│   ├── package.json
-│   ├── vite.config.js
+│   ├── README.md
+│   ├── SKILL.md
+│   ├── skills-lock.json
 │   ├── vercel.json
-│   └── README.md
+│   └── vite.config.js
 │
-├── .gitignore
-└── README.md
+└── readme.md
+
 ```
 
 ## Usage Examples
@@ -291,34 +352,8 @@ Login with demo credential and go to talk to data by clicking it in the sidebar.
 - "Which transactions are above ₹50,000?"
 - "Why did my expenses spike in March?" ← follow-up using chat memory
 
-### Example API Call
 
-```bash
-curl -X POST http://localhost:8000/query \
-  -H "Content-Type: application/json" \
-  -d '{
-    "query": "What were my top expenses last month?",
-    "business_id": "biz_001",
-    "session_id": "session_abc123"
-  }'
-```
-```{
-  "query": "What were my top expenses last month?",
-  "sql": "SELECT category, SUM(amount) as total FROM bank_transactions WHERE business_id = 'biz_001' AND type = 'debit' AND date >= '2025-03-01' GROUP BY category ORDER BY total DESC LIMIT 5",
-  "data": [
-    { "category": "Rent", "total": 45000 },
-    { "category": "Salaries", "total": 120000 }
-  ],
-  "insight": {
-    "summary": "Your top expense last month was Salaries at ₹1,20,000, followed by Rent at ₹45,000.",
-    "confidence": 0.91,
-    "tags": ["expenses", "monthly", "cashflow"]
-  },
-  "tables_used": ["bank_transactions"]
-}
-```
-
-## Screenshots
+### Screenshots
 
 Talk to data:
 
@@ -397,9 +432,21 @@ User Query
 
 - The system has been tested on a sample financial dataset; accuracy on production-scale data has not been evaluated
 
-## Current Implementation Status
 
-- Authentication flow is fully implemented in the backend and integrated with the frontend
-- Forecasting flow is fully implemented in the backend and integrated with the frontend
-- Talk to Data flow is fully implemented in the backend and integrated with the frontend
-- Other modules and pages are currently implemented only at the frontend level
+### Current Implementation Status
+
+**Fully Implemented (Frontend & Backend with Database Integration)**
+* **Authentication & Onboarding:** Complete signup and login flow using JWT authentication, complete with automatic creation of business profiles and default bank accounts for new users.
+* **Talk to Data (Conversational AI):** The core NLP pipeline is fully functional. It integrates with the Groq API (`llama-3.3-70b-versatile`) to resolve query intent, generate schema-aware Postgres SQL, safely execute queries, and generate business insights with persistent chat memory.
+* **Data Ingestion (Uploads):** Fully functional CSV upload pipelines using Pandas. The system successfully validates, parses, and inserts records into the database for Bank Transactions, Invoices, and Expenses.
+* **Team Management:** Complete functionality to fetch team members, invite new users with role assignments, and remove members from a business profile.
+
+**Partially Implemented (Frontend Integrated with Stubbed/Mocked Backend)**
+* **Dashboard & Reporting:** The frontend successfully communicates with backend endpoints to retrieve metrics and export CSV reports, but the backend currently returns static, mocked financial data.
+* **Forecasting:** UI components trigger backend routes (`/optimize`, `/mitigations`), but the backend currently returns static success messages rather than connecting to live ML prediction models.
+* **Risk & Invoice Delay Management:** Actions like applying for invoice factoring or sending automated reminders have backend endpoints that return simulated responses.
+* **Banking Recommendations:** The recommendation engine (`/apply`, `/simulate`) is stubbed in the backend to return static simulated impacts.
+
+**Frontend-Only Modules**
+* **Bank-Side Portals:** Advanced bank-facing dashboards (e.g., `BankPortfolio`, `AlertsCenter`, `CustomerDetail`, `SystemAdmin`) have been built in the frontend React application for demonstration purposes but do not yet have corresponding backend database routing.
+
