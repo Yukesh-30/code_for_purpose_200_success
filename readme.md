@@ -156,6 +156,7 @@ bun run dev
 | Frontend language | JavaScript (ES2020+) |
 | Frontend framework | React |
 | Database | PostgreSQL |
+|Vector Database | ChromaDB|
 | ORM / Query layer | SQLAlchemy |
 | LLM / AI | groq (via API) |
 | Embeddings / Semantic search | OpenAI `text-embedding-ada-002` |
