@@ -44,7 +44,7 @@ You can try out the deployed version of the application here:
 
 ## Prerequisites
 - Node.js (LTS) & package manager (`bun` or `npm`)
-- Python 3.8+
+- Python 3.11+
 - PostgreSQL Server
 - Docker Desktop (Optional - for containerized backend execution)
 
