@@ -205,14 +205,26 @@ export default function TalkToData() {
 
   const renderChart = () => {
     if (!lastResponse?.data || lastResponse.data.length === 0) return null;
-    const chartData = lastResponse.data.slice(0, 15);
-    const keys = Object.keys(chartData[0]).filter(k => typeof chartData[0][k] === 'number');
-    const categoryKey = Object.keys(chartData[0]).find(k => typeof chartData[0][k] === 'string') || 'id';
+    
+    const chartData = lastResponse.data.slice(0, 15).map(item => {
+      const formatted = { ...item };
+      Object.keys(formatted).forEach(k => {
+        if (formatted[k] !== null && formatted[k] !== "" && !isNaN(Number(formatted[k]))) {
+          formatted[k] = Number(formatted[k]);
+        }
+      });
+      return formatted;
+    });
+
+    const categoryKey = Object.keys(chartData[0]).find(k => typeof chartData[0][k] === 'string') || Object.keys(chartData[0])[0];
+    const keys = Object.keys(chartData[0]).filter(k => typeof chartData[0][k] === 'number' && k !== categoryKey && k !== 'id');
     const chartType = lastResponse.insight?.chart_type || 'bar';
+
+    if (keys.length === 0) return <div className="h-full flex items-center justify-center text-muted-text text-xs">Insufficient data for chart</div>;
 
     if (chartType === 'pie') {
       return (
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height={220}>
           <PieChart>
             <Pie data={chartData} cx="50%" cy="50%" outerRadius={60} fill="#8884d8" dataKey={keys[0]} nameKey={categoryKey} label>
               {chartData.map((e, index) => <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />)}
@@ -227,7 +239,7 @@ export default function TalkToData() {
       const ChartComponent = chartType === 'line' ? LineChart : AreaChart;
       const DataComponent = chartType === 'line' ? Line : Area;
       return (
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height={220}>
           <ChartComponent data={chartData} margin={{ top: 5, right: 5, left: -20, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(255,255,255,0.05)" />
             <XAxis dataKey={categoryKey} hide />
@@ -242,7 +254,7 @@ export default function TalkToData() {
     }
 
     return (
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" height={220}>
         <BarChart data={chartData} margin={{ top: 5, right: 5, left: -20, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="rgba(255,255,255,0.05)" />
           <XAxis dataKey={categoryKey} hide />
@@ -544,7 +556,7 @@ export default function TalkToData() {
                           <span className="text-[11px] font-black uppercase tracking-widest text-muted-text">Data Visualization</span>
                           <Badge className="text-[10px] bg-primary/10 text-primary border-none uppercase px-3 py-1 font-black">{lastResponse.insight?.chart_type}</Badge>
                         </CardHeader>
-                        <CardContent className="h-64 p-6 pt-4">
+                        <CardContent className="p-6 pt-4 min-h-[260px]">
                           {renderChart()}
                         </CardContent>
                       </Card>
